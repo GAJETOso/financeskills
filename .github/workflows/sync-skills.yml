@@ -1,0 +1,25 @@
+name: Sync Skills
+
+on:
+  push:
+    branches: [ main ]
+    paths:
+      - 'skills/**/SKILL.md'
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Use Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+      - run: node .github/scripts/sync-skills.js
+      - name: Commit changes
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add marketplace.json
+          git commit -m "chore: sync skills to marketplace.json [skip ci]" || echo "No changes to commit"
+          git push

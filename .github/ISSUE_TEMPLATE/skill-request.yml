@@ -1,0 +1,30 @@
+name: Skill Request
+description: Suggest a new financial skill for AI agents
+title: "[Skill Request]: "
+labels: ["skill-request"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for suggesting a new skill!
+  - type: input
+    id: skill-name
+    attributes:
+      label: Skill Name
+      description: What should the skill be called? (e.g., "mergers-acquisitions")
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: What does this skill do?
+    validations:
+      required: true
+  - type: textarea
+    id: trigger-phrases
+    attributes:
+      label: Trigger Phrases
+      description: What are some keywords or phrases that should trigger this skill?
+    validations:
+      required: true
