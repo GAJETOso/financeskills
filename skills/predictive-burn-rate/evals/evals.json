@@ -1,0 +1,18 @@
+{
+  "skill_name": "predictive-burn-rate",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Our burn rate has been $100k, $120k, and $150k over the last 3 months. We have $1M in the bank. When do we run out of money?",
+      "expected_output": "Should identify the accelerating burn trend. Should note that a simple average is dangerous due to the acceleration. Should calculate the 'Zero Date' based on the trend (approx. 5-6 months). Should suggest using Prophet for a more detailed seasonal forecast. Should provide a Runway Forecast Report.",
+      "assertions": [
+        "Identifies accelerating burn trend",
+        "Notes that linear extrapolation may be over-optimistic",
+        "Calculates an estimated runway (approx 5-7 months)",
+        "Suggests time-series modeling (Prophet/ARIMA)",
+        "Output follows Runway Forecast Report structure"
+      ],
+      "files": []
+    }
+  ]
+}

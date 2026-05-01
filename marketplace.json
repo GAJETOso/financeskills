@@ -45,7 +45,26 @@
       "name": "Forensic Accounting",
       "path": "skills/forensic-accounting",
       "category": "Investigation"
+    },
+    {
+      "id": "treasury-management",
+      "name": "Treasury Management",
+      "path": "skills/treasury-management",
+      "category": "Corporate Finance"
+    },
+    {
+      "id": "ai-anomaly-detection",
+      "name": "AI Anomaly Detection",
+      "path": "skills/ai-anomaly-detection",
+      "category": "AI/Automation"
+    },
+    {
+      "id": "predictive-burn-rate",
+      "name": "Predictive Burn Rate",
+      "path": "skills/predictive-burn-rate",
+      "category": "AI/Planning"
     }
+
 
 
   ]

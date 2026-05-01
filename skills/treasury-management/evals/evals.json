@@ -1,0 +1,18 @@
+{
+  "skill_name": "treasury-management",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "We have $5M in cash but $2M is in Euros and the Euro is dropping. We also have a $1M payroll next week. What should we do?",
+      "expected_output": "Should identify the immediate liquidity need (payroll) and the FX risk (Euro dropping). Should suggest a cash positioning review and potential FX hedging or conversion. Should provide a structured Treasury Report with a cash flow forecast and risk management recommendations.",
+      "assertions": [
+        "Identifies payroll as an immediate liquidity priority",
+        "Addresses the FX risk of the Euro dropping",
+        "Suggests a 13-week rolling cash forecast",
+        "Provides specific hedging or conversion recommendations",
+        "Output follows Treasury Report structure"
+      ],
+      "files": []
+    }
+  ]
+}

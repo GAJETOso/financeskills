@@ -1,0 +1,18 @@
+{
+  "skill_name": "ai-anomaly-detection",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "We have 1 million credit card transactions. We want to find weird spending patterns that don't follow our standard rules. Which ML model should we use?",
+      "expected_output": "Should recommend unsupervised learning models like Isolation Forest or Autoencoders. Should explain why these are better than rules-based systems for large datasets. Should mention feature engineering (e.g. txn frequency, distance). Should provide an AI Audit Report structure.",
+      "assertions": [
+        "Recommends Isolation Forest or Autoencoders",
+        "Explains the limitation of rules-based systems at scale",
+        "Discusses feature engineering for fraud detection",
+        "Mentions reconstruction error or anomaly scores",
+        "Output follows AI Audit Report structure"
+      ],
+      "files": []
+    }
+  ]
+}

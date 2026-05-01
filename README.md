@@ -22,6 +22,9 @@ Modular, AI-runnable skill definitions:
 *   [Risk Assessment](./skills/risk-assessment/SKILL.md)
 *   [Investment Analysis](./skills/investment-analysis/SKILL.md)
 *   [Forensic Accounting](./skills/forensic-accounting/SKILL.md)
+*   [Treasury Management](./skills/treasury-management/SKILL.md)
+*   [AI Anomaly Detection](./skills/ai-anomaly-detection/SKILL.md)
+*   [Predictive Burn Rate](./skills/predictive-burn-rate/SKILL.md)
 
 ### ⚖️ Compliance & Governance
 *   [Regulatory Compliance Mapping](./compliance/REGULATORY_MAPPING.md): Unified mapping of skills to IFRS, GAAP, and local African frameworks.
