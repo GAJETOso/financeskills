@@ -117,7 +117,38 @@
       "name": "Venture Debt Analysis",
       "path": "skills/venture-debt",
       "category": "Financing"
+    },
+    {
+      "id": "wacc-computation",
+      "name": "WACC Computation",
+      "path": "skills/wacc-computation",
+      "category": "Corporate Finance"
+    },
+    {
+      "id": "ecl-computation",
+      "name": "ECL Computation",
+      "path": "skills/ecl-computation",
+      "category": "Accounting/Risk"
+    },
+    {
+      "id": "aro-computation",
+      "name": "ARO Computation",
+      "path": "skills/aro-computation",
+      "category": "Accounting"
+    },
+    {
+      "id": "corporate-consolidation",
+      "name": "Corporate Consolidation",
+      "path": "skills/corporate-consolidation",
+      "category": "Accounting"
+    },
+    {
+      "id": "product-profitability",
+      "name": "Product Profitability Analysis",
+      "path": "skills/product-profitability",
+      "category": "Analysis"
     }
+
 
 
 

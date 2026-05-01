@@ -1,0 +1,18 @@
+{
+  "skill_name": "product-profitability",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Our 'Premium' service has 80% gross margins but only 5% of our sales. Our 'Standard' service has 20% margins but 95% of sales. Should we shut down 'Standard'?",
+      "expected_output": "Should perform a Contribution Margin analysis. Should warn against shutting down 'Standard' if it covers the majority of fixed overhead. Should discuss the impact of fixed cost re-allocation. Should provide a Product Profitability Dashboard.",
+      "assertions": [
+        "Analyzes contribution margin vs gross margin",
+        "Warns about fixed cost absorption/re-allocation",
+        "Suggests a Stack Rank of products/services",
+        "Identifies 'Standard' as the primary overhead funder",
+        "Output follows Product Profitability Dashboard structure"
+      ],
+      "files": []
+    }
+  ]
+}

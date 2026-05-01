@@ -1,0 +1,18 @@
+{
+  "skill_name": "wacc-computation",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Our stock beta is 1.2, the 10-year Treasury is at 4%, and the Equity Risk Premium is 5%. We have $1M in debt at 6% interest and $2M in market cap. Tax rate is 25%. What's our WACC?",
+      "expected_output": "Should calculate Cost of Equity (4% + 1.2 * 5% = 10%). Should calculate After-tax Cost of Debt (6% * (1 - 0.25) = 4.5%). Should weight the components (1/3 Debt, 2/3 Equity). Should calculate the final WACC ((1/3 * 4.5%) + (2/3 * 10%) = 8.16%). Should provide a WACC Computation Memo.",
+      "assertions": [
+        "Calculates Cost of Equity as 10%",
+        "Calculates After-tax Cost of Debt as 4.5%",
+        "Correctly weights Debt (33.3%) and Equity (66.7%)",
+        "Calculates final WACC as approx. 8.16% or 8.17%",
+        "Output follows WACC Computation Memo structure"
+      ],
+      "files": []
+    }
+  ]
+}

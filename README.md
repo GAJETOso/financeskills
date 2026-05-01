@@ -34,6 +34,11 @@ Modular, AI-runnable skill definitions:
 *   [Revenue Recognition](./skills/revenue-recognition/SKILL.md)
 *   [ESG Reporting](./skills/esg-reporting/SKILL.md)
 *   [Venture Debt Analysis](./skills/venture-debt/SKILL.md)
+*   [WACC Computation](./skills/wacc-computation/SKILL.md)
+*   [ECL Computation](./skills/ecl-computation/SKILL.md)
+*   [ARO Computation](./skills/aro-computation/SKILL.md)
+*   [Corporate Consolidation](./skills/corporate-consolidation/SKILL.md)
+*   [Product Profitability Analysis](./skills/product-profitability/SKILL.md)
 
 ### ⚖️ Compliance & Governance
 *   [Regulatory Compliance Mapping](./compliance/REGULATORY_MAPPING.md): Unified mapping of skills to IFRS, GAAP, and local African frameworks.

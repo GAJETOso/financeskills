@@ -1,0 +1,18 @@
+{
+  "skill_name": "ecl-computation",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "We have $1M in trade receivables. Historically, 2% of these fail to pay. This year, the economy is heading into a recession. How should we calculate our provision?",
+      "expected_output": "Should recommend a Provision Matrix approach for trade receivables. Should discuss adjusting the historical 2% rate upwards for the expected recession. Should mention Stage 1/2/3 classification for non-trade assets. Should provide an ECL Analysis Report.",
+      "assertions": [
+        "Recommends a Provision Matrix for trade receivables",
+        "Adjusts historical rates for forward-looking recession data",
+        "Mentions PD/LGD/EAD components",
+        "Identifies the need for macroeconomic scenario weighting",
+        "Output follows ECL Analysis Report structure"
+      ],
+      "files": []
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "skill_name": "corporate-consolidation",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Parent Co owns 80% of Sub Co. Parent sold $100k of goods to Sub, which are still in Sub's inventory. How do we handle this in consolidation?",
+      "expected_output": "Should identify this as an intercompany transaction with unrealized profit. Should eliminate the intercompany Sales/COGS ($100k). Should eliminate the unrealized profit from Inventory and COGS. Should calculate the NCI (20%). Should provide a Consolidated Financial Package.",
+      "assertions": [
+        "Eliminates intercompany Sales and COGS ($100,000)",
+        "Identifies and eliminates unrealized profit in inventory",
+        "Correctly identifies the Parent (80%) and NCI (20%) stakes",
+        "Mentions standardizing accounting policies between entities",
+        "Output follows Consolidated Financial Package structure"
+      ],
+      "files": []
+    }
+  ]
+}

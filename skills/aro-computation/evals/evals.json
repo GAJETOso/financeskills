@@ -1,0 +1,18 @@
+{
+  "skill_name": "aro-computation",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "We built a factory that must be restored in 10 years at an estimated cost of $1M. Our credit-adjusted risk-free rate is 5%. How do we record this today?",
+      "expected_output": "Should calculate the Present Value of the $1M ($1M / (1.05)^10 = ~$613.9k). Should describe the entry to Debit Asset / Credit ARO Liability. Should mention subsequent Accretion and Depreciation. Should provide an ARO Schedule.",
+      "assertions": [
+        "Calculates PV of $1M at 5% over 10 years (~$613,913)",
+        "Mentions Debit Asset / Credit Liability journal entry",
+        "Identifies Accretion as the unwinding of the discount",
+        "Explains that the capitalized cost is depreciated over the asset life",
+        "Output follows ARO Schedule structure"
+      ],
+      "files": []
+    }
+  ]
+}
