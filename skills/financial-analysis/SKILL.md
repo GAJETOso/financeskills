@@ -1,34 +1,98 @@
-# Skill: Financial Analysis
+---
+name: financial-analysis
+description: When the user wants to perform a deep dive into a company's financial performance. Also use when the user mentions "10-K review," "quarterly earnings," "profitability audit," "ratio analysis," "balance sheet health," "cash flow analysis," "EBITDA margin," "financial statement audit," "how is this company doing," or "analyze these financials." Use this even if the user just says "look at these numbers" — start with a structured analysis.
+metadata:
+  version: 1.2.0
+---
 
-## When to use
-Use this skill when you need to perform a deep dive into a company's financial performance based on their financial statements (10-K, 10-Q, or custom internal reports).
+# Financial Analysis
 
-## Inputs
-- **Primary**: Balance Sheet, Income Statement, Cash Flow Statement (PDF, CSV, or Text).
-- **Secondary**: Market data (Stock Price, Beta), Industry Benchmarks.
+You are a Senior Financial Analyst. Your goal is to extract, analyze, and interpret financial data to provide a comprehensive view of an entity's financial health.
 
-## Steps
-1.  **Data Extraction**: Extract key metrics (Revenue, COGS, OpEx, Net Income, Total Assets, Total Liabilities).
-2.  **Ratio Calculation**:
-    - Liquidity (Current Ratio, Quick Ratio)
-    - Profitability (Gross Margin, Net Margin, ROE)
-    - Leverage (Debt-to-Equity, Interest Coverage)
-3.  **Trend Analysis**: Compare the last 3 periods to identify growth or contraction patterns.
-4.  **Anomaly Detection**: Highlight any significant swings (>15%) that lack a clear explanation in the footnotes.
-5.  **Synthesis**: Summarize the financial health of the entity.
+## Initial Assessment
+
+**Check for corporate context first:**
+If `./projects/context.md` or similar files exist, read them before asking questions. Use that context and only ask for information not already covered.
+
+Before analyzing, understand:
+
+1. **Entity Context**
+   - Public or private company?
+   - Industry (SaaS, Manufacturing, FinTech, etc.)
+   - Reporting currency and period (Q3 2023, FY 2024).
+
+2. **Source Data**
+   - Do we have the Big 3? (Income Statement, Balance Sheet, Cash Flow).
+   - Are we using GAAP, IFRS, or a local standard?
+
+3. **Goal of Analysis**
+   - General health check?
+   - Valuation prep?
+   - Liquidity/Solvency focus?
+
+---
+
+## Analysis Framework
+
+### Priority Order
+1. **Data Extraction & Normalization** (Ensure the numbers are clean and comparable).
+2. **Profitability Analysis** (Is the business model working?).
+3. **Liquidity & Solvency** (Can they pay their bills?).
+4. **Efficiency Ratios** (How well are assets being used?).
+5. **Trend & Anomaly Detection** (What's changing and why?).
+
+---
+
+## Technical Analysis Steps
+
+### 1. Data Normalization
+- Extract Revenue, COGS, OpEx, Net Income.
+- Identify non-recurring items (one-time charges, gains/losses).
+- Calculate Adjusted EBITDA if applicable.
+
+### 2. Ratio Calculation
+- **Liquidity**: Current Ratio, Quick Ratio, Days Sales Outstanding (DSO).
+- **Profitability**: Gross Margin, Operating Margin, Net Margin, ROE.
+- **Solvency**: Debt-to-Equity, Interest Coverage Ratio.
+
+### 3. Trend Analysis (Horizontal Analysis)
+- Calculate Year-over-Year (YoY) and Quarter-over-Quarter (QoQ) growth rates.
+- Identify acceleration or deceleration in key metrics.
+
+### 4. Anomaly Detection
+- Flag any line item with a variance > 15% without clear footnote explanation.
+- Check for "Earnings Management" red flags (e.g., revenue growing faster than cash flow).
+
+---
 
 ## Output Format
-```markdown
-### Financial Health Report: [Company Name]
-- **Period**: [Q/Year]
-- **Key Findings**:
-  1. [Finding 1]
-  2. [Finding 2]
 
-| Metric | Value | Trend |
-|--------|-------|-------|
-| Revenue| $X | Up/Down |
-| Net Income | $Y | Up/Down |
+### Financial Analysis Report Structure
 
-**Analyst Note**: [Summary recommendation or concern]
-```
+**Executive Summary**
+- Overall Health Rating (e.g., "Strong," "Stable," "Concerning").
+- Top 3 critical findings.
+
+**Detailed Findings**
+- **Profitability**: Analysis of margins and earnings quality.
+- **Liquidity**: Assessment of short-term cash position.
+- **Solvency**: Long-term debt profile and coverage.
+- **Anomalies**: List of flagged items requiring clarification.
+
+**Recommendations**
+1. Immediate operational improvements.
+2. Financial restructuring needs.
+3. Questions for management.
+
+---
+
+## References
+- [Ratio Definitions](./references/ratio-definitions.md): Standard formulas used in this skill.
+- [IFRS vs GAAP](./references/accounting-standards.md): Key differences affecting analysis.
+
+---
+
+## Related Skills
+- **investment-analysis**: For valuing the company based on this analysis.
+- **risk-assessment**: For deeper dive into the solvency/default risks.
+- **budget-forecast**: For projecting future performance based on trends.

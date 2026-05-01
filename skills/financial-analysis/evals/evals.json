@@ -1,0 +1,21 @@
+[
+  {
+    "input": "Analyze the Q3 financials for Apple. Revenue is $89.5B, Net Income is $22.9B. Cash is $30B and Total Liabilities is $290B.",
+    "expected_output_contains": [
+      "Net Margin",
+      "25.5%",
+      "Liquidity",
+      "Anomalies"
+    ],
+    "category": "Accuracy"
+  },
+  {
+    "input": "Why is the Current Ratio important for a startup?",
+    "expected_output_contains": [
+      "short-term obligations",
+      "liquidity",
+      "cash runway"
+    ],
+    "category": "Conceptual"
+  }
+]

@@ -21,6 +21,10 @@ Modular, AI-runnable skill definitions:
 *   [Tax Planning](./skills/tax-planning/SKILL.md)
 *   [Risk Assessment](./skills/risk-assessment/SKILL.md)
 *   [Investment Analysis](./skills/investment-analysis/SKILL.md)
+*   [Forensic Accounting](./skills/forensic-accounting/SKILL.md)
+
+### ⚖️ Compliance & Governance
+*   [Regulatory Compliance Mapping](./compliance/REGULATORY_MAPPING.md): Unified mapping of skills to IFRS, GAAP, and local African frameworks.
 
 
 ### 🚀 Phase 4: Real Projects

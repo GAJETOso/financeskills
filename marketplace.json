@@ -39,7 +39,14 @@
       "name": "Investment Analysis",
       "path": "skills/investment-analysis",
       "category": "Investment"
+    },
+    {
+      "id": "forensic-accounting",
+      "name": "Forensic Accounting",
+      "path": "skills/forensic-accounting",
+      "category": "Investigation"
     }
+
 
   ]
 }
