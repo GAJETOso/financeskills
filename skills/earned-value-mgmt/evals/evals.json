@@ -1,0 +1,18 @@
+{
+  "skill_name": "earned-value-mgmt",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Our project was supposed to be 50% done ($500k PV). We've spent $600k (AC) but we are only 40% done (EV = $400k). How are we doing?",
+      "expected_output": "Should calculate CPI (400/600 = 0.67). Should calculate SPI (400/500 = 0.80). Should conclude the project is over budget and behind schedule. Should provide a Project Performance Dashboard.",
+      "assertions": [
+        "Calculates CPI as 0.67",
+        "Calculates SPI as 0.80",
+        "Concludes project is over budget and behind schedule",
+        "Mentions the EAC (Estimate at Completion) forecast",
+        "Output follows Project Performance Dashboard structure"
+      ],
+      "files": []
+    }
+  ]
+}

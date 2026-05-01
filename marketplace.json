@@ -147,7 +147,44 @@
       "name": "Product Profitability Analysis",
       "path": "skills/product-profitability",
       "category": "Analysis"
+    },
+    {
+      "id": "oil-gas-valuation",
+      "name": "Oil & Gas Reserve Valuation",
+      "path": "skills/oil-gas-valuation",
+      "category": "Energy"
+    },
+    {
+      "id": "insurance-reserving",
+      "name": "Insurance Loss Reserving",
+      "path": "skills/insurance-reserving",
+      "category": "Insurance"
+    },
+    {
+      "id": "banking-compliance",
+      "name": "Banking Regulatory Compliance",
+      "path": "skills/banking-compliance",
+      "category": "Banking"
+    },
+    {
+      "id": "crypto-accounting",
+      "name": "Crypto-Accounting",
+      "path": "skills/crypto-accounting",
+      "category": "AI/Accounting"
+    },
+    {
+      "id": "variance-analysis",
+      "name": "Manufacturing Variance Analysis",
+      "path": "skills/variance-analysis",
+      "category": "Manufacturing"
+    },
+    {
+      "id": "earned-value-mgmt",
+      "name": "Earned Value Management",
+      "path": "skills/earned-value-mgmt",
+      "category": "Project Management"
     }
+
 
 
 

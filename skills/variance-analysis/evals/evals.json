@@ -1,0 +1,18 @@
+{
+  "skill_name": "variance-analysis",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "We expected to use 1,000 lbs of steel at $5/lb. We actually used 1,100 lbs at $4.50/lb. Calculate the variances.",
+      "expected_output": "Should calculate Material Price Variance ($0.50 favorable * 1,100 lbs = $550 F). Should calculate Material Usage Variance (100 lbs unfavorable * $5 = $500 U). Should provide a Production Variance Report.",
+      "assertions": [
+        "Calculates Price Variance as $550 Favorable",
+        "Calculates Usage Variance as $500 Unfavorable",
+        "Identifies the root cause (bought cheaper steel, used more of it)",
+        "Correctly labels Favorable (F) and Unfavorable (U)",
+        "Output follows Production Variance Report structure"
+      ],
+      "files": []
+    }
+  ]
+}

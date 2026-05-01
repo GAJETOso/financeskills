@@ -39,6 +39,12 @@ Modular, AI-runnable skill definitions:
 *   [ARO Computation](./skills/aro-computation/SKILL.md)
 *   [Corporate Consolidation](./skills/corporate-consolidation/SKILL.md)
 *   [Product Profitability Analysis](./skills/product-profitability/SKILL.md)
+*   [Oil & Gas Reserve Valuation](./skills/oil-gas-valuation/SKILL.md)
+*   [Insurance Loss Reserving](./skills/insurance-reserving/SKILL.md)
+*   [Banking Regulatory Compliance](./skills/banking-compliance/SKILL.md)
+*   [Crypto-Accounting](./skills/crypto-accounting/SKILL.md)
+*   [Manufacturing Variance Analysis](./skills/variance-analysis/SKILL.md)
+*   [Earned Value Management](./skills/earned-value-mgmt/SKILL.md)
 
 ### ⚖️ Compliance & Governance
 *   [Regulatory Compliance Mapping](./compliance/REGULATORY_MAPPING.md): Unified mapping of skills to IFRS, GAAP, and local African frameworks.

@@ -1,0 +1,18 @@
+{
+  "skill_name": "insurance-reserving",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Our paid losses for Accident Year 2023 are $500k. Historically, this line develops to 2.0x its current value by year 5. What's our IBNR?",
+      "expected_output": "Should calculate Projected Ultimate Loss ($500k * 2.0 = $1M). Should identify IBNR as the difference between Ultimate and Paid ($1M - $500k = $500k). Should discuss the loss ratio. Should provide an Insurance Reserve Report.",
+      "assertions": [
+        "Calculates Projected Ultimate Loss as $1,000,000",
+        "Calculates IBNR as $500,000",
+        "Identifies the use of loss development factors (LDF)",
+        "Mentions the combined ratio target of <100%",
+        "Output follows Insurance Reserve Report structure"
+      ],
+      "files": []
+    }
+  ]
+}

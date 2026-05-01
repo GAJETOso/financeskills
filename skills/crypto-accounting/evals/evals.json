@@ -1,0 +1,18 @@
+{
+  "skill_name": "crypto-accounting",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "We bought 1 BTC for $50k. It dropped to $30k last month, but now it's at $60k. How do we value it on our GAAP balance sheet?",
+      "expected_output": "Should identify the GAAP impairment rule (Indefinite-lived intangible asset). Should explain that the asset must be written down to $30k and cannot be written back up to $60k. Should provide a Digital Asset Ledger Summary.",
+      "assertions": [
+        "Identifies BTC as an indefinite-lived intangible asset (GAAP)",
+        "Applies the impairment rule (must write down to $30k)",
+        "Explains that write-ups are not allowed under current GAAP",
+        "Mentions the carrying value vs fair market value discrepancy",
+        "Output follows Digital Asset Ledger Summary structure"
+      ],
+      "files": []
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "skill_name": "oil-gas-valuation",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "We have 1 million barrels of proved reserves. Lifting costs are $15/bbl. Current oil price is $80/bbl. What's the PV-10 assuming a 10-year production life?",
+      "expected_output": "Should calculate annual production (100k bbl/yr). Should calculate annual net cash flow ($80 - $15 = $65/bbl * 100k = $6.5M/yr). Should discount the 10-year annuity at 10% to find PV-10 (approx. $39.9M). Should provide an Oil & Gas Valuation Memo.",
+      "assertions": [
+        "Calculates annual net cash flow as $6.5M",
+        "Applies 10% discount rate for PV-10",
+        "Identifies 1P as the reserve category",
+        "Mentions lifting costs per BOE",
+        "Output follows Oil & Gas Valuation Memo structure"
+      ],
+      "files": []
+    }
+  ]
+}

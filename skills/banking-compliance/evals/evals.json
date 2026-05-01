@@ -1,0 +1,18 @@
+{
+  "skill_name": "banking-compliance",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Our bank has $100M in CET1 capital and $800M in Risk-Weighted Assets. Are we Basel III compliant?",
+      "expected_output": "Should calculate the CET1 ratio ($100M / $800M = 12.5%). Should compare this to the Basel III minimum (4.5% + buffers). Should conclude the bank is currently compliant. Should provide a Regulatory Compliance Dashboard.",
+      "assertions": [
+        "Calculates CET1 ratio as 12.5%",
+        "Compares ratio to Basel III 4.5% minimum",
+        "Identifies CET1 as common equity and retained earnings",
+        "Mentions the Liquidity Coverage Ratio (LCR)",
+        "Output follows Regulatory Compliance Dashboard structure"
+      ],
+      "files": []
+    }
+  ]
+}
