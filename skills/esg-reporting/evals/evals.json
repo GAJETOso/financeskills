@@ -1,0 +1,18 @@
+{
+  "skill_name": "esg-reporting",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Our factory used 1,000 MWh of electricity this year. Is this Scope 1 or Scope 2 emissions?",
+      "expected_output": "Should identify purchased electricity as Scope 2. Should explain that Scope 1 is for direct on-site combustion. Should suggest reporting this as part of an ESG Performance Report.",
+      "assertions": [
+        "Correctly identifies purchased electricity as Scope 2",
+        "Differentiates between Scope 1, 2, and 3",
+        "Mentions GHG Protocol or SASB standards",
+        "Suggests a scorecard for tracking targets",
+        "Output follows ESG Performance Report structure"
+      ],
+      "files": []
+    }
+  ]
+}

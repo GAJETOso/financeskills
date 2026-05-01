@@ -1,0 +1,18 @@
+{
+  "skill_name": "revenue-recognition",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "We sold a $12k annual subscription today. The customer paid upfront. How much revenue do we recognize this month?",
+      "expected_output": "Should identify this as a multi-period performance obligation. Should calculate the monthly revenue ($1k). Should explain the deferral of the remaining $11k as Unearned Revenue. Should provide a Revenue Recognition Memo structure.",
+      "assertions": [
+        "Calculates monthly revenue as $1,000",
+        "Identifies $11,000 as Deferred/Unearned Revenue",
+        "Mentions the 5-Step Model (Step 5: Recognize over time)",
+        "Provides journal entries for the initial payment and monthly rec",
+        "Output follows Revenue Recognition Memo structure"
+      ],
+      "files": []
+    }
+  ]
+}

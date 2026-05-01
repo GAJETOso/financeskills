@@ -1,0 +1,18 @@
+{
+  "skill_name": "venture-debt",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "We're a Series B startup with $5M in MRR. We want to borrow $10M in venture debt to avoid dilution. What should we expect for terms?",
+      "expected_output": "Should identify that venture debt is typically 20-30% of the last equity round or linked to MRR multiples. Should discuss Warrants and Covenants (Minimum Cash/MRR). Should provide a Venture Debt Term Sheet structure.",
+      "assertions": [
+        "Mentions Warrant Coverage (e.g. 5-15%)",
+        "Discusses standard interest rates (e.g. Prime + 1-2%)",
+        "Identifies 'Refinance Risk' as a key underwriting factor",
+        "Mentions Minimum Cash or MRR covenants",
+        "Output follows Venture Debt Term Sheet structure"
+      ],
+      "files": []
+    }
+  ]
+}

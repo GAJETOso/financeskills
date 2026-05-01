@@ -1,0 +1,18 @@
+{
+  "skill_name": "lbo-modeling",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "We want to buy a company for $100M (10x EBITDA). We are using $60M in debt and $40M in equity. If we exit in 5 years at the same multiple, what's our IRR?",
+      "expected_output": "Should calculate the entry EBITDA ($10M). Should identify the need for cash flow projections to pay down debt. Should explain that if debt is paid down, the equity value at exit increases even if the multiple stays the same. Should provide an LBO Analysis Summary structure.",
+      "assertions": [
+        "Identifies entry EBITDA as $10M",
+        "Notes the importance of debt paydown for equity returns",
+        "Suggests a Sources & Uses table",
+        "Explains IRR and MOIC concepts",
+        "Output follows LBO Analysis Summary structure"
+      ],
+      "files": []
+    }
+  ]
+}

@@ -93,7 +93,32 @@
       "name": "Financial Statement Preparation",
       "path": "skills/statement-preparation",
       "category": "Accounting"
+    },
+    {
+      "id": "lbo-modeling",
+      "name": "LBO Modeling",
+      "path": "skills/lbo-modeling",
+      "category": "Corporate Finance"
+    },
+    {
+      "id": "revenue-recognition",
+      "name": "Revenue Recognition",
+      "path": "skills/revenue-recognition",
+      "category": "Accounting"
+    },
+    {
+      "id": "esg-reporting",
+      "name": "ESG Reporting",
+      "path": "skills/esg-reporting",
+      "category": "Compliance"
+    },
+    {
+      "id": "venture-debt",
+      "name": "Venture Debt Analysis",
+      "path": "skills/venture-debt",
+      "category": "Financing"
     }
+
 
 
 

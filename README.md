@@ -30,6 +30,10 @@ Modular, AI-runnable skill definitions:
 *   [NLP Earnings Sentiment](./skills/nlp-earnings-sentiment/SKILL.md)
 *   [Automated Reconciliation](./skills/automated-reconciliation/SKILL.md)
 *   [Financial Statement Preparation](./skills/statement-preparation/SKILL.md)
+*   [LBO Modeling](./skills/lbo-modeling/SKILL.md)
+*   [Revenue Recognition](./skills/revenue-recognition/SKILL.md)
+*   [ESG Reporting](./skills/esg-reporting/SKILL.md)
+*   [Venture Debt Analysis](./skills/venture-debt/SKILL.md)
 
 ### ⚖️ Compliance & Governance
 *   [Regulatory Compliance Mapping](./compliance/REGULATORY_MAPPING.md): Unified mapping of skills to IFRS, GAAP, and local African frameworks.
