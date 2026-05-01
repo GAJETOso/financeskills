@@ -1,0 +1,45 @@
+{
+  "name": "FinanceSkills Marketplace",
+  "version": "1.1.0",
+  "description": "Premium AI-powered financial engineering skills for automated analysis and auditing.",
+  "publisher": "KOMVIA",
+  "skills": [
+    {
+      "id": "financial-analysis",
+      "name": "Financial Analysis",
+      "path": "skills/financial-analysis",
+      "category": "Analysis"
+    },
+    {
+      "id": "budget-forecast",
+      "name": "Budget Forecasting",
+      "path": "skills/budget-forecast",
+      "category": "Planning"
+    },
+    {
+      "id": "audit-checklist",
+      "name": "Audit Checklist",
+      "path": "skills/audit-checklist",
+      "category": "Compliance"
+    },
+    {
+      "id": "tax-planning",
+      "name": "Tax Planning",
+      "path": "skills/tax-planning",
+      "category": "Taxation"
+    },
+    {
+      "id": "risk-assessment",
+      "name": "Risk Assessment",
+      "path": "skills/risk-assessment",
+      "category": "Risk Management"
+    },
+    {
+      "id": "investment-analysis",
+      "name": "Investment Analysis",
+      "path": "skills/investment-analysis",
+      "category": "Investment"
+    }
+
+  ]
+}

@@ -1,0 +1,1001 @@
+transaction_id,date,vendor,amount,category
+TXN-0000,2023-08-16,Starbucks,272.87,Operations
+TXN-0001,2023-11-05,Slack,353.79,Operations
+TXN-0002,2023-07-04,Starbucks,406.8,Operations
+TXN-0003,2023-08-01,Starbucks,343.59,Operations
+TXN-0004,2023-07-29,Google Cloud,382.87,Operations
+TXN-0005,2023-04-12,Zoom,311.46,Operations
+TXN-0006,2023-02-19,Uber,115.88,Operations
+TXN-0007,2023-11-15,Office Depot,361.73,Operations
+TXN-0008,2023-07-07,AWS,209.2,Operations
+TXN-0009,2023-05-23,Uber,436.32,Operations
+TXN-0010,2023-04-26,AWS,417.01,Operations
+TXN-0011,2023-12-09,Zoom,104.85,Operations
+TXN-0012,2023-03-13,Slack,462.38,Operations
+TXN-0013,2023-07-09,AWS,424.48,Operations
+TXN-0014,2023-06-20,Google Cloud,310.46,Operations
+TXN-0015,2023-02-03,Office Depot,417.07,Operations
+TXN-0016,2023-02-05,AWS,456.87,Operations
+TXN-0017,2023-08-29,Uber,365.2,Operations
+TXN-0018,2023-02-26,Office Depot,458.17,Operations
+TXN-0019,2023-11-23,Office Depot,56.13,Operations
+TXN-0020,2023-07-03,Office Depot,109.58,Operations
+TXN-0021,2023-04-10,Zoom,419.88,Operations
+TXN-0022,2023-10-17,Slack,477.37,Operations
+TXN-0023,2023-06-08,Slack,240.42,Operations
+TXN-0024,2023-05-11,Uber,388.26,Operations
+TXN-0025,2023-01-15,Office Depot,190.47,Operations
+TXN-0026,2023-07-03,Google Cloud,55.65,Operations
+TXN-0027,2023-10-29,Slack,72.21,Operations
+TXN-0028,2023-06-11,Starbucks,281.65,Operations
+TXN-0029,2023-10-17,Uber,439.88,Operations
+TXN-0030,2023-03-27,Office Depot,135.86,Operations
+TXN-0031,2023-03-15,Starbucks,377.22,Operations
+TXN-0032,2023-02-28,Office Depot,132.06,Operations
+TXN-0033,2023-07-25,Google Cloud,17.12,Operations
+TXN-0034,2023-10-20,Office Depot,178.68,Operations
+TXN-0035,2023-07-02,AWS,391.7,Operations
+TXN-0036,2023-09-30,AWS,84.56,Operations
+TXN-0037,2023-05-18,Zoom,184.89,Operations
+TXN-0038,2023-02-22,Office Depot,398.45,Operations
+TXN-0039,2023-02-28,AWS,418.17,Operations
+TXN-0040,2023-04-03,Office Depot,57.48,Operations
+TXN-0041,2023-12-11,AWS,496.3,Operations
+TXN-0042,2023-06-30,AWS,172.1,Operations
+TXN-0043,2023-02-22,Slack,61.33,Operations
+TXN-0044,2023-06-23,AWS,112.09,Operations
+TXN-0045,2023-08-16,Office Depot,112.84,Operations
+TXN-0046,2023-02-20,Office Depot,45.79,Operations
+TXN-0047,2023-07-19,Zoom,19.26,Operations
+TXN-0048,2023-01-29,AWS,291.9,Operations
+TXN-0049,2023-08-13,Slack,53.28,Operations
+TXN-0050,2023-10-04,AWS,25000.0,Operations
+TXN-0051,2023-10-04,Zoom,52.58,Operations
+TXN-0052,2023-05-31,Starbucks,206.47,Operations
+TXN-0053,2023-02-14,Uber,300.93,Operations
+TXN-0054,2023-10-16,Slack,337.19,Operations
+TXN-0055,2023-12-28,Office Depot,327.54,Operations
+TXN-0056,2023-12-12,Slack,113.63,Operations
+TXN-0057,2023-11-16,Office Depot,273.4,Operations
+TXN-0058,2023-08-11,Office Depot,107.41,Operations
+TXN-0059,2023-03-17,Starbucks,274.37,Operations
+TXN-0060,2023-11-16,AWS,227.34,Operations
+TXN-0061,2023-07-12,AWS,84.83,Operations
+TXN-0062,2023-12-22,AWS,188.1,Operations
+TXN-0063,2023-08-07,Office Depot,314.38,Operations
+TXN-0064,2023-05-24,Starbucks,39.74,Operations
+TXN-0065,2023-07-19,Starbucks,146.2,Operations
+TXN-0066,2023-09-03,Starbucks,217.03,Operations
+TXN-0067,2023-04-21,Zoom,229.65,Operations
+TXN-0068,2023-11-06,Slack,140.92,Operations
+TXN-0069,2023-03-25,Office Depot,161.67,Operations
+TXN-0070,2023-04-24,Starbucks,31.59,Operations
+TXN-0071,2023-07-01,Slack,226.43,Operations
+TXN-0072,2023-04-01,Slack,489.13,Operations
+TXN-0073,2023-12-26,Office Depot,147.36,Operations
+TXN-0074,2023-07-01,AWS,268.0,Operations
+TXN-0075,2023-02-27,Zoom,180.49,Operations
+TXN-0076,2023-10-09,Google Cloud,62.41,Operations
+TXN-0077,2023-06-23,AWS,352.69,Operations
+TXN-0078,2023-09-02,AWS,112.91,Operations
+TXN-0079,2023-10-29,Google Cloud,120.51,Operations
+TXN-0080,2023-02-16,Uber,453.64,Operations
+TXN-0081,2023-11-15,Zoom,85.61,Operations
+TXN-0082,2023-07-25,Google Cloud,112.46,Operations
+TXN-0083,2023-07-09,Slack,423.44,Operations
+TXN-0084,2023-09-06,Uber,345.01,Operations
+TXN-0085,2023-06-25,Starbucks,286.95,Operations
+TXN-0086,2023-08-29,Slack,432.07,Operations
+TXN-0087,2023-09-18,Uber,137.72,Operations
+TXN-0088,2023-01-29,Starbucks,205.37,Operations
+TXN-0089,2023-05-27,Office Depot,199.18,Operations
+TXN-0090,2023-03-16,Office Depot,230.32,Operations
+TXN-0091,2023-11-10,Google Cloud,172.1,Operations
+TXN-0092,2023-09-23,Uber,244.4,Operations
+TXN-0093,2023-11-07,Office Depot,306.61,Operations
+TXN-0094,2023-12-23,Office Depot,48.27,Operations
+TXN-0095,2023-02-17,Uber,129.42,Operations
+TXN-0096,2023-02-08,Starbucks,423.45,Operations
+TXN-0097,2023-10-30,Slack,28.46,Operations
+TXN-0098,2023-04-18,Office Depot,233.02,Operations
+TXN-0099,2023-08-27,Slack,478.11,Operations
+TXN-0100,2023-02-22,Stripe,499.99,Operations
+TXN-0101,2023-10-16,Stripe,499.99,Operations
+TXN-0102,2023-01-30,AWS,311.5,Operations
+TXN-0103,2023-05-10,Office Depot,453.12,Operations
+TXN-0104,2023-04-15,AWS,32.27,Operations
+TXN-0105,2023-10-24,Starbucks,28.22,Operations
+TXN-0106,2023-06-11,Uber,303.18,Operations
+TXN-0107,2023-10-14,Slack,329.43,Operations
+TXN-0108,2023-12-28,AWS,69.19,Operations
+TXN-0109,2023-02-21,Google Cloud,453.5,Operations
+TXN-0110,2023-04-24,Starbucks,249.5,Operations
+TXN-0111,2023-12-23,Slack,408.81,Operations
+TXN-0112,2023-05-29,Slack,132.52,Operations
+TXN-0113,2023-06-05,Slack,247.85,Operations
+TXN-0114,2023-09-24,Zoom,403.73,Operations
+TXN-0115,2023-07-03,Slack,119.93,Operations
+TXN-0116,2023-12-15,Uber,434.92,Operations
+TXN-0117,2023-05-02,Google Cloud,184.53,Operations
+TXN-0118,2023-04-24,Google Cloud,192.66,Operations
+TXN-0119,2023-08-18,Slack,279.95,Operations
+TXN-0120,2023-07-17,Office Depot,367.34,Operations
+TXN-0121,2023-06-13,Starbucks,103.9,Operations
+TXN-0122,2023-08-26,Zoom,407.68,Operations
+TXN-0123,2023-11-21,AWS,143.46,Operations
+TXN-0124,2023-03-26,AWS,143.85,Operations
+TXN-0125,2023-03-04,Uber,356.74,Operations
+TXN-0126,2023-03-23,Slack,12.01,Operations
+TXN-0127,2023-08-03,AWS,79.1,Operations
+TXN-0128,2023-12-27,Uber,484.11,Operations
+TXN-0129,2023-10-30,Zoom,381.06,Operations
+TXN-0130,2023-02-06,Uber,30.26,Operations
+TXN-0131,2023-10-08,Office Depot,32.54,Operations
+TXN-0132,2023-01-29,Slack,497.94,Operations
+TXN-0133,2023-01-16,Starbucks,207.14,Operations
+TXN-0134,2023-08-11,Uber,269.54,Operations
+TXN-0135,2023-09-28,Starbucks,84.32,Operations
+TXN-0136,2023-01-16,Zoom,479.69,Operations
+TXN-0137,2023-10-19,Google Cloud,411.99,Operations
+TXN-0138,2023-01-01,Zoom,81.35,Operations
+TXN-0139,2023-04-05,Slack,247.11,Operations
+TXN-0140,2023-07-16,Zoom,46.01,Operations
+TXN-0141,2023-05-09,Uber,332.79,Operations
+TXN-0142,2023-07-31,Starbucks,292.56,Operations
+TXN-0143,2023-07-31,AWS,69.08,Operations
+TXN-0144,2023-04-02,AWS,452.12,Operations
+TXN-0145,2023-11-05,Google Cloud,180.99,Operations
+TXN-0146,2023-11-01,AWS,61.63,Operations
+TXN-0147,2023-07-10,Uber,319.2,Operations
+TXN-0148,2023-12-05,Uber,259.63,Operations
+TXN-0149,2023-07-08,Google Cloud,265.72,Operations
+TXN-0150,2023-12-19,Uber,170.31,Operations
+TXN-0151,2023-05-20,Zoom,432.96,Operations
+TXN-0152,2023-11-28,AWS,274.34,Operations
+TXN-0153,2023-11-12,Zoom,256.87,Operations
+TXN-0154,2023-11-28,Office Depot,334.11,Operations
+TXN-0155,2023-07-27,Slack,231.99,Operations
+TXN-0156,2023-11-28,AWS,153.31,Operations
+TXN-0157,2023-03-25,Uber,78.03,Operations
+TXN-0158,2023-12-16,Google Cloud,388.64,Operations
+TXN-0159,2023-02-20,Zoom,87.03,Operations
+TXN-0160,2023-03-29,AWS,284.95,Operations
+TXN-0161,2023-10-02,Slack,293.04,Operations
+TXN-0162,2023-04-21,Zoom,453.5,Operations
+TXN-0163,2023-04-10,Starbucks,250.2,Operations
+TXN-0164,2023-04-25,Uber,372.42,Operations
+TXN-0165,2023-09-10,Office Depot,154.55,Operations
+TXN-0166,2023-04-13,AWS,229.6,Operations
+TXN-0167,2023-12-13,Office Depot,16.88,Operations
+TXN-0168,2023-01-30,Slack,339.2,Operations
+TXN-0169,2023-08-18,Slack,449.25,Operations
+TXN-0170,2023-11-25,Uber,193.4,Operations
+TXN-0171,2023-04-12,Slack,256.41,Operations
+TXN-0172,2023-09-16,Zoom,145.18,Operations
+TXN-0173,2023-12-01,Starbucks,445.02,Operations
+TXN-0174,2023-05-21,Zoom,390.87,Operations
+TXN-0175,2023-10-18,Zoom,130.15,Operations
+TXN-0176,2023-01-05,Slack,393.6,Operations
+TXN-0177,2023-11-10,Google Cloud,31.53,Operations
+TXN-0178,2023-06-17,Slack,301.09,Operations
+TXN-0179,2023-09-26,Zoom,122.21,Operations
+TXN-0180,2023-05-13,Office Depot,412.99,Operations
+TXN-0181,2023-12-19,Uber,430.77,Operations
+TXN-0182,2023-11-23,Uber,146.36,Operations
+TXN-0183,2023-05-24,Office Depot,115.52,Operations
+TXN-0184,2023-10-24,Starbucks,301.46,Operations
+TXN-0185,2023-09-04,Google Cloud,283.38,Operations
+TXN-0186,2023-07-30,Office Depot,369.54,Operations
+TXN-0187,2023-03-04,Zoom,477.12,Operations
+TXN-0188,2023-08-03,AWS,203.01,Operations
+TXN-0189,2023-06-15,Office Depot,483.55,Operations
+TXN-0190,2023-01-06,Zoom,323.22,Operations
+TXN-0191,2023-08-02,Slack,410.56,Operations
+TXN-0192,2023-10-04,Office Depot,368.24,Operations
+TXN-0193,2023-03-28,AWS,319.04,Operations
+TXN-0194,2023-06-20,Starbucks,160.6,Operations
+TXN-0195,2023-04-21,Slack,84.84,Operations
+TXN-0196,2023-12-14,Zoom,39.35,Operations
+TXN-0197,2023-07-31,Office Depot,253.38,Operations
+TXN-0198,2023-05-15,Zoom,317.03,Operations
+TXN-0199,2023-07-14,Slack,150.59,Operations
+TXN-0200,2023-03-16,Office Depot,239.66,Operations
+TXN-0201,2023-10-11,AWS,113.04,Operations
+TXN-0202,2023-07-31,Starbucks,296.25,Operations
+TXN-0203,2023-04-16,Uber,57.9,Operations
+TXN-0204,2023-09-02,Slack,71.47,Operations
+TXN-0205,2023-10-27,Slack,46.81,Operations
+TXN-0206,2023-02-16,Starbucks,277.32,Operations
+TXN-0207,2023-11-04,Slack,362.59,Operations
+TXN-0208,2023-08-20,Uber,280.09,Operations
+TXN-0209,2023-11-02,Zoom,215.02,Operations
+TXN-0210,2023-07-13,Starbucks,360.91,Operations
+TXN-0211,2023-10-18,Slack,84.62,Operations
+TXN-0212,2023-01-29,Starbucks,272.53,Operations
+TXN-0213,2023-07-25,Google Cloud,288.89,Operations
+TXN-0214,2023-01-26,Slack,126.83,Operations
+TXN-0215,2023-08-25,Office Depot,49.77,Operations
+TXN-0216,2023-05-27,Office Depot,309.52,Operations
+TXN-0217,2023-09-26,Starbucks,396.6,Operations
+TXN-0218,2023-08-18,Office Depot,210.81,Operations
+TXN-0219,2023-09-04,Starbucks,496.24,Operations
+TXN-0220,2023-08-17,AWS,435.61,Operations
+TXN-0221,2023-08-06,Office Depot,252.49,Operations
+TXN-0222,2023-11-12,AWS,411.33,Operations
+TXN-0223,2023-02-03,Office Depot,240.23,Operations
+TXN-0224,2023-12-09,Zoom,248.38,Operations
+TXN-0225,2023-09-17,AWS,76.58,Operations
+TXN-0226,2023-09-16,Starbucks,367.39,Operations
+TXN-0227,2023-10-22,AWS,256.93,Operations
+TXN-0228,2023-08-14,Office Depot,49.01,Operations
+TXN-0229,2023-12-18,Zoom,481.06,Operations
+TXN-0230,2023-11-03,Slack,256.38,Operations
+TXN-0231,2023-03-13,Starbucks,266.14,Operations
+TXN-0232,2023-09-24,Zoom,395.66,Operations
+TXN-0233,2023-05-07,Google Cloud,26.6,Operations
+TXN-0234,2023-05-25,Google Cloud,311.42,Operations
+TXN-0235,2023-03-03,Slack,147.55,Operations
+TXN-0236,2023-08-14,Google Cloud,435.42,Operations
+TXN-0237,2023-06-02,Starbucks,268.61,Operations
+TXN-0238,2023-06-26,AWS,361.81,Operations
+TXN-0239,2023-04-08,Slack,81.97,Operations
+TXN-0240,2023-10-07,Starbucks,157.82,Operations
+TXN-0241,2023-04-25,Slack,373.16,Operations
+TXN-0242,2023-02-09,AWS,241.75,Operations
+TXN-0243,2023-07-15,Slack,175.93,Operations
+TXN-0244,2023-02-22,Starbucks,295.33,Operations
+TXN-0245,2023-02-21,AWS,61.34,Operations
+TXN-0246,2023-09-01,Office Depot,369.59,Operations
+TXN-0247,2023-09-06,Zoom,116.83,Operations
+TXN-0248,2023-10-12,Google Cloud,283.51,Operations
+TXN-0249,2023-08-13,Slack,392.84,Operations
+TXN-0250,2023-02-22,Uber,478.47,Operations
+TXN-0251,2023-11-14,Starbucks,369.41,Operations
+TXN-0252,2023-05-15,Google Cloud,18.58,Operations
+TXN-0253,2023-09-04,Starbucks,105.05,Operations
+TXN-0254,2023-02-17,Google Cloud,308.39,Operations
+TXN-0255,2023-05-15,Slack,166.31,Operations
+TXN-0256,2023-12-07,Office Depot,91.99,Operations
+TXN-0257,2023-12-01,AWS,258.82,Operations
+TXN-0258,2023-01-07,Uber,239.23,Operations
+TXN-0259,2023-12-03,Google Cloud,138.98,Operations
+TXN-0260,2023-01-23,AWS,142.51,Operations
+TXN-0261,2023-10-31,Office Depot,123.55,Operations
+TXN-0262,2023-05-03,Uber,376.1,Operations
+TXN-0263,2023-11-18,Slack,336.67,Operations
+TXN-0264,2023-10-06,AWS,11.94,Operations
+TXN-0265,2023-09-10,Google Cloud,80.79,Operations
+TXN-0266,2023-07-06,Zoom,394.41,Operations
+TXN-0267,2023-01-06,Starbucks,127.32,Operations
+TXN-0268,2023-12-16,Zoom,96.87,Operations
+TXN-0269,2023-11-02,Starbucks,49.28,Operations
+TXN-0270,2023-04-05,Starbucks,271.17,Operations
+TXN-0271,2023-02-19,Uber,198.86,Operations
+TXN-0272,2023-06-16,Google Cloud,268.78,Operations
+TXN-0273,2023-10-11,Uber,170.03,Operations
+TXN-0274,2023-12-21,Starbucks,11.03,Operations
+TXN-0275,2023-12-26,Office Depot,250.7,Operations
+TXN-0276,2023-03-24,Slack,272.1,Operations
+TXN-0277,2023-10-06,AWS,186.6,Operations
+TXN-0278,2023-05-17,Google Cloud,304.04,Operations
+TXN-0279,2023-08-07,Google Cloud,249.53,Operations
+TXN-0280,2023-03-05,AWS,300.71,Operations
+TXN-0281,2023-07-22,Google Cloud,142.6,Operations
+TXN-0282,2023-07-07,Slack,373.34,Operations
+TXN-0283,2023-08-07,Slack,215.3,Operations
+TXN-0284,2023-04-28,Starbucks,59.87,Operations
+TXN-0285,2023-06-14,Zoom,478.03,Operations
+TXN-0286,2023-08-25,Uber,285.21,Operations
+TXN-0287,2023-04-12,Slack,430.75,Operations
+TXN-0288,2023-01-05,Google Cloud,171.22,Operations
+TXN-0289,2023-03-10,Office Depot,124.52,Operations
+TXN-0290,2023-02-24,Starbucks,121.92,Operations
+TXN-0291,2023-08-02,Uber,151.46,Operations
+TXN-0292,2023-06-18,Uber,182.05,Operations
+TXN-0293,2023-05-07,Uber,457.93,Operations
+TXN-0294,2023-11-28,AWS,89.92,Operations
+TXN-0295,2023-07-16,Slack,276.39,Operations
+TXN-0296,2023-03-19,Starbucks,411.01,Operations
+TXN-0297,2023-04-10,Google Cloud,58.76,Operations
+TXN-0298,2023-11-12,Google Cloud,314.46,Operations
+TXN-0299,2023-04-12,Slack,170.51,Operations
+TXN-0300,2023-11-02,Slack,113.33,Operations
+TXN-0301,2023-06-09,Zoom,313.38,Operations
+TXN-0302,2023-03-29,Starbucks,225.87,Operations
+TXN-0303,2023-08-20,Zoom,174.95,Operations
+TXN-0304,2023-08-06,Slack,479.22,Operations
+TXN-0305,2023-04-18,Office Depot,368.72,Operations
+TXN-0306,2023-06-17,Uber,413.82,Operations
+TXN-0307,2023-12-14,Slack,146.23,Operations
+TXN-0308,2023-11-01,Uber,252.31,Operations
+TXN-0309,2023-06-03,Office Depot,189.35,Operations
+TXN-0310,2023-04-01,Zoom,241.18,Operations
+TXN-0311,2023-07-18,AWS,114.65,Operations
+TXN-0312,2023-05-23,Starbucks,494.53,Operations
+TXN-0313,2023-11-27,Uber,18.08,Operations
+TXN-0314,2023-02-05,Zoom,486.82,Operations
+TXN-0315,2023-11-05,Zoom,52.26,Operations
+TXN-0316,2023-01-07,Slack,308.87,Operations
+TXN-0317,2023-10-19,Slack,293.58,Operations
+TXN-0318,2023-10-08,AWS,142.38,Operations
+TXN-0319,2023-12-11,Zoom,282.68,Operations
+TXN-0320,2023-06-26,Google Cloud,16.87,Operations
+TXN-0321,2023-04-23,Starbucks,423.7,Operations
+TXN-0322,2023-07-23,Starbucks,174.95,Operations
+TXN-0323,2023-08-28,Uber,474.38,Operations
+TXN-0324,2023-06-30,Office Depot,345.28,Operations
+TXN-0325,2023-03-24,Office Depot,102.27,Operations
+TXN-0326,2023-04-22,Office Depot,342.05,Operations
+TXN-0327,2023-10-04,AWS,41.89,Operations
+TXN-0328,2023-03-28,Google Cloud,92.74,Operations
+TXN-0329,2023-03-24,Office Depot,478.94,Operations
+TXN-0330,2023-08-24,Slack,338.4,Operations
+TXN-0331,2023-01-26,Slack,309.0,Operations
+TXN-0332,2023-08-03,Zoom,423.7,Operations
+TXN-0333,2023-07-20,Starbucks,467.47,Operations
+TXN-0334,2023-12-02,Slack,214.07,Operations
+TXN-0335,2023-12-13,Uber,14.15,Operations
+TXN-0336,2023-07-26,Uber,197.78,Operations
+TXN-0337,2023-07-26,Starbucks,98.73,Operations
+TXN-0338,2023-01-02,Office Depot,428.74,Operations
+TXN-0339,2023-05-23,AWS,131.15,Operations
+TXN-0340,2023-09-14,Zoom,274.63,Operations
+TXN-0341,2023-12-30,Zoom,291.63,Operations
+TXN-0342,2023-04-02,Uber,412.6,Operations
+TXN-0343,2023-03-16,Google Cloud,75.1,Operations
+TXN-0344,2023-05-21,Uber,456.36,Operations
+TXN-0345,2023-11-30,Slack,409.46,Operations
+TXN-0346,2023-12-30,Slack,46.16,Operations
+TXN-0347,2023-06-06,AWS,46.26,Operations
+TXN-0348,2023-01-16,Slack,230.48,Operations
+TXN-0349,2023-12-04,Uber,232.74,Operations
+TXN-0350,2023-03-26,Slack,71.82,Operations
+TXN-0351,2023-07-11,Uber,265.64,Operations
+TXN-0352,2023-05-17,Office Depot,385.29,Operations
+TXN-0353,2023-10-13,AWS,229.25,Operations
+TXN-0354,2023-05-18,Starbucks,212.08,Operations
+TXN-0355,2023-08-22,AWS,306.59,Operations
+TXN-0356,2023-02-03,Office Depot,30.22,Operations
+TXN-0357,2023-08-04,Uber,354.77,Operations
+TXN-0358,2023-04-08,Starbucks,80.52,Operations
+TXN-0359,2023-07-17,Google Cloud,199.5,Operations
+TXN-0360,2023-01-28,Starbucks,51.75,Operations
+TXN-0361,2023-01-14,Office Depot,216.21,Operations
+TXN-0362,2023-09-17,Google Cloud,407.64,Operations
+TXN-0363,2023-01-11,Starbucks,185.11,Operations
+TXN-0364,2023-11-29,Zoom,338.29,Operations
+TXN-0365,2023-11-16,Starbucks,454.22,Operations
+TXN-0366,2023-05-22,Uber,17.73,Operations
+TXN-0367,2023-10-11,Slack,301.89,Operations
+TXN-0368,2023-03-09,Slack,453.44,Operations
+TXN-0369,2023-03-18,AWS,280.56,Operations
+TXN-0370,2023-03-05,Zoom,329.49,Operations
+TXN-0371,2023-12-21,Slack,309.76,Operations
+TXN-0372,2023-05-14,Slack,386.43,Operations
+TXN-0373,2023-01-31,Slack,99.67,Operations
+TXN-0374,2023-04-04,AWS,360.09,Operations
+TXN-0375,2023-02-22,Slack,353.61,Operations
+TXN-0376,2023-01-05,Slack,74.79,Operations
+TXN-0377,2023-10-22,Slack,339.63,Operations
+TXN-0378,2023-06-11,AWS,312.03,Operations
+TXN-0379,2023-06-15,Uber,291.09,Operations
+TXN-0380,2023-04-05,Slack,28.37,Operations
+TXN-0381,2023-12-04,AWS,175.15,Operations
+TXN-0382,2023-09-02,Google Cloud,420.19,Operations
+TXN-0383,2023-08-17,AWS,349.94,Operations
+TXN-0384,2023-11-14,Uber,59.75,Operations
+TXN-0385,2023-12-16,AWS,453.9,Operations
+TXN-0386,2023-06-24,Starbucks,23.39,Operations
+TXN-0387,2023-04-13,Uber,479.22,Operations
+TXN-0388,2023-11-11,Google Cloud,253.77,Operations
+TXN-0389,2023-09-28,Uber,444.39,Operations
+TXN-0390,2023-04-10,Uber,322.92,Operations
+TXN-0391,2023-03-05,Uber,157.23,Operations
+TXN-0392,2023-04-01,Google Cloud,323.72,Operations
+TXN-0393,2023-11-25,Office Depot,353.81,Operations
+TXN-0394,2023-07-28,Starbucks,445.37,Operations
+TXN-0395,2023-12-28,Slack,380.35,Operations
+TXN-0396,2023-04-13,Starbucks,408.18,Operations
+TXN-0397,2023-09-16,AWS,149.43,Operations
+TXN-0398,2023-12-27,Google Cloud,174.1,Operations
+TXN-0399,2023-09-15,Google Cloud,408.19,Operations
+TXN-0400,2023-07-26,Google Cloud,176.04,Operations
+TXN-0401,2023-09-27,Slack,30.22,Operations
+TXN-0402,2023-01-09,Office Depot,400.12,Operations
+TXN-0403,2023-05-10,Google Cloud,157.72,Operations
+TXN-0404,2023-11-27,Zoom,225.11,Operations
+TXN-0405,2023-11-18,Uber,268.45,Operations
+TXN-0406,2023-09-03,AWS,64.48,Operations
+TXN-0407,2023-08-25,AWS,224.43,Operations
+TXN-0408,2023-07-31,AWS,241.8,Operations
+TXN-0409,2023-10-12,Uber,223.12,Operations
+TXN-0410,2023-08-26,Slack,334.04,Operations
+TXN-0411,2023-12-30,Slack,259.47,Operations
+TXN-0412,2023-03-08,Starbucks,57.5,Operations
+TXN-0413,2023-11-29,AWS,198.71,Operations
+TXN-0414,2023-09-12,Starbucks,270.08,Operations
+TXN-0415,2023-05-01,Google Cloud,198.45,Operations
+TXN-0416,2023-05-18,Uber,81.11,Operations
+TXN-0417,2023-09-03,AWS,381.68,Operations
+TXN-0418,2023-04-06,Starbucks,487.95,Operations
+TXN-0419,2023-04-22,Google Cloud,230.7,Operations
+TXN-0420,2023-10-27,AWS,384.43,Operations
+TXN-0421,2023-09-20,Zoom,463.6,Operations
+TXN-0422,2023-02-27,AWS,267.06,Operations
+TXN-0423,2023-11-25,AWS,166.1,Operations
+TXN-0424,2023-09-12,Uber,106.9,Operations
+TXN-0425,2023-01-03,Slack,27.29,Operations
+TXN-0426,2023-10-17,Office Depot,242.76,Operations
+TXN-0427,2023-07-08,AWS,390.25,Operations
+TXN-0428,2023-07-19,Office Depot,204.08,Operations
+TXN-0429,2023-08-30,Uber,280.64,Operations
+TXN-0430,2023-02-16,Office Depot,213.05,Operations
+TXN-0431,2023-06-13,Slack,373.64,Operations
+TXN-0432,2023-04-09,Uber,419.31,Operations
+TXN-0433,2023-11-30,Uber,431.83,Operations
+TXN-0434,2023-11-28,AWS,228.99,Operations
+TXN-0435,2023-05-29,AWS,207.41,Operations
+TXN-0436,2023-09-29,Slack,317.54,Operations
+TXN-0437,2023-03-28,Zoom,475.81,Operations
+TXN-0438,2023-08-30,Starbucks,264.82,Operations
+TXN-0439,2023-01-22,Zoom,276.02,Operations
+TXN-0440,2023-04-08,Google Cloud,21.96,Operations
+TXN-0441,2023-01-19,AWS,168.74,Operations
+TXN-0442,2023-05-04,Google Cloud,375.65,Operations
+TXN-0443,2023-09-03,Starbucks,301.79,Operations
+TXN-0444,2023-01-20,Google Cloud,26.27,Operations
+TXN-0445,2023-01-18,AWS,137.33,Operations
+TXN-0446,2023-10-11,Office Depot,381.04,Operations
+TXN-0447,2023-09-11,Slack,405.8,Operations
+TXN-0448,2023-05-07,Slack,228.87,Operations
+TXN-0449,2023-12-09,Starbucks,498.94,Operations
+TXN-0450,2023-08-30,Starbucks,201.35,Operations
+TXN-0451,2023-03-17,Office Depot,25.08,Operations
+TXN-0452,2023-07-09,AWS,36.44,Operations
+TXN-0453,2023-12-01,AWS,185.55,Operations
+TXN-0454,2023-04-13,Office Depot,347.63,Operations
+TXN-0455,2023-12-21,Uber,488.27,Operations
+TXN-0456,2023-09-17,Starbucks,47.53,Operations
+TXN-0457,2023-03-04,Google Cloud,46.46,Operations
+TXN-0458,2023-04-05,Google Cloud,29.95,Operations
+TXN-0459,2023-12-04,Zoom,335.88,Operations
+TXN-0460,2023-11-24,Google Cloud,436.36,Operations
+TXN-0461,2023-12-29,Office Depot,124.98,Operations
+TXN-0462,2023-10-17,Uber,307.05,Operations
+TXN-0463,2023-10-06,AWS,437.12,Operations
+TXN-0464,2023-07-07,Google Cloud,141.57,Operations
+TXN-0465,2023-10-29,AWS,144.31,Operations
+TXN-0466,2023-09-11,Starbucks,353.94,Operations
+TXN-0467,2023-09-21,Slack,123.4,Operations
+TXN-0468,2023-07-13,AWS,269.67,Operations
+TXN-0469,2023-10-26,Google Cloud,219.54,Operations
+TXN-0470,2023-03-21,AWS,424.34,Operations
+TXN-0471,2023-11-11,Slack,306.71,Operations
+TXN-0472,2023-04-16,Uber,104.1,Operations
+TXN-0473,2023-06-05,Slack,69.22,Operations
+TXN-0474,2023-04-30,Office Depot,169.08,Operations
+TXN-0475,2023-11-11,Slack,221.13,Operations
+TXN-0476,2023-03-21,AWS,57.46,Operations
+TXN-0477,2023-09-29,AWS,442.95,Operations
+TXN-0478,2023-11-08,Office Depot,119.43,Operations
+TXN-0479,2023-08-24,Starbucks,151.51,Operations
+TXN-0480,2023-10-15,Starbucks,457.81,Operations
+TXN-0481,2023-11-09,Starbucks,281.77,Operations
+TXN-0482,2023-02-07,Zoom,444.1,Operations
+TXN-0483,2023-12-02,Starbucks,481.38,Operations
+TXN-0484,2023-01-20,Google Cloud,179.97,Operations
+TXN-0485,2023-10-28,AWS,434.84,Operations
+TXN-0486,2023-04-03,Slack,154.98,Operations
+TXN-0487,2023-12-13,Starbucks,84.1,Operations
+TXN-0488,2023-05-26,AWS,319.26,Operations
+TXN-0489,2023-11-24,Office Depot,165.23,Operations
+TXN-0490,2023-01-21,Starbucks,139.79,Operations
+TXN-0491,2023-04-04,Zoom,16.67,Operations
+TXN-0492,2023-04-01,Slack,408.74,Operations
+TXN-0493,2023-07-01,Office Depot,70.2,Operations
+TXN-0494,2023-11-16,Zoom,118.16,Operations
+TXN-0495,2023-12-25,Uber,219.55,Operations
+TXN-0496,2023-08-13,AWS,364.11,Operations
+TXN-0497,2023-12-04,Slack,407.5,Operations
+TXN-0498,2023-07-28,Uber,447.62,Operations
+TXN-0499,2023-06-16,AWS,360.09,Operations
+TXN-0500,2023-02-17,AWS,41.21,Operations
+TXN-0501,2023-10-23,Zoom,226.28,Operations
+TXN-0502,2023-01-12,Google Cloud,319.26,Operations
+TXN-0503,2023-04-25,Google Cloud,140.05,Operations
+TXN-0504,2023-03-21,Starbucks,334.18,Operations
+TXN-0505,2023-08-05,Uber,155.27,Operations
+TXN-0506,2023-08-17,Uber,345.97,Operations
+TXN-0507,2023-03-16,Zoom,401.05,Operations
+TXN-0508,2023-09-11,Uber,406.83,Operations
+TXN-0509,2023-12-17,Zoom,420.49,Operations
+TXN-0510,2023-11-01,Office Depot,32.75,Operations
+TXN-0511,2023-01-23,Starbucks,463.94,Operations
+TXN-0512,2023-02-19,Google Cloud,241.12,Operations
+TXN-0513,2023-05-31,Google Cloud,443.76,Operations
+TXN-0514,2023-04-21,Zoom,156.79,Operations
+TXN-0515,2023-12-19,Slack,452.17,Operations
+TXN-0516,2023-06-07,Slack,313.3,Operations
+TXN-0517,2023-07-03,Google Cloud,424.61,Operations
+TXN-0518,2023-05-26,Zoom,19.25,Operations
+TXN-0519,2023-09-21,Slack,401.05,Operations
+TXN-0520,2023-07-28,AWS,307.9,Operations
+TXN-0521,2023-08-31,Starbucks,309.14,Operations
+TXN-0522,2023-10-13,Starbucks,204.56,Operations
+TXN-0523,2023-08-14,Zoom,19.6,Operations
+TXN-0524,2023-05-30,Uber,257.54,Operations
+TXN-0525,2023-07-11,Slack,121.34,Operations
+TXN-0526,2023-02-21,Google Cloud,460.36,Operations
+TXN-0527,2023-09-08,Slack,396.27,Operations
+TXN-0528,2023-06-27,AWS,368.64,Operations
+TXN-0529,2023-11-08,Office Depot,155.12,Operations
+TXN-0530,2023-07-05,Starbucks,460.19,Operations
+TXN-0531,2023-07-11,Uber,70.25,Operations
+TXN-0532,2023-03-18,Office Depot,269.93,Operations
+TXN-0533,2023-04-25,Uber,58.23,Operations
+TXN-0534,2023-02-17,Uber,473.0,Operations
+TXN-0535,2023-02-27,Office Depot,22.77,Operations
+TXN-0536,2023-02-06,Uber,242.69,Operations
+TXN-0537,2023-04-29,Slack,311.75,Operations
+TXN-0538,2023-01-10,Slack,235.23,Operations
+TXN-0539,2023-01-21,Slack,217.34,Operations
+TXN-0540,2023-04-13,Office Depot,127.63,Operations
+TXN-0541,2023-12-27,Uber,497.69,Operations
+TXN-0542,2023-02-12,Uber,118.59,Operations
+TXN-0543,2023-10-19,Google Cloud,217.75,Operations
+TXN-0544,2023-08-25,Google Cloud,474.2,Operations
+TXN-0545,2023-01-27,Google Cloud,57.67,Operations
+TXN-0546,2023-10-19,AWS,412.98,Operations
+TXN-0547,2023-04-28,Uber,26.11,Operations
+TXN-0548,2023-01-19,Zoom,275.39,Operations
+TXN-0549,2023-11-06,AWS,274.18,Operations
+TXN-0550,2023-09-22,Zoom,37.87,Operations
+TXN-0551,2023-03-10,Google Cloud,46.87,Operations
+TXN-0552,2023-02-22,Google Cloud,11.06,Operations
+TXN-0553,2023-07-23,Google Cloud,428.89,Operations
+TXN-0554,2023-09-16,Zoom,403.79,Operations
+TXN-0555,2023-12-01,Uber,138.43,Operations
+TXN-0556,2023-04-05,Google Cloud,188.7,Operations
+TXN-0557,2023-02-05,Google Cloud,109.13,Operations
+TXN-0558,2023-02-17,Slack,398.71,Operations
+TXN-0559,2023-03-23,AWS,169.48,Operations
+TXN-0560,2023-02-20,Google Cloud,468.66,Operations
+TXN-0561,2023-02-21,Zoom,425.58,Operations
+TXN-0562,2023-02-18,AWS,441.65,Operations
+TXN-0563,2023-05-21,Slack,423.68,Operations
+TXN-0564,2023-06-29,Uber,423.12,Operations
+TXN-0565,2023-09-30,Starbucks,431.82,Operations
+TXN-0566,2023-01-14,Office Depot,95.72,Operations
+TXN-0567,2023-02-26,Google Cloud,442.39,Operations
+TXN-0568,2023-08-31,Starbucks,60.85,Operations
+TXN-0569,2023-11-02,Google Cloud,216.11,Operations
+TXN-0570,2023-03-19,Office Depot,13.86,Operations
+TXN-0571,2023-06-11,Uber,46.63,Operations
+TXN-0572,2023-02-24,AWS,80.03,Operations
+TXN-0573,2023-03-06,Slack,25.99,Operations
+TXN-0574,2023-06-25,Slack,422.11,Operations
+TXN-0575,2023-06-12,AWS,308.35,Operations
+TXN-0576,2023-05-23,Uber,88.11,Operations
+TXN-0577,2023-04-08,Uber,71.92,Operations
+TXN-0578,2023-04-05,Zoom,388.28,Operations
+TXN-0579,2023-02-08,Zoom,268.05,Operations
+TXN-0580,2023-08-06,Starbucks,373.49,Operations
+TXN-0581,2023-09-20,Starbucks,100.72,Operations
+TXN-0582,2023-02-18,Starbucks,75.5,Operations
+TXN-0583,2023-11-28,Zoom,169.92,Operations
+TXN-0584,2023-02-10,Slack,350.0,Operations
+TXN-0585,2023-12-08,Starbucks,34.28,Operations
+TXN-0586,2023-09-13,Zoom,140.79,Operations
+TXN-0587,2023-08-29,Slack,10.41,Operations
+TXN-0588,2023-12-22,Slack,230.92,Operations
+TXN-0589,2023-03-13,Office Depot,400.25,Operations
+TXN-0590,2023-06-24,Office Depot,313.62,Operations
+TXN-0591,2023-09-17,Starbucks,207.75,Operations
+TXN-0592,2023-10-08,AWS,102.79,Operations
+TXN-0593,2023-04-25,Google Cloud,287.17,Operations
+TXN-0594,2023-09-18,Starbucks,292.39,Operations
+TXN-0595,2023-12-09,Uber,488.33,Operations
+TXN-0596,2023-12-06,Starbucks,61.72,Operations
+TXN-0597,2023-05-30,AWS,494.82,Operations
+TXN-0598,2023-10-24,Google Cloud,109.39,Operations
+TXN-0599,2023-01-26,Starbucks,279.23,Operations
+TXN-0600,2023-03-11,Google Cloud,288.37,Operations
+TXN-0601,2023-10-01,Uber,319.3,Operations
+TXN-0602,2023-06-26,Uber,48.73,Operations
+TXN-0603,2023-09-28,Starbucks,340.0,Operations
+TXN-0604,2023-12-16,Zoom,71.7,Operations
+TXN-0605,2023-03-04,Uber,148.82,Operations
+TXN-0606,2023-07-31,AWS,142.47,Operations
+TXN-0607,2023-12-05,Zoom,107.11,Operations
+TXN-0608,2023-05-03,Zoom,299.7,Operations
+TXN-0609,2023-07-02,Starbucks,61.52,Operations
+TXN-0610,2023-05-21,AWS,186.63,Operations
+TXN-0611,2023-02-26,Slack,492.95,Operations
+TXN-0612,2023-08-31,AWS,201.33,Operations
+TXN-0613,2023-03-24,Zoom,43.14,Operations
+TXN-0614,2023-03-23,Slack,243.88,Operations
+TXN-0615,2023-02-15,AWS,379.73,Operations
+TXN-0616,2023-10-13,Zoom,456.8,Operations
+TXN-0617,2023-03-05,Google Cloud,99.46,Operations
+TXN-0618,2023-01-09,Google Cloud,451.58,Operations
+TXN-0619,2023-05-02,Office Depot,284.38,Operations
+TXN-0620,2023-02-12,Google Cloud,238.74,Operations
+TXN-0621,2023-01-16,Office Depot,47.27,Operations
+TXN-0622,2023-07-21,Starbucks,85.41,Operations
+TXN-0623,2023-11-12,Uber,397.14,Operations
+TXN-0624,2023-02-16,Zoom,214.46,Operations
+TXN-0625,2023-01-11,Slack,458.43,Operations
+TXN-0626,2023-09-26,Google Cloud,434.31,Operations
+TXN-0627,2023-09-03,Slack,294.07,Operations
+TXN-0628,2023-04-15,Starbucks,175.23,Operations
+TXN-0629,2023-09-12,Uber,402.08,Operations
+TXN-0630,2023-02-13,Office Depot,338.33,Operations
+TXN-0631,2023-02-08,Google Cloud,401.47,Operations
+TXN-0632,2023-04-08,Slack,380.5,Operations
+TXN-0633,2023-01-01,Office Depot,365.83,Operations
+TXN-0634,2023-06-07,Office Depot,227.11,Operations
+TXN-0635,2023-12-16,Starbucks,406.92,Operations
+TXN-0636,2023-02-14,Slack,400.69,Operations
+TXN-0637,2023-02-09,Google Cloud,199.3,Operations
+TXN-0638,2023-05-15,Zoom,499.75,Operations
+TXN-0639,2023-10-10,Google Cloud,357.72,Operations
+TXN-0640,2023-05-11,Google Cloud,215.95,Operations
+TXN-0641,2023-08-11,Office Depot,278.89,Operations
+TXN-0642,2023-07-20,Google Cloud,10.67,Operations
+TXN-0643,2023-01-17,Google Cloud,136.53,Operations
+TXN-0644,2023-07-22,Slack,403.51,Operations
+TXN-0645,2023-02-26,Uber,142.59,Operations
+TXN-0646,2023-11-20,Office Depot,46.51,Operations
+TXN-0647,2023-01-06,Office Depot,26.87,Operations
+TXN-0648,2023-01-21,Uber,290.66,Operations
+TXN-0649,2023-07-19,Slack,425.23,Operations
+TXN-0650,2023-12-08,Slack,17.16,Operations
+TXN-0651,2023-10-06,Uber,116.72,Operations
+TXN-0652,2023-03-15,Office Depot,468.87,Operations
+TXN-0653,2023-11-09,Zoom,346.97,Operations
+TXN-0654,2023-10-22,Slack,213.74,Operations
+TXN-0655,2023-03-20,Uber,159.21,Operations
+TXN-0656,2023-10-29,Slack,141.74,Operations
+TXN-0657,2023-10-28,Slack,355.91,Operations
+TXN-0658,2023-06-01,Starbucks,226.41,Operations
+TXN-0659,2023-06-30,Slack,67.99,Operations
+TXN-0660,2023-08-02,Office Depot,386.67,Operations
+TXN-0661,2023-09-26,Google Cloud,64.17,Operations
+TXN-0662,2023-01-14,Office Depot,444.59,Operations
+TXN-0663,2023-05-04,Starbucks,265.7,Operations
+TXN-0664,2023-05-08,Zoom,316.04,Operations
+TXN-0665,2023-12-08,Google Cloud,367.07,Operations
+TXN-0666,2023-10-03,Office Depot,260.31,Operations
+TXN-0667,2023-09-25,Slack,39.82,Operations
+TXN-0668,2023-10-19,AWS,378.52,Operations
+TXN-0669,2023-06-17,Slack,49.9,Operations
+TXN-0670,2023-08-09,Zoom,262.11,Operations
+TXN-0671,2023-10-08,Google Cloud,406.03,Operations
+TXN-0672,2023-07-31,Office Depot,307.89,Operations
+TXN-0673,2023-01-20,Zoom,264.85,Operations
+TXN-0674,2023-02-16,Uber,257.6,Operations
+TXN-0675,2023-01-03,Starbucks,349.82,Operations
+TXN-0676,2023-01-11,Slack,215.84,Operations
+TXN-0677,2023-05-23,Zoom,163.16,Operations
+TXN-0678,2023-08-11,Uber,224.45,Operations
+TXN-0679,2023-02-14,Starbucks,285.55,Operations
+TXN-0680,2023-07-22,Slack,354.63,Operations
+TXN-0681,2023-06-26,Slack,140.2,Operations
+TXN-0682,2023-09-02,Uber,485.66,Operations
+TXN-0683,2023-09-10,Google Cloud,436.49,Operations
+TXN-0684,2023-01-23,Google Cloud,241.5,Operations
+TXN-0685,2023-02-18,Slack,53.65,Operations
+TXN-0686,2023-02-19,Google Cloud,173.7,Operations
+TXN-0687,2023-12-27,Starbucks,241.31,Operations
+TXN-0688,2023-09-21,Office Depot,275.29,Operations
+TXN-0689,2023-09-29,Office Depot,256.73,Operations
+TXN-0690,2023-01-01,Uber,470.62,Operations
+TXN-0691,2023-08-07,Starbucks,418.42,Operations
+TXN-0692,2023-07-25,Zoom,214.55,Operations
+TXN-0693,2023-03-11,Uber,432.46,Operations
+TXN-0694,2023-04-13,Zoom,205.33,Operations
+TXN-0695,2023-05-14,Uber,97.32,Operations
+TXN-0696,2023-07-21,Starbucks,380.05,Operations
+TXN-0697,2023-02-06,Uber,247.96,Operations
+TXN-0698,2023-02-11,Slack,104.18,Operations
+TXN-0699,2023-09-22,Slack,93.25,Operations
+TXN-0700,2023-05-18,Uber,169.53,Operations
+TXN-0701,2023-03-05,Uber,473.36,Operations
+TXN-0702,2023-10-28,AWS,462.51,Operations
+TXN-0703,2023-12-20,Slack,346.16,Operations
+TXN-0704,2023-11-04,Uber,253.35,Operations
+TXN-0705,2023-02-02,Starbucks,352.81,Operations
+TXN-0706,2023-09-26,Google Cloud,158.89,Operations
+TXN-0707,2023-10-27,AWS,480.56,Operations
+TXN-0708,2023-04-20,AWS,365.49,Operations
+TXN-0709,2023-09-12,Office Depot,447.84,Operations
+TXN-0710,2023-07-25,Zoom,402.98,Operations
+TXN-0711,2023-09-01,Slack,298.71,Operations
+TXN-0712,2023-02-23,Google Cloud,205.48,Operations
+TXN-0713,2023-10-15,AWS,203.65,Operations
+TXN-0714,2023-04-08,Zoom,40.82,Operations
+TXN-0715,2023-12-14,Google Cloud,380.44,Operations
+TXN-0716,2023-08-22,Starbucks,282.49,Operations
+TXN-0717,2023-02-25,AWS,321.51,Operations
+TXN-0718,2023-10-21,Zoom,75.74,Operations
+TXN-0719,2023-08-03,Slack,277.35,Operations
+TXN-0720,2023-06-06,Google Cloud,373.57,Operations
+TXN-0721,2023-09-19,Slack,34.25,Operations
+TXN-0722,2023-08-16,Google Cloud,157.31,Operations
+TXN-0723,2023-09-11,Zoom,39.67,Operations
+TXN-0724,2023-06-28,Starbucks,212.97,Operations
+TXN-0725,2023-10-27,Zoom,181.86,Operations
+TXN-0726,2023-02-18,Slack,292.79,Operations
+TXN-0727,2023-05-28,Starbucks,387.66,Operations
+TXN-0728,2023-08-08,Uber,208.91,Operations
+TXN-0729,2023-04-16,Zoom,10.09,Operations
+TXN-0730,2023-11-13,Starbucks,272.58,Operations
+TXN-0731,2023-10-05,AWS,99.37,Operations
+TXN-0732,2023-02-05,Google Cloud,326.89,Operations
+TXN-0733,2023-10-08,Office Depot,338.62,Operations
+TXN-0734,2023-11-30,Uber,213.15,Operations
+TXN-0735,2023-12-23,Starbucks,284.07,Operations
+TXN-0736,2023-10-30,Uber,303.9,Operations
+TXN-0737,2023-05-13,AWS,460.93,Operations
+TXN-0738,2023-11-29,Google Cloud,163.57,Operations
+TXN-0739,2023-02-20,Office Depot,104.1,Operations
+TXN-0740,2023-01-27,Slack,280.26,Operations
+TXN-0741,2023-08-13,Google Cloud,335.3,Operations
+TXN-0742,2023-08-19,Slack,151.93,Operations
+TXN-0743,2023-05-14,AWS,284.42,Operations
+TXN-0744,2023-12-02,Office Depot,322.99,Operations
+TXN-0745,2023-11-05,Uber,303.48,Operations
+TXN-0746,2023-04-08,Uber,223.28,Operations
+TXN-0747,2023-12-01,Google Cloud,345.43,Operations
+TXN-0748,2023-07-28,Google Cloud,242.63,Operations
+TXN-0749,2023-12-15,Office Depot,40.69,Operations
+TXN-0750,2023-05-19,Office Depot,417.26,Operations
+TXN-0751,2023-09-13,Slack,73.73,Operations
+TXN-0752,2023-10-10,Zoom,191.49,Operations
+TXN-0753,2023-12-19,Google Cloud,475.78,Operations
+TXN-0754,2023-01-10,Starbucks,355.36,Operations
+TXN-0755,2023-10-14,Starbucks,94.56,Operations
+TXN-0756,2024-01-01,Slack,43.16,Operations
+TXN-0757,2023-11-09,Zoom,38.97,Operations
+TXN-0758,2023-01-24,Google Cloud,408.4,Operations
+TXN-0759,2023-11-08,Starbucks,418.68,Operations
+TXN-0760,2023-09-26,Zoom,420.91,Operations
+TXN-0761,2023-02-18,AWS,113.59,Operations
+TXN-0762,2023-04-12,AWS,372.37,Operations
+TXN-0763,2023-02-01,Uber,77.6,Operations
+TXN-0764,2023-05-15,Zoom,244.83,Operations
+TXN-0765,2023-12-28,Google Cloud,130.84,Operations
+TXN-0766,2023-06-17,Starbucks,285.38,Operations
+TXN-0767,2023-04-25,AWS,266.02,Operations
+TXN-0768,2023-12-08,Starbucks,355.96,Operations
+TXN-0769,2023-10-07,Starbucks,314.12,Operations
+TXN-0770,2023-12-23,Google Cloud,122.34,Operations
+TXN-0771,2023-10-01,Uber,159.25,Operations
+TXN-0772,2023-09-21,Starbucks,321.12,Operations
+TXN-0773,2023-01-22,Slack,105.5,Operations
+TXN-0774,2023-03-14,Google Cloud,148.42,Operations
+TXN-0775,2023-04-14,Office Depot,86.06,Operations
+TXN-0776,2023-02-25,AWS,373.02,Operations
+TXN-0777,2023-11-28,Uber,177.92,Operations
+TXN-0778,2023-08-13,Office Depot,448.17,Operations
+TXN-0779,2023-09-08,Google Cloud,419.45,Operations
+TXN-0780,2023-12-21,Zoom,161.04,Operations
+TXN-0781,2023-07-15,Google Cloud,435.22,Operations
+TXN-0782,2023-04-26,Uber,307.4,Operations
+TXN-0783,2023-05-30,Google Cloud,311.39,Operations
+TXN-0784,2023-07-24,Google Cloud,397.42,Operations
+TXN-0785,2023-10-01,Zoom,276.47,Operations
+TXN-0786,2023-06-03,AWS,232.64,Operations
+TXN-0787,2023-03-01,Zoom,95.8,Operations
+TXN-0788,2023-07-10,Uber,37.04,Operations
+TXN-0789,2023-02-03,Starbucks,448.57,Operations
+TXN-0790,2023-09-24,Office Depot,125.69,Operations
+TXN-0791,2023-01-05,Starbucks,411.68,Operations
+TXN-0792,2023-03-03,Google Cloud,272.45,Operations
+TXN-0793,2023-05-19,Slack,204.24,Operations
+TXN-0794,2023-08-25,Google Cloud,467.11,Operations
+TXN-0795,2023-04-06,Google Cloud,104.74,Operations
+TXN-0796,2023-04-01,Office Depot,220.26,Operations
+TXN-0797,2023-11-22,AWS,427.31,Operations
+TXN-0798,2023-12-21,Google Cloud,184.48,Operations
+TXN-0799,2023-10-11,Zoom,219.85,Operations
+TXN-0800,2023-03-10,Uber,434.53,Operations
+TXN-0801,2023-08-14,AWS,171.67,Operations
+TXN-0802,2024-01-01,Starbucks,172.47,Operations
+TXN-0803,2023-03-11,Slack,422.12,Operations
+TXN-0804,2023-11-14,Zoom,460.64,Operations
+TXN-0805,2023-12-21,Google Cloud,411.61,Operations
+TXN-0806,2023-10-19,Starbucks,159.71,Operations
+TXN-0807,2023-07-12,AWS,105.57,Operations
+TXN-0808,2023-03-14,Uber,484.08,Operations
+TXN-0809,2023-09-12,Slack,54.62,Operations
+TXN-0810,2023-04-08,Office Depot,100.36,Operations
+TXN-0811,2023-12-24,Uber,295.49,Operations
+TXN-0812,2023-12-25,Google Cloud,114.41,Operations
+TXN-0813,2023-09-11,AWS,116.37,Operations
+TXN-0814,2023-03-16,Starbucks,407.65,Operations
+TXN-0815,2023-06-14,Slack,92.44,Operations
+TXN-0816,2023-02-03,Google Cloud,330.0,Operations
+TXN-0817,2023-02-09,AWS,204.82,Operations
+TXN-0818,2023-06-11,AWS,50.59,Operations
+TXN-0819,2023-11-06,AWS,79.28,Operations
+TXN-0820,2023-06-26,Slack,175.46,Operations
+TXN-0821,2023-11-22,Google Cloud,154.13,Operations
+TXN-0822,2023-09-29,Uber,436.7,Operations
+TXN-0823,2023-07-15,Zoom,195.71,Operations
+TXN-0824,2023-03-29,AWS,101.7,Operations
+TXN-0825,2023-08-27,Starbucks,455.65,Operations
+TXN-0826,2023-11-06,Zoom,472.18,Operations
+TXN-0827,2023-09-04,Google Cloud,157.66,Operations
+TXN-0828,2023-10-06,Starbucks,124.8,Operations
+TXN-0829,2023-08-05,Google Cloud,191.87,Operations
+TXN-0830,2023-08-08,Starbucks,171.65,Operations
+TXN-0831,2023-11-21,Starbucks,27.96,Operations
+TXN-0832,2023-06-29,Zoom,130.38,Operations
+TXN-0833,2023-05-05,Office Depot,322.6,Operations
+TXN-0834,2023-01-31,Google Cloud,176.21,Operations
+TXN-0835,2023-02-24,Office Depot,427.96,Operations
+TXN-0836,2023-07-24,Zoom,74.1,Operations
+TXN-0837,2023-11-04,Google Cloud,334.26,Operations
+TXN-0838,2023-12-07,Google Cloud,486.89,Operations
+TXN-0839,2023-04-23,Office Depot,149.36,Operations
+TXN-0840,2023-08-26,Office Depot,314.74,Operations
+TXN-0841,2023-09-28,Google Cloud,440.94,Operations
+TXN-0842,2023-05-18,Uber,180.1,Operations
+TXN-0843,2023-01-01,Uber,301.27,Operations
+TXN-0844,2023-07-10,Starbucks,229.39,Operations
+TXN-0845,2023-02-08,Office Depot,422.48,Operations
+TXN-0846,2023-09-07,Google Cloud,363.14,Operations
+TXN-0847,2023-12-12,AWS,461.26,Operations
+TXN-0848,2023-08-08,AWS,418.74,Operations
+TXN-0849,2023-11-21,Uber,277.05,Operations
+TXN-0850,2023-10-13,Zoom,29.06,Operations
+TXN-0851,2023-02-25,Starbucks,476.29,Operations
+TXN-0852,2023-09-09,Starbucks,366.29,Operations
+TXN-0853,2023-12-29,Uber,355.17,Operations
+TXN-0854,2023-04-29,Slack,243.71,Operations
+TXN-0855,2023-05-05,Uber,333.04,Operations
+TXN-0856,2023-02-15,Starbucks,239.75,Operations
+TXN-0857,2023-07-23,Zoom,57.03,Operations
+TXN-0858,2023-08-07,Uber,430.3,Operations
+TXN-0859,2023-10-20,Slack,403.48,Operations
+TXN-0860,2023-01-03,AWS,46.52,Operations
+TXN-0861,2023-10-08,Slack,158.78,Operations
+TXN-0862,2023-01-02,Starbucks,488.29,Operations
+TXN-0863,2023-12-28,Zoom,270.1,Operations
+TXN-0864,2023-12-17,AWS,180.43,Operations
+TXN-0865,2023-09-16,AWS,194.9,Operations
+TXN-0866,2023-01-02,AWS,160.63,Operations
+TXN-0867,2023-11-16,AWS,44.61,Operations
+TXN-0868,2023-04-21,Zoom,243.11,Operations
+TXN-0869,2023-08-08,Zoom,327.42,Operations
+TXN-0870,2023-12-16,Google Cloud,290.94,Operations
+TXN-0871,2023-04-10,Zoom,492.2,Operations
+TXN-0872,2023-06-13,Google Cloud,243.99,Operations
+TXN-0873,2023-01-07,Starbucks,451.25,Operations
+TXN-0874,2023-08-16,Zoom,49.25,Operations
+TXN-0875,2023-01-21,Starbucks,222.63,Operations
+TXN-0876,2023-05-03,Office Depot,50.07,Operations
+TXN-0877,2023-03-01,Zoom,446.93,Operations
+TXN-0878,2023-11-10,Google Cloud,241.06,Operations
+TXN-0879,2023-11-11,Google Cloud,382.18,Operations
+TXN-0880,2023-11-28,Zoom,156.87,Operations
+TXN-0881,2023-10-11,Zoom,309.19,Operations
+TXN-0882,2023-09-06,Uber,334.15,Operations
+TXN-0883,2023-12-28,AWS,42.37,Operations
+TXN-0884,2023-11-03,AWS,409.1,Operations
+TXN-0885,2023-12-14,AWS,214.82,Operations
+TXN-0886,2023-07-30,Starbucks,202.67,Operations
+TXN-0887,2023-12-01,Office Depot,193.0,Operations
+TXN-0888,2023-05-15,Google Cloud,234.48,Operations
+TXN-0889,2023-10-20,Uber,204.97,Operations
+TXN-0890,2023-04-24,Slack,298.18,Operations
+TXN-0891,2023-08-28,Office Depot,123.5,Operations
+TXN-0892,2023-09-15,Google Cloud,255.99,Operations
+TXN-0893,2023-03-04,Uber,349.47,Operations
+TXN-0894,2023-05-14,Starbucks,169.95,Operations
+TXN-0895,2023-01-23,AWS,153.26,Operations
+TXN-0896,2023-04-26,Starbucks,319.98,Operations
+TXN-0897,2023-05-28,Zoom,414.36,Operations
+TXN-0898,2023-05-01,Zoom,18.15,Operations
+TXN-0899,2023-10-01,Starbucks,29.94,Operations
+TXN-0900,2023-08-21,Zoom,329.31,Operations
+TXN-0901,2023-02-10,Office Depot,156.49,Operations
+TXN-0902,2023-03-09,Office Depot,459.99,Operations
+TXN-0903,2023-05-01,Starbucks,277.69,Operations
+TXN-0904,2023-08-08,Google Cloud,347.08,Operations
+TXN-0905,2023-09-14,Slack,167.25,Operations
+TXN-0906,2023-10-07,Zoom,424.25,Operations
+TXN-0907,2023-01-10,Zoom,56.78,Operations
+TXN-0908,2023-04-22,Zoom,111.82,Operations
+TXN-0909,2023-10-19,Uber,487.05,Operations
+TXN-0910,2023-08-26,AWS,123.3,Operations
+TXN-0911,2023-04-07,Starbucks,432.12,Operations
+TXN-0912,2023-05-29,Office Depot,180.98,Operations
+TXN-0913,2023-12-06,Starbucks,46.99,Operations
+TXN-0914,2023-09-01,Starbucks,235.08,Operations
+TXN-0915,2023-02-05,Zoom,291.02,Operations
+TXN-0916,2023-06-27,Office Depot,326.87,Operations
+TXN-0917,2023-03-26,Zoom,358.57,Operations
+TXN-0918,2023-06-26,Office Depot,256.3,Operations
+TXN-0919,2023-09-13,Uber,171.41,Operations
+TXN-0920,2023-12-22,Office Depot,199.84,Operations
+TXN-0921,2023-05-10,Office Depot,364.66,Operations
+TXN-0922,2023-11-30,Zoom,473.11,Operations
+TXN-0923,2023-08-28,Uber,196.11,Operations
+TXN-0924,2023-12-20,Google Cloud,370.04,Operations
+TXN-0925,2023-09-10,Uber,433.48,Operations
+TXN-0926,2023-11-19,AWS,269.56,Operations
+TXN-0927,2023-11-16,Slack,80.83,Operations
+TXN-0928,2023-07-27,Google Cloud,438.92,Operations
+TXN-0929,2023-03-20,AWS,170.27,Operations
+TXN-0930,2023-05-16,Google Cloud,175.53,Operations
+TXN-0931,2023-06-12,Uber,324.61,Operations
+TXN-0932,2023-02-19,Zoom,282.98,Operations
+TXN-0933,2023-11-04,Office Depot,341.95,Operations
+TXN-0934,2023-07-14,AWS,156.24,Operations
+TXN-0935,2023-01-21,Google Cloud,58.28,Operations
+TXN-0936,2023-04-24,Slack,47.62,Operations
+TXN-0937,2023-11-08,Starbucks,313.14,Operations
+TXN-0938,2023-12-31,Office Depot,169.5,Operations
+TXN-0939,2023-07-06,Google Cloud,286.08,Operations
+TXN-0940,2023-06-11,Zoom,400.51,Operations
+TXN-0941,2023-05-29,AWS,34.4,Operations
+TXN-0942,2023-05-10,Uber,377.27,Operations
+TXN-0943,2023-10-26,Uber,406.0,Operations
+TXN-0944,2023-10-01,AWS,457.68,Operations
+TXN-0945,2023-05-27,Office Depot,263.36,Operations
+TXN-0946,2023-08-01,Google Cloud,249.51,Operations
+TXN-0947,2023-05-14,Uber,276.12,Operations
+TXN-0948,2023-03-17,Slack,83.68,Operations
+TXN-0949,2023-11-10,Uber,345.01,Operations
+TXN-0950,2023-12-28,Uber,98.76,Operations
+TXN-0951,2023-07-30,AWS,94.74,Operations
+TXN-0952,2023-08-31,Uber,443.45,Operations
+TXN-0953,2023-10-11,Office Depot,23.85,Operations
+TXN-0954,2023-12-29,Starbucks,48.32,Operations
+TXN-0955,2023-10-27,Office Depot,412.29,Operations
+TXN-0956,2023-11-21,Starbucks,51.11,Operations
+TXN-0957,2023-02-03,Office Depot,314.79,Operations
+TXN-0958,2023-08-27,Office Depot,418.28,Operations
+TXN-0959,2023-04-15,AWS,167.01,Operations
+TXN-0960,2023-12-19,Office Depot,407.89,Operations
+TXN-0961,2023-12-31,Starbucks,298.12,Operations
+TXN-0962,2023-12-01,Starbucks,122.28,Operations
+TXN-0963,2023-10-17,AWS,294.53,Operations
+TXN-0964,2023-04-14,Google Cloud,241.22,Operations
+TXN-0965,2023-07-07,AWS,60.86,Operations
+TXN-0966,2023-08-07,Uber,408.51,Operations
+TXN-0967,2023-11-15,Starbucks,101.7,Operations
+TXN-0968,2023-06-15,AWS,239.78,Operations
+TXN-0969,2023-05-18,Office Depot,77.14,Operations
+TXN-0970,2023-10-23,Slack,414.47,Operations
+TXN-0971,2023-03-04,Slack,339.53,Operations
+TXN-0972,2023-03-21,Starbucks,364.42,Operations
+TXN-0973,2023-05-12,AWS,42.74,Operations
+TXN-0974,2023-08-28,Uber,75.27,Operations
+TXN-0975,2023-12-30,Office Depot,454.13,Operations
+TXN-0976,2023-02-16,AWS,260.98,Operations
+TXN-0977,2023-01-15,Office Depot,494.74,Operations
+TXN-0978,2023-08-18,Office Depot,220.13,Operations
+TXN-0979,2023-06-01,Uber,443.83,Operations
+TXN-0980,2023-06-29,Google Cloud,214.77,Operations
+TXN-0981,2023-12-26,Office Depot,335.42,Operations
+TXN-0982,2023-09-04,Slack,125.55,Operations
+TXN-0983,2023-08-09,AWS,267.42,Operations
+TXN-0984,2023-03-17,Zoom,82.19,Operations
+TXN-0985,2023-06-29,Google Cloud,471.0,Operations
+TXN-0986,2023-07-11,Uber,288.31,Operations
+TXN-0987,2023-02-08,Zoom,77.24,Operations
+TXN-0988,2023-06-11,Office Depot,133.34,Operations
+TXN-0989,2023-07-11,Slack,144.01,Operations
+TXN-0990,2023-04-10,Google Cloud,15.68,Operations
+TXN-0991,2023-05-23,Office Depot,110.97,Operations
+TXN-0992,2023-12-18,AWS,417.91,Operations
+TXN-0993,2023-06-01,Office Depot,471.58,Operations
+TXN-0994,2023-04-15,Office Depot,42.77,Operations
+TXN-0995,2023-05-25,Google Cloud,76.52,Operations
+TXN-0996,2023-11-06,Google Cloud,112.07,Operations
+TXN-0997,2023-03-20,Google Cloud,101.46,Operations
+TXN-0998,2023-04-21,Google Cloud,268.76,Operations
+TXN-0999,2023-09-26,Google Cloud,45.16,Operations
