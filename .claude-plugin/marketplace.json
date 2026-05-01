@@ -1,0 +1,12 @@
+{
+  "name": "finance-skills",
+  "description": "Finance skills for AI agents — financial analysis, tax planning, auditing, risk assessment, and corporate finance.",
+  "version": "1.1.0",
+  "author": {
+    "name": "KOMVIA"
+  },
+  "homepage": "https://github.com/GAJETOso/financeskills",
+  "repository": "https://github.com/GAJETOso/financeskills",
+  "license": "MIT",
+  "skills": "./skills"
+}
