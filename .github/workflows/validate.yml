@@ -1,0 +1,17 @@
+name: Validate Finance Skills
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    - name: Run validation script
+      run: |
+        chmod +x validate-skills.sh
+        ./validate-skills.sh
