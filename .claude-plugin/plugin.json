@@ -1,0 +1,17 @@
+{
+  "schema_version": "v1",
+  "name_for_model": "finance_skills",
+  "name_for_human": "FinanceSkills Ecosystem",
+  "description_for_model": "Access a library of high-fidelity financial engineering, accounting, and audit skills. This plugin provides structured frameworks for financial analysis, budget forecasting, risk assessment, and industry-specific valuations (Oil & Gas, Banking, Crypto).",
+  "description_for_human": "Professional-grade financial engineering and accounting skills for AI agents.",
+  "auth": {
+    "type": "none"
+  },
+  "api": {
+    "type": "openapi",
+    "url": "/openapi.json"
+  },
+  "logo_url": "https://raw.githubusercontent.com/GAJETOso/financeskills/main/assets/logo.png",
+  "contact_email": "support@komvia.com",
+  "legal_info_url": "https://github.com/GAJETOso/financeskills/blob/main/LICENSE"
+}
