@@ -1,0 +1,18 @@
+{
+  "skill_name": "investment-analysis",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Is Tesla a good buy at $170? Its P/E is 45 and revenue growth is slowing. Can you run a quick valuation?",
+      "expected_output": "Should identify the need for a DCF or Multiples analysis. Should discuss the high P/E (45) relative to slowing revenue growth. Should identify key drivers for Tesla (Deliveries, FSD, Margins). Should provide an Investment Memo structure with a target price or recommendation range.",
+      "assertions": [
+        "Addresses the P/E multiple of 45",
+        "Mentions revenue growth slowdown",
+        "Suggests a DCF or relative valuation approach",
+        "Identifies key business drivers (e.g. FSD, margins)",
+        "Output follows Investment Memo structure"
+      ],
+      "files": []
+    }
+  ]
+}

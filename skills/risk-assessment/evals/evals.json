@@ -1,0 +1,18 @@
+{
+  "skill_name": "risk-assessment",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Our portfolio is 40% tech stocks and 60% crypto. What's the risk if the Fed raises interest rates?",
+      "expected_output": "Should identify high interest rate sensitivity in tech and crypto. Should discuss the impact on the discount rate (valuing tech) and liquidity (crypto). Should suggest a VaR calculation or stress test. Should recommend diversification or hedging strategies.",
+      "assertions": [
+        "Identifies interest rate sensitivity",
+        "Mentions tech valuation impact (discount rate)",
+        "Mentions crypto liquidity/risk-off impact",
+        "Suggests stress testing for interest rate spikes",
+        "Output follows Risk Dashboard structure"
+      ],
+      "files": []
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "skill_name": "audit-checklist",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "We are preparing for our year-end audit. Can you review our Procure-to-Pay process for potential gaps? We deal with about 50 vendors.",
+      "expected_output": "Should identify key audit objectives for P2P: Existence, Completeness, and Valuation. Should focus on the 'Three-Way Match' control. Should suggest a search for unrecorded liabilities by looking at post-year-end payments. Should provide a structured list of findings with Risk ratings and Recommendations.",
+      "assertions": [
+        "Checks for Three-Way Match control",
+        "Suggests search for unrecorded liabilities",
+        "Identifies cut-off testing as a priority",
+        "Output follows Audit Findings Report structure",
+        "Each finding has Issue, Risk, and Recommendation"
+      ],
+      "files": []
+    }
+  ]
+}

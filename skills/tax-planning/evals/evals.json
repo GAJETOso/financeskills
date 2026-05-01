@@ -1,0 +1,18 @@
+{
+  "skill_name": "tax-planning",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "I'm a freelancer making $150k/year. I'm currently a sole proprietor. Am I paying too much in tax?",
+      "expected_output": "Should identify the potential benefit of an S-Corp election (to save on self-employment tax). Should discuss common deductions for freelancers. Should emphasize that AI cannot file taxes and a CPA review is required. Should provide a Tax Strategy Report structure with an action plan.",
+      "assertions": [
+        "Mentions self-employment tax savings via S-Corp election",
+        "Identifies standard freelancer deductions",
+        "Provides the mandatory CPA review disclaimer",
+        "Output follows Tax Strategy Report structure",
+        "Provides an actionable plan (e.g. tracking equipment purchases)"
+      ],
+      "files": []
+    }
+  ]
+}

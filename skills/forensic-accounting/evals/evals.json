@@ -1,0 +1,18 @@
+{
+  "skill_name": "forensic-accounting",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Our petty cash is missing $5,000 over the last 3 months. Only the office manager has the key. Can you investigate?",
+      "expected_output": "Should recognize this as a potential asset misappropriation investigation. Should ask for the petty cash log and bank withdrawal records. Should recommend a reconciliation of physical cash vs log. Should suggest checking for 'top-up' patterns. Should provide a structured Forensic Report structure with Evidence Chain and Control Recommendations.",
+      "assertions": [
+        "Identifies asset misappropriation as the primary category",
+        "Asks for petty cash logs and withdrawal records",
+        "Recommends physical reconciliation",
+        "Suggests checking for top-up patterns",
+        "Output follows Forensic Report structure"
+      ],
+      "files": []
+    }
+  ]
+}

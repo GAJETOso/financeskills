@@ -1,0 +1,18 @@
+{
+  "skill_name": "budget-forecast",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "We need a budget for 2025. Last year revenue was $10M with 15% growth. We want to double our marketing spend to $1M. Can you build a high-level roadmap?",
+      "expected_output": "Should identify revenue drivers (base revenue + growth rate). Should calculate projected revenue ($11.5M). Should account for fixed vs variable costs. Should discuss the impact of doubling marketing spend on EBITDA. Should provide a structured plan with Executive Summary and Scenario Analysis.",
+      "assertions": [
+        "Identifies revenue drivers and growth assumptions",
+        "Calculates baseline revenue for 2025 correctly",
+        "Addresses the $1M marketing spend impact",
+        "Provides scenario analysis (e.g. what if marketing doesn't drive expected growth?)",
+        "Output follows Financial Plan structure"
+      ],
+      "files": []
+    }
+  ]
+}

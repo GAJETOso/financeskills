@@ -1,21 +1,33 @@
-[
-  {
-    "input": "Analyze the Q3 financials for Apple. Revenue is $89.5B, Net Income is $22.9B. Cash is $30B and Total Liabilities is $290B.",
-    "expected_output_contains": [
-      "Net Margin",
-      "25.5%",
-      "Liquidity",
-      "Anomalies"
-    ],
-    "category": "Accuracy"
-  },
-  {
-    "input": "Why is the Current Ratio important for a startup?",
-    "expected_output_contains": [
-      "short-term obligations",
-      "liquidity",
-      "cash runway"
-    ],
-    "category": "Conceptual"
-  }
-]
+{
+  "skill_name": "financial-analysis",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Can you analyze these Q3 financials? Revenue: $120M, COGS: $40M, OpEx: $30M, Net Income: $35M. Cash: $50M, Current Liabilities: $25M.",
+      "expected_output": "Should perform data normalization and calculate key ratios. Should identify Gross Margin (66.7%), Operating Margin (41.7%), and Net Margin (29.2%). Should calculate Current Ratio (2.0) and assess liquidity. Should check for profitability health and solvency. Output should follow the structured report format: Executive Summary, Detailed Findings (Profitability, Liquidity, Solvency), and Recommendations.",
+      "assertions": [
+        "Calculates Gross Margin correctly (66.7%)",
+        "Calculates Net Margin correctly (29.2%)",
+        "Calculates Current Ratio correctly (2.0)",
+        "Assesses liquidity as strong/stable",
+        "Output has Executive Summary",
+        "Output has Detailed Findings section",
+        "Provides specific recommendations or questions for management"
+      ],
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "Why has our EBITDA dropped 20% while revenue grew 5%? Look at these numbers: [link to spreadsheet or text snippet]",
+      "expected_output": "Should recognize this as a profitability anomaly investigation. Should investigate margin compression factors: rising COGS (inflation/supply chain), increased OpEx (hiring/marketing), or one-time charges. Should perform a horizontal analysis. Should explain the 'scissors effect' where expenses grow faster than revenue. Should provide actionable fixes for margin recovery.",
+      "assertions": [
+        "Identifies margin compression",
+        "Checks for rising COGS or OpEx",
+        "Performs horizontal analysis",
+        "Explains the discrepancy between revenue and EBITDA",
+        "Provides prioritized fixes for margin recovery"
+      ],
+      "files": []
+    }
+  ]
+}

@@ -2,7 +2,7 @@
 name: forensic-accounting
 description: When the user wants to investigate financial discrepancies, fraud, or hidden assets. Also use when the user mentions "suspicious transactions," "missing funds," "embezzlement check," "laundering detection," "shell company audit," "whistleblower claims," or "something doesn't add up." Use this for litigation support or high-stakes internal investigations.
 metadata:
-  version: 1.0.0
+  version: 1.1.0
 ---
 
 # Forensic Accounting
@@ -24,6 +24,11 @@ You are a Forensic Accountant and Certified Fraud Examiner (CFE). Your goal is t
 
 ## Investigation Framework
 
+### Evidence Detection Limitation
+
+**`web_fetch` and generic scraping cannot access secure banking portals or private ERP environments.**
+Forensic evidence must be provided as static files (CSV exports, PDF statements) or via specific API integrations. Do not claim to "verify" transactions without raw source data.
+
 ### Priority Order
 1. **Source of Funds** (Where did the money come from?)
 2. **Use of Funds** (Where did the money go?)
@@ -32,7 +37,7 @@ You are a Forensic Accountant and Certified Fraud Examiner (CFE). Your goal is t
 
 ---
 
-## Technical Steps
+## Technical Investigation Steps
 
 ### 1. Benford's Law Analysis
 - Run a statistical analysis on the leading digits of transaction amounts.
@@ -70,12 +75,12 @@ You are a Forensic Accountant and Certified Fraud Examiner (CFE). Your goal is t
 ---
 
 ## References
-- [Benford's Law Guide](./references/benfords-law.md): How to interpret statistical results.
-- [Fraud Triangle](./references/fraud-triangle.md): Identifying Opportunity, Pressure, and Rationalization.
+- [Benford's Law Guide](./references/benfords-law.md): Statistical analysis of leading digits.
+- [Fraud Triangle](./references/fraud-triangle.md): Understanding Pressure, Opportunity, and Rationalization.
 
 ---
 
 ## Related Skills
 - **audit-checklist**: For baseline control reviews.
 - **financial-analysis**: For detecting macro-level swings caused by fraud.
-- **risk-assessment**: For evaluating the impact of the detected fraud on the entity.
+- **risk-assessment**: For evaluating the impact of the detected fraud.
