@@ -8,11 +8,16 @@ This document maps FinanceSkills to international and local regulatory framework
 - **Financial Analysis**: Mapped to *IAS 1 (Presentation of Financial Statements)* and *IAS 7 (Statement of Cash Flows)*.
 - **Investment Analysis**: Mapped to *IFRS 9 (Financial Instruments)* and *IFRS 13 (Fair Value Measurement)*.
 - **Audit Checklist**: Covers controls required by *ISA (International Standards on Auditing)*.
+- **Banking Compliance**: Mapped to *IFRS 9* (Impairment) and *Basel III* accord.
+- **Crypto-Accounting**: Mapped to *IAS 38* (Intangibles) and *IAS 2* (Inventory).
+- **Insurance Reserving**: Mapped to *IFRS 17* (Insurance Contracts).
 
 ### US GAAP (Generally Accepted Accounting Principles)
 - **Tax Planning**: Mapped to *ASC 740 (Income Taxes)*.
 - **Budget Forecasting**: Aligned with *FASB* guidelines on management discussion and analysis (MD&A).
 - **Financial Analysis**: Mapped to *ASC 205 (Presentation of Financial Statements)*.
+- **Oil & Gas Valuation**: Mapped to *ASC 932* (Extractive Activities—Oil and Gas).
+- **Revenue Recognition**: Mapped to *ASC 606* (Revenue from Contracts with Customers).
 
 ## 🇿🇦 Local / Regional Frameworks (Africa focus)
 
