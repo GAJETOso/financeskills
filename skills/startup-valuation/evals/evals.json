@@ -1,0 +1,18 @@
+{
+  "skill_name": "startup-valuation",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "We have a SaaS startup with a working MVP and 2 technical co-founders. We're raising $500k. How much should we be valued at?",
+      "expected_output": "Should apply the Berkus Method to assign value for 'Sound Idea', 'Prototype', and 'Quality Management'. Should ask about traction or TAM. Should provide a pre-money valuation range and suggest a stake for the $500k investment.",
+      "assertions": [
+        "Identifies Berkus Method as a suitable methodology",
+        "Assigns value for Prototype and Quality Management",
+        "Asks for TAM or growth metrics",
+        "Provides a pre-money valuation range",
+        "Output follows Startup Valuation Memo structure"
+      ],
+      "files": []
+    }
+  ]
+}

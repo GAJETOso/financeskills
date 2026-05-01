@@ -63,7 +63,38 @@
       "name": "Predictive Burn Rate",
       "path": "skills/predictive-burn-rate",
       "category": "AI/Planning"
+    },
+    {
+      "id": "startup-valuation",
+      "name": "Startup Valuation",
+      "path": "skills/startup-valuation",
+      "category": "Financing"
+    },
+    {
+      "id": "debt-restructuring",
+      "name": "Debt Restructuring",
+      "path": "skills/debt-restructuring",
+      "category": "Corporate Finance"
+    },
+    {
+      "id": "nlp-earnings-sentiment",
+      "name": "NLP Earnings Sentiment",
+      "path": "skills/nlp-earnings-sentiment",
+      "category": "AI/Analysis"
+    },
+    {
+      "id": "automated-reconciliation",
+      "name": "Automated Reconciliation",
+      "path": "skills/automated-reconciliation",
+      "category": "AI/Accounting"
+    },
+    {
+      "id": "statement-preparation",
+      "name": "Financial Statement Preparation",
+      "path": "skills/statement-preparation",
+      "category": "Accounting"
     }
+
 
 
 

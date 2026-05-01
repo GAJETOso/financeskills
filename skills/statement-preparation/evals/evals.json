@@ -1,0 +1,18 @@
+{
+  "skill_name": "statement-preparation",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Here is our Trial Balance. Can you prepare the P&L and Balance Sheet? We also need to record $5k in depreciation.",
+      "expected_output": "Should validate the Trial Balance (Debits=Credits). Should record the $5k adjusting entry for depreciation. Should map accounts to the Income Statement and Balance Sheet. Should ensure Net Income flows into Retained Earnings. Should provide the full Financial Statement Package.",
+      "assertions": [
+        "Validates Trial Balance balance (Debits=Credits)",
+        "Records the $5k adjusting entry for depreciation",
+        "Correctly maps accounts to P&L and BS",
+        "Ensures BS balances (Assets = L+E)",
+        "Output follows Financial Statement Package structure"
+      ],
+      "files": []
+    }
+  ]
+}

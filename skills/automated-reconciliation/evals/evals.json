@@ -1,0 +1,18 @@
+{
+  "skill_name": "automated-reconciliation",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "I have 500 bank transactions and 510 ledger entries. Most are exact matches, but 20 have slightly different names like 'AWS' vs 'Amazon'. How can I reconcile this?",
+      "expected_output": "Should recommend a two-step process: Deterministic matching for exact entries and Probabilistic/Fuzzy matching for name variances. Should mention vendor name normalization. Should provide a Reconciliation Report structure.",
+      "assertions": [
+        "Suggests deterministic matching for exact matches",
+        "Recommends fuzzy matching for name variances",
+        "Mentions vendor name normalization",
+        "Identifies many-to-one or one-to-many issues",
+        "Output follows Reconciliation Report structure"
+      ],
+      "files": []
+    }
+  ]
+}

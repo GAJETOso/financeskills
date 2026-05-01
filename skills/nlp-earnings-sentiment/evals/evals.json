@@ -1,0 +1,18 @@
+{
+  "skill_name": "nlp-earnings-sentiment",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Analyze the sentiment of this earnings call transcript. Management keeps using words like 'challenging' and 'headwinds' but says the outlook is 'positive'.",
+      "expected_output": "Should identify a potential 'Tone Shift' or mismatch between specific negative descriptors and general positive outlook. Should focus on the Q&A section for reveal. Should mention uncertainty mapping (tracking 'challenging', 'headwinds'). Should provide a Sentiment Scorecard.",
+      "assertions": [
+        "Identifies the conflict between management words and outlook",
+        "Focuses on the Q&A section as a reveal point",
+        "Tracks uncertainty/negative keywords",
+        "Mentions Tone Shift relative to previous quarters",
+        "Output follows Sentiment Analysis Report structure"
+      ],
+      "files": []
+    }
+  ]
+}

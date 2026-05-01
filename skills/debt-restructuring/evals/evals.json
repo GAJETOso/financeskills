@@ -1,0 +1,18 @@
+{
+  "skill_name": "debt-restructuring",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Our company has $10M in debt and only $500k in annual EBITDA. We can't pay the interest. What are our options?",
+      "expected_output": "Should identify a severe solvency crisis. Should suggest a 'Haircut' or a 'Debt-for-Equity Swap'. Should discuss recovery values in restructuring vs liquidation. Should provide a Restructuring Proposal structure.",
+      "assertions": [
+        "Identifies insolvency or severe debt stress",
+        "Mentions 'Haircut' or 'Debt-for-Equity Swap'",
+        "Calculates that current EBITDA cannot cover $10M debt interest",
+        "Discusses liquidation vs restructuring recovery",
+        "Output follows Restructuring Proposal structure"
+      ],
+      "files": []
+    }
+  ]
+}
