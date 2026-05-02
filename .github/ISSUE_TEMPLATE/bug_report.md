@@ -20,6 +20,15 @@ Steps to reproduce the behavior:
 **Expected behavior**
 A clear and concise description of what you expected to happen.
 
+**Actual Behavior**
+What actually happened.
+
+**Environment**
+AI Agent: [e.g., Claude Code, Cursor]
+OS: [e.g., macOS, Windows, Linux]
+Python version: [e.g., 3.11]
+How installed: [CLI, Manual, etc.]
+
 **Screenshots**
 If applicable, add screenshots to help explain your problem.
 
