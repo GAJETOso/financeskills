@@ -1,11 +1,21 @@
-## Description
-Updating logic or steps in an existing skill.
+## Skill Update
 
-## Changes
-- [ ] Logic refinement in `SKILL.md`
-- [ ] Updated `evals/evals.json`
-- [ ] Version bump in YAML metadata
+**Skill:** `skills/SKILL-NAME`
+
+## Summary
+
+<!-- What changes are you making and why? -->
+
+## Type of update
+
+- [ ] Bug fix
+- [ ] Improved instructions
+- [ ] Added references/scripts
+- [ ] Other
 
 ## Checklist
-- [ ] I have tested the updated skill with an AI agent.
-- [ ] The skill remains cross-agent compatible.
+
+- [ ] Changes are focused and minimal
+- [ ] `SKILL.md` is still under 500 lines
+- [ ] No sensitive data or credentials
+- [ ] Tested locally with AI agent

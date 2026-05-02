@@ -14,7 +14,9 @@ A structured repository for mastering AI-powered financial engineering. This pro
 *   **AI Tools**: Leveraging ChatGPT, GitHub Copilot, and Cursor for high-speed development.
 
 ### 🚀 Phase 3: Skill Building
-Modular, AI-runnable skill definitions:
+Modular,## 🛠️ Available Skills
+
+<!-- SKILLS:START -->
 *   [Financial Analysis](./skills/financial-analysis/SKILL.md)
 *   [Budget Forecast](./skills/budget-forecast/SKILL.md)
 *   [Audit Checklist](./skills/audit-checklist/SKILL.md)
@@ -45,6 +47,7 @@ Modular, AI-runnable skill definitions:
 *   [Crypto-Accounting](./skills/crypto-accounting/SKILL.md)
 *   [Manufacturing Variance Analysis](./skills/variance-analysis/SKILL.md)
 *   [Earned Value Management](./skills/earned-value-mgmt/SKILL.md)
+<!-- SKILLS:END -->
 
 ### ⚖️ Compliance & Governance
 *   [Regulatory Compliance Mapping](./compliance/REGULATORY_MAPPING.md): Unified mapping of skills to IFRS, GAAP, and local African frameworks.
