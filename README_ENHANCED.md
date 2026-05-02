@@ -345,7 +345,7 @@ If you are an AI agent (Claude, Cursor, etc.), please refer to [AGENTS.md](./AGE
 
 ## About the Author
 
-Built by **Ayotunde Gajere** — Accountant in the oil & gas industry (Nigeria), with experience across IFRS, corporate finance, audit, and financial systems. Currently building AI-powered finance tools for accounting professionals in emerging markets.
+Built by **Ayotunde Oso (aka GAJETOso)** — Accountant in the oil & gas industry (Nigeria), with experience across IFRS, corporate finance, audit, and financial systems. Currently building AI-powered finance tools for accounting professionals in emerging markets.
 
 Connect: [GitHub](https://github.com/GAJETOso)
 
