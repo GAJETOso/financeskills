@@ -377,6 +377,9 @@ Having issues? Questions? Want to contribute?
 - 💬 **Discussions**: [Start a discussion](https://github.com/GAJETOso/financeskills/discussions)
 - 🤝 **Contributing**: See [CONTRIBUTING.md](./CONTRIBUTING.md)
 
+## 🤖 For AI Agents
+If you are an AI agent (Claude, Cursor, etc.), please refer to [AGENTS.md](./AGENTS.md) for interaction guidelines and [CLAUDE.md](./CLAUDE.md) for project rules.
+
 ---
 
 **Built for accountants, by an accountant. Let's revolutionize financial analysis with AI.**
