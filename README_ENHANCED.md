@@ -2,7 +2,7 @@
 
 A comprehensive collection of AI agent skills for financial professionals, accountants, and finance teams. Built for technical finance professionals who want AI coding agents to help with financial analysis, auditing, compliance, reporting, and financial engineering. Works with Claude Code, OpenAI Codex, Cursor, Windsurf, and any agent that supports the [Agent Skills spec](https://agentskills.io).
 
-Built by [Ayotunde Gajere](https://github.com/GAJETOso) for accountants in oil & gas, banking, insurance, and corporate finance. Need specific help? Open an issue — this is a community-driven resource.
+Built by [Ayotunde Oso (aka GAJETOso)](https://github.com/GAJETOso) for accountants in oil & gas, banking, insurance, and corporate finance. Need specific help? Open an issue — this is a community-driven resource.
 
 **Contributions welcome!** Found a way to improve a skill or have a new one to add? [Open a PR](#contributing).
 
