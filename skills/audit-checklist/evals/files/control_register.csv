@@ -1,0 +1,6 @@
+control_id,cycle,description,frequency,type,last_performed,evidence_status,notes
+C-01,Revenue,Three-way match PO/GR/invoice,Monthly,Automated,2026-05-31,Evidence attached,None
+C-02,Revenue,Credit-note approval by sales director,Monthly,Manual,2026-03-31,NO EVIDENCE for Apr-May,None
+C-03,Cash,Bank reconciliation review,Monthly,Manual,2026-05-31,Evidence attached,Preparer ALSO approves - SoD conflict
+C-04,Payroll,New-hire authorization,Per event,Manual,2026-05-31,Evidence attached,None
+C-05,ITGC,User access review,Quarterly,Manual,2025-12-31,TWO QUARTERS OVERDUE,None

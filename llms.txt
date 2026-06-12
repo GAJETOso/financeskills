@@ -1,0 +1,68 @@
+# FinanceSkills
+
+> 43 finance skills for AI agents (open Agent Skills spec): deterministic
+> calculators with self-tests, runnable evals with realistic fixtures, an MCP
+> server (155 tools), slash commands, output templates, and a 203-document
+> standards library. MIT licensed. Verify: MANIFEST.sha256.
+
+## Interfaces
+
+- [AGENTS.md](AGENTS.md): how agents should use this repo
+- [tools/mcp/README.md](tools/mcp/README.md): MCP server (stdio + HTTP)
+- [commands/](commands/): 52 slash commands (one per skill + workflows)
+- [workflows/month-end-close.md](workflows/month-end-close.md): multi-skill orchestration
+- [tools/connectors/README.md](tools/connectors/README.md): Stripe/Plaid/QuickBooks/Xero/CSV bridges
+- [tools/evals/BASELINE.md](tools/evals/BASELINE.md): eval scorecard
+- [SECURITY.md](SECURITY.md): provenance and safe-install guarantees
+
+## Skills
+
+- [ai-anomaly-detection](skills/ai-anomaly-detection/SKILL.md): When the user wants to use machine learning to detect fraud, errors, or unusual patterns in high-volume financial data
+- [aro-computation](skills/aro-computation/SKILL.md): When the user wants to calculate Asset Retirement Obligations (ARO) for long-lived assets
+- [audit-checklist](skills/audit-checklist/SKILL.md): When the user wants to perform an internal audit, review controls, or prepare for an external financial audit
+- [automated-reconciliation](skills/automated-reconciliation/SKILL.md): When the user wants to match disparate financial data sources (e.g., bank statements vs
+- [banking-compliance](skills/banking-compliance/SKILL.md): When the user wants to analyze bank capital adequacy or regulatory compliance (Basel III)
+- [budget-forecast](skills/budget-forecast/SKILL.md): When the user wants to create a budget, forecast future performance, or perform variance analysis
+- [close-management](skills/close-management/SKILL.md): When the user wants to plan, sequence, or track the month-end or year-end close process
+- [company-valuation](skills/company-valuation/SKILL.md): When the user wants to value a mature company using DCF, trading comparables, or precedent transactions
+- [corporate-consolidation](skills/corporate-consolidation/SKILL.md): When the user wants to consolidate the financial results of multiple legal entities into a single set of statements
+- [credit-analysis](skills/credit-analysis/SKILL.md): When the user wants to assess a borrower's creditworthiness, debt capacity, or covenant compliance
+- [crypto-accounting](skills/crypto-accounting/SKILL.md): When the user wants to account for digital assets (Cryptocurrency, NFTs) in financial statements
+- [cvp-breakeven](skills/cvp-breakeven/SKILL.md): When the user wants cost-volume-profit analysis, breakeven points, or operating leverage assessment
+- [debt-restructuring](skills/debt-restructuring/SKILL.md): When the user wants to reorganize an entity's outstanding obligations to restore solvency
+- [deferred-tax](skills/deferred-tax/SKILL.md): When the user wants to compute or review deferred tax under IAS 12 or ASC 740
+- [earned-value-mgmt](skills/earned-value-mgmt/SKILL.md): When the user wants to track the financial progress of a large project
+- [ecl-computation](skills/ecl-computation/SKILL.md): When the user wants to calculate Expected Credit Losses (ECL) under IFRS 9 or CECL (ASC 326)
+- [esg-reporting](skills/esg-reporting/SKILL.md): When the user wants to prepare, audit, or analyze Environmental, Social, and Governance (ESG) reports
+- [financial-analysis](skills/financial-analysis/SKILL.md): When the user wants to perform a deep dive into a company's financial performance
+- [fixed-asset-accounting](skills/fixed-asset-accounting/SKILL.md): When the user wants to account for property, plant and equipment or intangibles — capitalization, depreciation, disposals, impairment, or th
+- [forensic-accounting](skills/forensic-accounting/SKILL.md): When the user wants to investigate financial discrepancies, fraud, or hidden assets
+- [insurance-reserving](skills/insurance-reserving/SKILL.md): When the user wants to calculate insurance loss reserves or analyze insurance financial health
+- [intercompany-accounting](skills/intercompany-accounting/SKILL.md): When the user wants to manage intercompany transactions, balances, eliminations, or settlement
+- [inventory-costing](skills/inventory-costing/SKILL.md): When the user wants to value inventory, choose or apply costing methods, or handle write-downs
+- [investment-analysis](skills/investment-analysis/SKILL.md): When the user wants to evaluate the potential profitability and viability of an investment opportunity
+- [journal-entry](skills/journal-entry/SKILL.md): When the user wants to prepare, review, or document a journal entry with proper debits, credits, and support
+- [lbo-modeling](skills/lbo-modeling/SKILL.md): When the user wants to model a Leveraged Buyout (LBO) for private equity analysis
+- [lease-accounting](skills/lease-accounting/SKILL.md): When the user wants to account for leases under IFRS 16 or ASC 842
+- [nlp-earnings-sentiment](skills/nlp-earnings-sentiment/SKILL.md): When the user wants to analyze earnings call transcripts or financial news for sentiment shifts
+- [oil-gas-valuation](skills/oil-gas-valuation/SKILL.md): When the user wants to value oil and gas reserves or perform upstream financial analysis
+- [predictive-burn-rate](skills/predictive-burn-rate/SKILL.md): When the user wants to predict future cash consumption and "Runway" using time-series AI models
+- [product-profitability](skills/product-profitability/SKILL.md): When the user wants to break down revenue and costs by specific products, services, or segments
+- [revenue-recognition](skills/revenue-recognition/SKILL.md): When the user wants to apply complex revenue recognition rules (IFRS 15 / ASC 606)
+- [risk-assessment](skills/risk-assessment/SKILL.md): When the user wants to identify, quantify, and mitigate financial risks
+- [sox-compliance](skills/sox-compliance/SKILL.md): When the user wants to plan or execute SOX 404 control testing, select audit samples, build testing workpapers, or classify control deficien
+- [startup-valuation](skills/startup-valuation/SKILL.md): When the user wants to value an early-stage company that may have little or no revenue
+- [statement-preparation](skills/statement-preparation/SKILL.md): When the user wants to generate a set of financial statements (Balance Sheet, Income Statement, Cash Flow) from a trial balance
+- [tax-planning](skills/tax-planning/SKILL.md): When the user wants to optimize tax liability or ensure tax compliance
+- [three-statement-modeling](skills/three-statement-modeling/SKILL.md): When the user wants to build an integrated financial model linking income statement, balance sheet, and cash flow
+- [treasury-management](skills/treasury-management/SKILL.md): When the user wants to manage corporate liquidity, investments, or financial risks like FX and interest rates
+- [variance-analysis](skills/variance-analysis/SKILL.md): When the user wants to analyze the difference between actual and standard costs in manufacturing
+- [venture-debt](skills/venture-debt/SKILL.md): When the user wants to evaluate or structure debt for high-growth, venture-backed startups
+- [wacc-computation](skills/wacc-computation/SKILL.md): When the user wants to calculate the Weighted Average Cost of Capital (WACC) for valuation or capital budgeting
+- [working-capital-analysis](skills/working-capital-analysis/SKILL.md): When the user wants to analyze or optimize working capital — receivables, payables, inventory, and the cash conversion cycle
+
+## Standards
+
+- [standards/](standards/): IFRS, IAS, US GAAP ASC, IPSAS, ISA/ISAE/ISQM, Basel III,
+  ESG (GRI/SASB/TCFD/IFRS S1-S2), valuation (IVS), ethics (IESBA), national GAAP.
+  Orientation summaries with as_of dates - verify against issuing bodies for decisions.

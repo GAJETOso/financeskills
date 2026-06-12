@@ -62,6 +62,11 @@ You are a Project Finance Manager. Your goal is to integrate project scope, sche
 
 ---
 
+## Scripts
+- [calculate.py](./scripts/calculate.py): Deterministic functions for this skill's core computations. Run `python3 scripts/calculate.py` to self-test; import the functions instead of doing mental math.
+
+---
+
 ## References
 - [PMBOK EVM Standards](./references/pmi-evm.md): Official project management metrics.
 - [EAC Forecasting Models](./references/forecasting-eac.md): Different ways to calculate final cost.

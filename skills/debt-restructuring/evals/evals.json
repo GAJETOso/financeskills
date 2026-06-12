@@ -13,6 +13,45 @@
         "Output follows Restructuring Proposal structure"
       ],
       "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "Lenders will exchange 500M of senior notes for 300M new notes plus 25% equity. Old EIR 9%; new notes 8%, 5yr. Walk the debtor's accounting.",
+      "expected_output": "Run the 10% test comparing PV of new cash flows (including equity FV as consideration) vs old carrying amount; an exchange this size is almost certainly an extinguishment: derecognize 500M, recognize new debt at fair value + equity at fair value, gain to P&L. Show the test mechanics.",
+      "assertions": [
+        "Applies the 10% PV test (plus qualitative factors)",
+        "Concludes extinguishment and books the gain through P&L",
+        "Measures new notes and equity at fair value",
+        "Includes the equity issued as part of the consideration"
+      ],
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "A company has 18 months to a 2B maturity wall, leverage at 7x, EBITDA stabilizing. Rank the restructuring options.",
+      "expected_output": "Solvency-leaning problem at 7x: amend-and-extend alone insufficient; rank by feasibility - debt-for-equity to a sustainable 3-4x, new money with priming only if liquidity gaps, A&E only as a bridge with deleveraging path; in-court if holdout risk. Should model the post-restructuring capital structure.",
+      "assertions": [
+        "Distinguishes solvency vs liquidity diagnosis from the 7x leverage",
+        "Targets a sustainable post-deal leverage level",
+        "Sequences consensual options before in-court",
+        "Addresses holdout risk in the recommendation"
+      ],
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "Run the priority waterfall in the attached capital structure (evals/files/capital_structure.csv) at the stated distributable enterprise value. Recovery $ and % per tranche, and identify the fulcrum security.",
+      "expected_output": "Senior secured 100% ($500m); senior unsecured 75% ($300m); subs 0%. Fulcrum = senior unsecured.",
+      "assertions": [
+        "Senior secured recovers 100%",
+        "Senior unsecured recovers 75% ($300m of $400m)",
+        "Subordinated notes recover nothing",
+        "Identifies the senior unsecured as the fulcrum security",
+        "Computes with code"
+      ],
+      "files": [
+        "evals/files/capital_structure.csv"
+      ]
     }
   ]
 }

@@ -1,0 +1,56 @@
+{
+  "skill_name": "sox-compliance",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "I need to test a daily three-way-match control in P2P for the full year. Population is about 18,000 matched invoices. How many samples, how do I pick them, and what do I document?",
+      "expected_output": "Sample of 25-40 (daily/per-transaction frequency), random selection across the full period including period-end, population completeness validation against the GL/system, and item-level attribute documentation.",
+      "assertions": [
+        "Recommends a sample in the 25-60 range with rationale tied to control frequency and risk",
+        "Requires population completeness validation before selection",
+        "Requires coverage of the full period including period-end",
+        "Specifies item-level attribute documentation, not summary-level"
+      ],
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "We found 1 exception in 25 samples of a monthly bank reconciliation review control \u2014 one rec wasn't reviewed for 6 weeks. The preparer says it was a one-off during staff leave. Can we call the control effective?",
+      "expected_output": "No isolated-exception conclusion without root cause analysis and expanded testing. Should expand the sample, evaluate compensating controls, and assess severity considering the account's magnitude; staff-leave root cause suggests a design gap (no backup reviewer).",
+      "assertions": [
+        "Refuses to conclude effective based on the 'one-off' explanation alone",
+        "Requires sample expansion with zero further tolerance or concludes deficiency",
+        "Identifies the missing backup-reviewer design issue",
+        "Evaluates severity using likelihood and magnitude, not just the observed error"
+      ],
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "Three deficiencies this year: (1) revenue cut-off control failed twice, revenue account is 60% of materiality exposure, (2) one late timesheet approval, immaterial, (3) ITGC access review missed a quarter for the billing system. Classify them.",
+      "expected_output": "Deficiency 1: likely significant deficiency or material weakness given magnitude near materiality and repeated failure. Deficiency 2: control deficiency. Deficiency 3: must be aggregated with deficiency 1 since billing ITGC underpins the revenue assertions \u2014 combined evaluation may elevate severity.",
+      "assertions": [
+        "Classifies the timesheet item as a simple control deficiency",
+        "Evaluates the revenue cut-off failure at significant-deficiency-or-worse severity using maximum exposure",
+        "Aggregates the ITGC deficiency with the revenue control failure rather than evaluating in isolation",
+        "Applies likelihood x magnitude reasoning and mentions compensating controls"
+      ],
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "This is the Jan-May population for the revenue approval control (evals/files/revenue_population.csv), which operates per-transaction (daily frequency). Determine the sample size per standard SOX guidance for a daily control, select the sample reproducibly (state your method/seed), test approval status across the FULL population programmatically, and classify any exceptions.",
+      "expected_output": "Daily/multiple-times-daily control -> 25 selections (or 40 per some methodologies - state the table used). Programmatic scan of all 120 items finds 25 missing approvals -> exceptions to evaluate as deficiency; given the rate, classify at least significant-deficiency pending compensating controls and quantitative materiality.",
+      "assertions": [
+        "States the standard sample size for a daily control (25, or methodology-stated alternative)",
+        "Uses a reproducible selection method (stated seed or systematic interval)",
+        "Finds the missing-approval exceptions by scanning the full population with code (25 items)",
+        "Classifies the finding severity with reasoning (deficiency vs significant deficiency)",
+        "Does not claim the control passed"
+      ],
+      "files": [
+        "evals/files/revenue_population.csv"
+      ]
+    }
+  ]
+}

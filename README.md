@@ -317,11 +317,50 @@ financeskills/
 │   │   └── references/        # Accounting standards
 │   ├── audit-checklist/
 │   ├── tax-planning/
-│   └── [30+ other skills]/
+│   └── [40+ other skills]/
 ├── compliance/         # Regulatory mapping (IFRS, GAAP, local)
 ├── projects/          # Phase 4: Full-scale applications
 └── tools/             # Helper utilities and integrations
 ```
+
+## Use It From Any Agent
+
+**Skills (auto-trigger + explicit):** SKILL.md follows the open Agent Skills
+spec - works in Claude Code, Codex CLI, Gemini CLI, Copilot/VS Code, Cursor,
+Windsurf, and any tool reading `.agents/skills/`. In Claude Code, invoke
+explicitly with `/skill-name`.
+
+**Slash commands:** `commands/` ships 52 commands - one per skill (full
+coverage of all 43) plus workflow commands (`/reconcile`, `/wacc`,
+`/close-the-books`, ...) with argument handling.
+
+**MCP connector:** stdio (`tools/mcp/server.py`) or hosted HTTP
+(`tools/mcp/http_server.py` + Dockerfile, see `tools/mcp/DEPLOY.md`) exposing 155+ tools (every calculator
+across 38 skills, plus skill/standards/template readers) to ANY MCP client -
+zero dependencies, no network, no keys. Config snippets in `tools/mcp/README.md`.
+
+**Install as a CLI:** `pipx install git+https://github.com/GAJETOso/financeskills`
+gives `financeskills-mcp`, `financeskills-mcp-http`, `financeskills-validate`,
+`financeskills-evals`.
+
+**Live data:** `tools/connectors/` pulls Stripe and Plaid transactions into
+skill-ready CSVs (each has a `--mock` mode). See `tools/connectors/README.md`.
+
+**Eval scorecard:** see `tools/evals/BASELINE.md`. All 43 skills have file-based
+evals with realistic fixtures (CSV/XLSX) and code-verified expected values.
+
+**Provenance:** `MANIFEST.sha256` checksums all content; skill scripts are
+stdlib-only with no network access (see SECURITY.md).
+
+## Quality Infrastructure
+
+Every skill is validated and testable:
+
+- **Validator** - `python3 validate_skills.py` enforces the full Agent Skills spec (frontmatter, evals schema, dead links, line limits), runs every script's self-test, and checks marketplace manifests against the skills on disk. CI runs it on every push.
+- **Eval harness** - `python3 tools/evals/run_evals.py --all` feeds each eval prompt (with its fixture files) to a model with the skill as system context and grades the assertions with an LLM judge. `--dry-run` validates schemas offline.
+- **Deterministic scripts** - 38 of 43 skills ship a `scripts/calculate.py` with self-tested functions, so agents compute with code instead of mental math.
+- **Fixtures** - flagship skills include realistic CSV fixtures (trial balances, lease portfolios, bank statements) with code-verified expected answers.
+- **Templates** - flagship skills ship output templates in `assets/` for consistent memos and workpapers.
 
 ## Contributing
 
@@ -352,7 +391,7 @@ Connect: [GitHub](https://github.com/GAJETOso)
 ## Roadmap
 
 ### ✅ Completed
-- [x] 30+ core financial skills
+- [x] 43 core financial skills
 - [x] IFRS/GAAP compliance mapping
 - [x] Industry-specific skills (oil & gas, banking, insurance)
 - [x] AI agent integration (Claude Code, Cursor)

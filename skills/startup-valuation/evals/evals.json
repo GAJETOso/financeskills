@@ -13,6 +13,45 @@
         "Output follows Startup Valuation Memo structure"
       ],
       "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "A VC offers 3M for 25% (9M pre-money). Using the VC method with a 60M exit in 6 years and 40% cumulative dilution ahead, is 25% the right ask at a 10x target?",
+      "expected_output": "Required exit proceeds 30M = 50% of exit; adjusting for dilution: 50%/(1-0.4) = 83% today - the deal doesn't work at 10x/60M exit. Either the exit assumption is higher, the target return lower, or the valuation must fall. Show the math and negotiate levers.",
+      "assertions": [
+        "Computes required exit stake of 50% at 10x on 3M",
+        "Applies the dilution adjustment correctly",
+        "Concludes the offered 25% is inconsistent with the stated assumptions",
+        "Identifies which assumption must move"
+      ],
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "Founder insists on a 20M pre-money for a pre-revenue medtech because 'a similar company raised at 20M'. Build the counter-analysis.",
+      "expected_output": "Triangulate: scorecard method against local seed medians with factor ratings, Berkus-style risk decomposition (regulatory risk dominates medtech), and diligence the comparable (stage, traction, geography, investor). Conclude a defended range.",
+      "assertions": [
+        "Tests the comparable's true comparability",
+        "Applies at least two structured pre-revenue methods",
+        "Weights regulatory/clinical risk appropriately for medtech",
+        "Produces a range with negotiation rationale rather than a single number"
+      ],
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "Apply the VC method to the attached round terms (evals/files/round_terms.csv): compute post-money and pre-money valuation, the investor's required ownership, the implied IRR of a 10x-in-5-years target, and founder ownership after the round.",
+      "expected_output": "Post-money $10,000,000; pre-money $8,000,000; investor ownership 20%; implied IRR 58.5%; founder falls to 48%.",
+      "assertions": [
+        "Post-money $10,000,000 and pre-money $8,000,000",
+        "Investor required ownership 20%",
+        "Implied IRR approx 58% (10x over 5 years)",
+        "Founder ownership after round 48%",
+        "Computes with code"
+      ],
+      "files": [
+        "evals/files/round_terms.csv"
+      ]
     }
   ]
 }

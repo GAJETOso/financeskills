@@ -1,0 +1,5 @@
+date,type,units,unit_cost
+2026-01-10,purchase,100,10.0
+2026-02-14,purchase,100,12.0
+2026-03-20,purchase,100,14.0
+2026-03-28,sale,150,

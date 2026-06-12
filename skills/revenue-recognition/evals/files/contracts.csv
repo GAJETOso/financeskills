@@ -1,0 +1,4 @@
+contract,performance_obligation,stated_price,ssp,timing
+C-101,Software licence (point in time),60000,75000,point_in_time
+C-101,12-month support (over time),30000,30000,over_time
+C-101,Implementation service (over time),10000,20000,over_time

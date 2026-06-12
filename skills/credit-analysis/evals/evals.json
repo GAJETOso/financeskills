@@ -1,0 +1,72 @@
+{
+  "skill_name": "credit-analysis",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Borrower requests a 500M term loan, 5 years. EBITDA 280M (includes a 40M one-off insurance recovery), cash taxes 45M, maintenance capex 60M, existing debt 320M with 38M annual interest, new loan interest ~12%, straight-line amortization. Assess debt service capacity.",
+      "expected_output": "Normalize EBITDA to 240M. Total debt 820M -> leverage 3.4x. Total interest ~98M, principal 100M/yr. DSCR = (240-45-60)/(98+100) = 135/198 = ~0.68x - fails. Restructure needed: smaller amount, longer tenor, or back-ended amortization.",
+      "assertions": [
+        "Strips the 40M one-off from EBITDA before any ratio",
+        "Computes post-deal leverage on total debt including existing",
+        "Computes DSCR below 1.0x and concludes the structure fails as proposed",
+        "Proposes concrete restructuring levers rather than declining flatly",
+        "Verifies calculations with code"
+      ],
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "A Nigerian manufacturer earns 85% of revenue in NGN but wants a USD loan because the rate is 7% vs 24% in naira. Good idea?",
+      "expected_output": "Flags the currency mismatch as the dominant risk: a devaluation inflates debt service in revenue-currency terms; the interest differential approximates expected depreciation (covered interest parity logic). Stress test a 30-50% devaluation; consider NGN debt, hedging cost reality (NDF carry), or natural-hedge sizing limited to the 15% USD revenue.",
+      "assertions": [
+        "Identifies the FX mismatch as the central credit risk, not the headline rate",
+        "Explains that the rate differential embeds expected depreciation",
+        "Quantifies impact via a devaluation stress scenario",
+        "Suggests sizing USD debt to USD-linked revenue or assessing hedge costs"
+      ],
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "Set financial covenants for a 4-year loan. Borrower base case: EBITDA 100 growing to 130, opening net debt 280 amortizing to 180. Show your headroom logic.",
+      "expected_output": "Base-case net leverage runs 2.8x -> 1.4x. Set covenant at ~25% EBITDA cushion: e.g., opening 3.75x stepping down (3.75/3.50/3.00/2.50). Add interest cover and minimum liquidity; specify EBITDA definition discipline and quarterly testing.",
+      "assertions": [
+        "Derives covenant levels from the borrower base case with ~20-25% cushion",
+        "Uses step-downs tracking the deleveraging profile",
+        "Includes at least one coverage or liquidity covenant alongside leverage",
+        "Addresses EBITDA definition/addback discipline"
+      ],
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "Assess the borrower in the attached file (evals/files/borrower_financials.csv): compute interest coverage, net leverage, and DSCR, then measure headroom against both covenants and state which is tighter.",
+      "expected_output": "Interest coverage 4.0x; net leverage 3.2x vs max 4.0x (20% headroom); DSCR 1.20x vs min 1.25x (-4.0% headroom). DSCR is the binding constraint.",
+      "assertions": [
+        "Interest coverage 4.0x",
+        "Net leverage 3.2x",
+        "DSCR 1.20x",
+        "Leverage headroom approx 20%, DSCR headroom approx -4%",
+        "Identifies DSCR as the tighter covenant",
+        "Computes with code"
+      ],
+      "files": [
+        "evals/files/borrower_financials.csv"
+      ]
+    },
+    {
+      "id": 5,
+      "prompt": "[adversarial] Compute net leverage against the 4.0x covenant from the attached file (evals/files/borrower_with_oneoff.csv). Read the notes carefully.",
+      "expected_output": "Reported EBITDA includes a $2.5m one-off disposal gain. Adjusted EBITDA $10m -> net leverage 4.0x = breach of the 4.0x covenant (reported basis 3.2x would misleadingly pass).",
+      "assertions": [
+        "Adjusts EBITDA for the one-off gain before computing leverage",
+        "Adjusted net leverage 4.0x (vs misleading 3.2x unadjusted)",
+        "Concludes covenant breach on the adjusted basis",
+        "Computes with code"
+      ],
+      "files": [
+        "evals/files/borrower_with_oneoff.csv"
+      ]
+    }
+  ]
+}

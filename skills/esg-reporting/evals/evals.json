@@ -13,6 +13,46 @@
         "Output follows ESG Performance Report structure"
       ],
       "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "Compute Scope 1 and 2 for our Lagos plant: 180,000 liters of diesel in generators (factor 2.68 kgCO2e/l), 1.2 GWh grid electricity (factor 0.45 kgCO2e/kWh), and a fleet using 40,000 liters of petrol (factor 2.31 kgCO2e/l).",
+      "expected_output": "Scope 1 = 180,000x2.68 + 40,000x2.31 = 482.4 + 92.4 = 574.8 tCO2e. Scope 2 (location-based) = 1,200,000x0.45 = 540 tCO2e. Should note market-based Scope 2 dual reporting and factor source documentation.",
+      "assertions": [
+        "Classifies diesel generators and fleet as Scope 1",
+        "Computes Scope 1 of ~574.8 tCO2e and Scope 2 of 540 tCO2e",
+        "Distinguishes location-based vs market-based Scope 2",
+        "Documents emission factor sources",
+        "Verifies arithmetic with code"
+      ],
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "Our CEO wants to claim 'carbon neutral by 2030' in the sustainability report based on planned offset purchases. Review this claim.",
+      "expected_output": "High greenwashing/legal risk: offset-led neutrality claims face increasing regulatory scrutiny; credible pathway requires reduction targets (ideally SBTi-aligned), offset quality standards (permanence, additionality), and precise claim wording. Recommend reframing with a reduction-first roadmap.",
+      "assertions": [
+        "Flags offset-reliant neutrality claims as greenwashing risk",
+        "Recommends science-based reduction targets before offsets",
+        "Addresses offset quality criteria (additionality, permanence)",
+        "Suggests defensible claim language"
+      ],
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "Compute Scope 1 and Scope 2 (location-based) emissions in tCO2e from the attached activity data and factors (evals/files/activity_data.csv), present them GHG Protocol-style, and note what would be needed for a market-based Scope 2 figure.",
+      "expected_output": "Scope 1 804.4 tCO2e (diesel 482.4 + gas 183.3 + fleet 138.6); Scope 2 location-based 1,032.0 tCO2e; market-based needs supplier-specific/REC factors.",
+      "assertions": [
+        "Scope 1 total approx 804 tCO2e",
+        "Scope 2 location-based approx 1,032 tCO2e",
+        "Converts kg to tonnes correctly",
+        "Notes market-based Scope 2 requires contractual instruments (RECs/supplier factors)",
+        "Computes with code"
+      ],
+      "files": [
+        "evals/files/activity_data.csv"
+      ]
     }
   ]
 }

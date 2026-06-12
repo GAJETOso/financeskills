@@ -13,6 +13,46 @@
         "Output follows Oil & Gas Valuation Memo structure"
       ],
       "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "Value a producing field: 2P reserves 40 MMbbl, production declining 12%/yr from 8,000 bopd, realized price $70 net of differentials, opex $18/bbl, capex program $120M over 3 years, 10% discount. Sketch the NPV approach and key sensitivities.",
+      "expected_output": "Decline-curve production profile, netback margin ($52/bbl pre-capex), discounted cash flows with abandonment costs (aro-computation), risked on reserve categories (1P vs 2P weighting). Sensitivities: price deck (strip vs flat), decline rate, opex inflation, FX for local costs.",
+      "assertions": [
+        "Builds production from the decline rate, not flat volumes",
+        "Includes abandonment/decommissioning in the cash flows",
+        "Risk-weights or segments reserve categories rather than valuing 2P at par",
+        "Runs price-deck and decline sensitivities",
+        "Notes fiscal/PSC terms affect the netback"
+      ],
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "Our PV-10 is 900M but a buyer is offering 480M for the asset. Why might both numbers be 'right'?",
+      "expected_output": "PV-10 uses SEC flat pricing, 10% discount, no risking of PUD development, and pre-tax basis; buyers use strip pricing, higher risk-adjusted discount rates, capex funding reality, tax, and portfolio constraints. Bridge the two with a waterfall.",
+      "assertions": [
+        "Identifies SEC flat-price vs strip-price divergence",
+        "Notes PV-10 is pre-tax and unrisked on development timing",
+        "Explains buyer discount rates and risking of undeveloped volumes",
+        "Recommends building a PV-10-to-offer bridge"
+      ],
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "Value the field described in the attached parameters (evals/files/field_parameters.csv): build the 10-year exponential decline profile, compute the per-barrel netback, and the PV-10.",
+      "expected_output": "Netback $41.50/bbl; year-10 production 387,420 bbl; PV-10 $179,605,644.",
+      "assertions": [
+        "Netback $41.50 per barrel",
+        "Year-2 production 900,000 bbl (10% decline)",
+        "PV-10 approx $180 million",
+        "Discounts at exactly 10% (PV-10 convention)",
+        "Computes with code"
+      ],
+      "files": [
+        "evals/files/field_parameters.csv"
+      ]
     }
   ]
 }

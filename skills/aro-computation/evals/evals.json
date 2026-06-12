@@ -13,6 +13,47 @@
         "Output follows ARO Schedule structure"
       ],
       "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "Recognize an ARO: well P&A cost estimated at 2.5M (today's cost) in 12 years, cost inflation 4%, discount rate 11%. Then show year-1 accretion and depreciation (UoP basis unavailable - use straight line).",
+      "expected_output": "Future cost = 2.5M x 1.04^12 = ~4.0M; PV = 4.0/1.11^12 = ~1.15M. Capitalize into the asset and recognize the provision. Year-1 accretion = 1.15M x 11% = ~126k finance cost; depreciation = 1.15M/12 = ~96k.",
+      "assertions": [
+        "Inflates then discounts to ~1.15M initial provision",
+        "Capitalizes the same amount into the related asset",
+        "Computes year-1 accretion of ~126k",
+        "Depreciates the ARO asset over the 12-year life",
+        "Calculates with code"
+      ],
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "Three years into a 10-year ARO, regulators tighten standards and the cost estimate rises 40%; discount rates also fell from 11% to 9%. Account for the change.",
+      "expected_output": "IFRIC 1: recompute the provision at the revised estimate AND current 9% rate over the remaining 7 years; the increase adjusts both provision and asset (cost model), with prospective depreciation over the remaining life. No restatement of past accretion.",
+      "assertions": [
+        "Remeasures with both the new cost and the new rate",
+        "Adjusts the asset and provision symmetrically",
+        "Applies the change prospectively including revised depreciation",
+        "Notes US GAAP layering difference for upward revisions"
+      ],
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "Using the attached asset retirement obligations file (evals/files/retirement_obligations.csv), measure the initial ARO liability for each asset (inflate current cost to retirement date, discount back at the credit-adjusted rate), total the provision, and compute year-1 accretion expense.",
+      "expected_output": "AROs: Alpha $5,893,636, Beta $4,979,947, Gamma $1,270,349; total $12,143,931; year-1 accretion $958,811.",
+      "assertions": [
+        "Platform Alpha ARO approx $5,893,636",
+        "Platform Beta ARO approx $4,979,947",
+        "Storage site Gamma ARO approx $1,270,349",
+        "Total provision approx $12,143,931",
+        "Year-1 accretion approx $958,811",
+        "Computes with code"
+      ],
+      "files": [
+        "evals/files/retirement_obligations.csv"
+      ]
     }
   ]
 }

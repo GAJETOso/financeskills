@@ -66,9 +66,19 @@ For large datasets, this skill uses Python libraries like `pandas` and `RecordLi
 
 ---
 
+## Scripts
+- [calculate.py](./scripts/calculate.py): Exact, tolerance, and subset-sum matching engine. Run with `python3 scripts/calculate.py` to self-test; import the functions for actual computations.
+
+---
+
 ## References
 - [Fuzzy Matching for Finance](./references/fuzzy-logic.md): Jaro-Winkler vs. Levenshtein.
 - [Rec Best Practices](./references/rec-controls.md): Maintaining an audit trail.
+
+---
+
+## Assets
+- [reconciliation-statement-template.md](./assets/reconciliation-statement-template.md): Bank rec statement with outstanding-items detail.
 
 ---
 

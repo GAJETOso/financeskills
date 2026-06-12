@@ -61,6 +61,11 @@ You are a Plant Controller. Your goal is to identify exactly *why* actual produc
 
 ---
 
+## Scripts
+- [calculate.py](./scripts/calculate.py): Material, labor, and overhead variance functions. Run with `python3 scripts/calculate.py` to self-test; import the functions for actual computations.
+
+---
+
 ## References
 - [Variance Formulas](./references/variance-math.md): Quick look-up for all manufacturing variances.
 - [Absorption vs. Variable Costing](./references/overhead-logic.md): Understanding fixed overhead.

@@ -13,6 +13,46 @@
         "Output follows Regulatory Compliance Dashboard structure"
       ],
       "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "Our bank's CET1 is 11.2% against a 10.5% requirement including buffers. The board wants a dividend that would take it to 10.3%. Advise.",
+      "expected_output": "Falling into the capital conservation buffer triggers automatic distribution restrictions (MDA limits) - the dividend would be constrained/blocked. Quantify the MDA, stress-test forward capital, and propose alternatives (scrip dividend, reduced payout, RWA optimization).",
+      "assertions": [
+        "Identifies breach of the buffer triggers distribution restrictions",
+        "Explains MDA mechanics limiting the dividend",
+        "Stress-tests the forward capital trajectory before any payout",
+        "Offers concrete alternatives"
+      ],
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "Walk me through computing RWA for: 500M FGN bonds, 2B corporate loans (unrated), 800M residential mortgages at 65% average LTV, and 300M undrawn committed corporate facilities.",
+      "expected_output": "FGN bonds 0% (sovereign local currency per CBN), unrated corporates 100% = 2B, mortgages ~35% band at 65% LTV = 280M, undrawn committed: CCF (e.g., 40-50%) x 100% = 120-150M. Total RWA ~2.4-2.43B, with the caveat to confirm CBN-specific weights.",
+      "assertions": [
+        "Applies 0% to local-currency sovereign exposure",
+        "Applies 100% to unrated corporates",
+        "Uses an LTV-based preferential weight for residential mortgages",
+        "Converts undrawn commitments via CCF before weighting",
+        "Sums RWA correctly and notes local regulatory calibration"
+      ],
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "CET1 capital is $410,000,000 and the countercyclical buffer is 1%. Using the attached exposure file (evals/files/exposures.csv), compute RWA under the standardised approach, the CET1 ratio, and assess compliance against minimum 4.5% + 2.5% conservation + 1% CCyB.",
+      "expected_output": "RWA $3,645,000,000; CET1 ratio 11.25% vs requirement 8.0%; surplus 3.25% - compliant.",
+      "assertions": [
+        "RWA approx $3.645 billion",
+        "CET1 ratio approx 11.2%",
+        "Combined requirement of 8.0% (4.5 + 2.5 + 1.0)",
+        "Concludes compliant with surplus approx 3.2 points",
+        "Computes with code"
+      ],
+      "files": [
+        "evals/files/exposures.csv"
+      ]
     }
   ]
 }

@@ -1,0 +1,70 @@
+{
+  "skill_name": "inventory-costing",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Purchases: 200 units at 50, then 300 at 60, then 100 at 70. We sold 450 units. Give me COGS and ending inventory under FIFO and periodic weighted average.",
+      "expected_output": "Total cost 35,000 for 600 units. FIFO: COGS = 200x50 + 250x60 = 25,000; ending = 50x60 + 100x70 = 10,000. Weighted avg 58.333: COGS = 26,250; ending = 8,750. Both proved to total 35,000.",
+      "assertions": [
+        "FIFO COGS of 25,000 and ending inventory of 10,000",
+        "Weighted average COGS of 26,250 and ending of 8,750",
+        "Proves COGS + ending inventory = total cost under both methods",
+        "Uses code for the computation"
+      ],
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "Our plant budgeted 600M fixed overhead at normal capacity of 50,000 units but only produced 35,000 this year due to FX-related input shortages. The plant manager wants to spread all 600M over the 35,000 units. Is that right?",
+      "expected_output": "No. Absorb at the normal-capacity rate of 12,000/unit (420M into inventory/COGS via units); the 180M unabsorbed overhead is expensed immediately. Inflating unit costs to 17,143 overstates inventory.",
+      "assertions": [
+        "Rejects spreading total overhead over actual low production",
+        "Computes the normal rate of 12,000 per unit",
+        "Expenses 180M of unabsorbed overhead in the period",
+        "Cites the IAS 2 normal capacity principle"
+      ],
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "An inventory line: 1,000 units at cost 800 each. Current selling price 850, but completion costs are 30/unit and selling costs 60/unit. Test for write-down and book the entry if needed.",
+      "expected_output": "NRV = 850 - 30 - 60 = 760 < cost 800 -> write down 40/unit = 40,000. Dr Inventory write-down (COGS) 40,000 / Cr Inventory allowance 40,000. Note IFRS reversal if NRV recovers.",
+      "assertions": [
+        "Computes NRV of 760 deducting both completion and selling costs",
+        "Writes down 40,000 total",
+        "Books a balanced entry",
+        "Mentions IFRS reversal possibility up to original cost"
+      ],
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "From the attached purchase/sale ledger (evals/files/purchases_sales.csv), compute COGS and ending inventory for the 150-unit sale under FIFO, weighted average, and periodic LIFO. State which gives the lowest taxable income in this rising-price environment.",
+      "expected_output": "FIFO COGS $1,600 / EI $2,000; WAC $1,800; LIFO $2,000. LIFO minimizes taxable income when prices rise.",
+      "assertions": [
+        "FIFO COGS $1,600 and ending inventory $2,000",
+        "Weighted-average COGS $1,800",
+        "LIFO COGS $2,000",
+        "States LIFO gives lowest taxable income with rising prices (and notes IFRS prohibits LIFO)",
+        "Computes with code"
+      ],
+      "files": [
+        "evals/files/purchases_sales.csv"
+      ]
+    },
+    {
+      "id": 5,
+      "prompt": "[adversarial] Compute FIFO COGS for the sale in the attached ledger (evals/files/oversold_ledger.csv).",
+      "expected_output": "Sale of 180 exceeds the 150 units purchased - impossible. Must flag the data error (missing purchases, opening balance, or wrong sale qty) and not fabricate a cost for the 30-unit shortfall.",
+      "assertions": [
+        "Detects that units sold (180) exceed units available (150)",
+        "Does not invent a cost for the missing 30 units",
+        "Suggests likely causes (missing opening inventory or purchase records)",
+        "Verifies with code"
+      ],
+      "files": [
+        "evals/files/oversold_ledger.csv"
+      ]
+    }
+  ]
+}

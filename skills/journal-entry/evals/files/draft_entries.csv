@@ -1,0 +1,9 @@
+je_number,account,dr,cr,memo
+JE-101,Payroll expense,84300,0,May payroll accrual
+JE-101,Accrued liabilities,0,84300,
+JE-102,Depreciation expense,17500,0,May depreciation
+JE-102,Accumulated depreciation,0,17050,TRANSPOSED
+JE-103,Prepaid insurance,0,2000,amortize prepaid
+JE-103,Insurance expense,2000,0,
+JE-104,Rent expense,30000,5000,BOTH SIDES - invalid
+JE-104,Cash,0,25000,

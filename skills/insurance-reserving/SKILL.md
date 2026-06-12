@@ -65,6 +65,11 @@ You are an Insurance Actuarial Analyst. Your goal is to ensure the insurer has s
 
 ---
 
+## Scripts
+- [calculate.py](./scripts/calculate.py): Deterministic functions for this skill's core computations. Run `python3 scripts/calculate.py` to self-test; import the functions instead of doing mental math.
+
+---
+
 ## References
 - [Chain Ladder Basics](./references/actuarial-methods.md): Math behind loss development.
 - [Combined Ratio Guide](./references/insurance-metrics.md): Evaluating underwriting profitability.

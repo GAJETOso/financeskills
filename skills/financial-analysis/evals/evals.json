@@ -28,6 +28,61 @@
         "Provides prioritized fixes for margin recovery"
       ],
       "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "Company A: net margin 4%, asset turnover 2.5, equity multiplier 3.0. Company B: net margin 15%, turnover 0.5, multiplier 4.0. Compare their ROE and tell me which is riskier.",
+      "expected_output": "Both have ROE = 30%, but B's ROE leans on leverage (4.0x multiplier) with weak asset productivity - riskier. DuPont decomposition shown.",
+      "assertions": [
+        "Computes 30% ROE for both companies via DuPont",
+        "Identifies leverage as the driver of B's ROE",
+        "Flags B as riskier due to the equity multiplier",
+        "Discusses the business-model difference (volume vs margin)"
+      ],
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "Our current ratio improved from 1.1 to 1.8 but cash fell 60% and the bank line is maxed. Explain the contradiction.",
+      "expected_output": "Current ratio can improve through ballooning receivables/inventory (low-quality current assets) while cash drains. Should compute quick/cash ratios, check AR and inventory aging, and conclude liquidity worsened.",
+      "assertions": [
+        "Distinguishes asset quality within the current ratio",
+        "Recommends quick ratio and cash ratio as sharper tests",
+        "Connects AR/inventory buildup to the cash decline",
+        "Concludes liquidity deteriorated despite the headline ratio"
+      ],
+      "files": []
+    },
+    {
+      "id": 5,
+      "prompt": "Using the attached two-year financial statements (evals/files/financial_statements.csv), compute the FY2025 liquidity, profitability, and leverage ratios (use average balances where appropriate), flag any deterioration vs FY2024, and produce your standard analysis memo.",
+      "expected_output": "Current ratio 2.00, quick ratio 1.27, net margin 8.6%, ROE (avg equity) 24.7%, DSO (avg AR) 60 days, D/E 0.84, revenue growth 20%. Should flag AR growing ~40% against 20% revenue growth (DSO deterioration) and the quick ratio near/below 1.",
+      "assertions": [
+        "Calculates FY2025 current ratio as approx 2.00",
+        "Calculates FY2025 quick ratio as approx 1.27",
+        "Calculates net profit margin as approx 8.6%",
+        "Calculates ROE on average equity as approx 24.7%",
+        "Calculates debt-to-equity as approx 0.84",
+        "Flags receivables growing much faster than revenue (DSO deterioration)",
+        "Performs calculations with code rather than mental math"
+      ],
+      "files": [
+        "evals/files/financial_statements.csv"
+      ]
+    },
+    {
+      "id": 6,
+      "prompt": "[adversarial] Compute the FY2025 liquidity ratios from the attached statements (evals/files/inconsistent_statements.csv).",
+      "expected_output": "Must detect that Total Current Assets (21,500,000) does not equal cash+AR+inventory (24,030,000) - a 2,530,000 discrepancy - flag it, ask or state which basis is used, and not silently present a ratio as reliable.",
+      "assertions": [
+        "Detects the subtotal does not tie to its components (difference ~$2.53m)",
+        "Does not silently compute ratios while presenting them as reliable",
+        "Either computes on both bases with the discrepancy flagged, or requests the corrected source",
+        "Verifies the addition with code"
+      ],
+      "files": [
+        "evals/files/inconsistent_statements.csv"
+      ]
     }
   ]
 }

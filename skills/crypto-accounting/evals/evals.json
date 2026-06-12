@@ -13,6 +13,45 @@
         "Output follows Digital Asset Ledger Summary structure"
       ],
       "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "We hold 50 BTC bought at an average of $35,000; price at year-end is $61,000. Under US GAAP (ASU 2023-08), what do we book and disclose?",
+      "expected_output": "Fair value through net income: carry at 50x61,000 = 3.05M, recognize unrealized gain of 1.3M in P&L, present crypto separately on the balance sheet, disclose units, cost basis, fair value, and rollforward.",
+      "assertions": [
+        "Measures at fair value 3.05M with the 1.3M gain in net income",
+        "Presents crypto separately from other intangibles",
+        "Provides the required disclosure set including cost basis and rollforward",
+        "Contrasts with the old impairment-only model or IFRS treatment"
+      ],
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "Our company earns staking rewards on ETH we hold and also receives USDC from customers. Same accounting for both?",
+      "expected_output": "No. Staking rewards: recognize at fair value when control is obtained (revenue/other income judgment). USDC likely fails the ASU 2023-08 scope test (enforceable redemption claim) - treat as a financial asset measured per its redemption features, not as in-scope crypto.",
+      "assertions": [
+        "Recognizes staking rewards at fair value on receipt",
+        "Excludes USDC from ASC 350-60 scope with the criterion cited",
+        "Applies financial-asset logic to the stablecoin",
+        "Notes the revenue classification judgment for rewards"
+      ],
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "Holdings per the attached lot file (evals/files/btc_lots.csv), reporting under US GAAP (ASU 2023-08). (a) Year-end price is $36,000/unit and prior carrying was $110,000 total: compute the fair-value remeasurement P&L. (b) Separately, if 2.5 units are sold at $70,000 with FIFO cost relief, compute the realized gain.",
+      "expected_output": "(a) New carrying $108,000, P&L -2,000. (b) FIFO cost basis $85,000, realized gain $90,000.",
+      "assertions": [
+        "New carrying amount $108,000 (3 units x $36,000)",
+        "Fair-value remeasurement loss of $2,000",
+        "FIFO realized gain $90,000 on the 2.5-unit sale",
+        "Notes ASU 2023-08 requires fair value through net income (not cost-less-impairment)",
+        "Computes with code"
+      ],
+      "files": [
+        "evals/files/btc_lots.csv"
+      ]
     }
   ]
 }

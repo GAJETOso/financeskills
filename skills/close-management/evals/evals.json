@@ -1,0 +1,56 @@
+{
+  "skill_name": "close-management",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Our close takes 9 working days. Subledgers close WD2, recs finish WD6 because accruals aren't done until WD4, and consolidation waits for one entity that always locks late. Build us a plan to get to 5 days.",
+      "expected_output": "Should identify the critical path (accruals -> recs -> entity lock -> consolidation), move predictable accruals pre-close, set intercompany/late-entity deadlines with escalation, and produce a day-by-day close calendar with dependencies.",
+      "assertions": [
+        "Identifies the dependent chain as the critical path rather than treating tasks independently",
+        "Recommends pre-close accruals for predictable costs",
+        "Addresses the chronically late entity with a deadline/escalation or auto-plug mechanism",
+        "Produces a WD-by-WD calendar with owners and dependencies",
+        "Output includes prioritized improvement actions"
+      ],
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "It's WD3. Bank recs are done but intercompany doesn't match by $48,000 between two subsidiaries, and the AP accrual was missed for a $200k legal invoice received yesterday. What do we do?",
+      "expected_output": "Should treat both as blockers: post the missed legal accrual immediately (journal-entry), investigate the intercompany difference against tolerance policy, and assess critical-path impact on consolidation.",
+      "assertions": [
+        "Directs immediate posting of the $200k accrual with proper support",
+        "Does not allow consolidation to proceed with an unexplained $48k intercompany difference unless within documented tolerance",
+        "Distinguishes critical-path impact from off-path noise",
+        "Logs both items in a blocker log with owners"
+      ],
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "Give me a post-close retrospective template and tell me what metrics to track to know if our close is improving.",
+      "expected_output": "Should provide retro structure (what slipped, root causes, actions) and metrics: close duration, tasks completed on time %, number of post-close adjustments, accrual true-up error %, rec items aged > 30 days.",
+      "assertions": [
+        "Includes close duration in working days as the headline metric",
+        "Includes accrual accuracy (true-up error) as a quality metric",
+        "Includes post-close adjustment count as a quality metric",
+        "Provides a structured retro format with root cause and action owner"
+      ],
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "It is Day 4 of the close. Assess the attached status (evals/files/close_status_day4.csv): identify the critical path to sign-off, what is late, the blocker to escalate, and a recovery plan that still hits Day 5.",
+      "expected_output": "Critical path T-03/T-04 -> T-06 -> T-07. T-03 is 2 days late with no dependency - start immediately. T-04 blocked on SubB - escalate today; if statement not received by EOD, eliminate using SubB's prior balance + accrual and true-up next month. T-06 compresses to Day 5 morning; T-07 Day 5 afternoon.",
+      "assertions": [
+        "Identifies T-06/T-07 critical path driven by T-03 and T-04",
+        "Flags T-03 as late with no excuse (no dependency)",
+        "Escalates the T-04 SubB blocker with a concrete fallback (estimate and true-up)",
+        "Produces a recovery sequencing that still achieves Day-5 sign-off"
+      ],
+      "files": [
+        "evals/files/close_status_day4.csv"
+      ]
+    }
+  ]
+}

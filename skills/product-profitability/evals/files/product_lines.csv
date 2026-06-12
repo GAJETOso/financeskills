@@ -1,0 +1,5 @@
+product,revenue,direct_costs
+Alpha,6000000,3600000
+Beta,3000000,2100000
+Gamma,1000000,850000
+SHARED_COSTS,900000,allocate by revenue

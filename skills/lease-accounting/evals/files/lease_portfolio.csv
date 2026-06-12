@@ -1,0 +1,4 @@
+lease_id,asset,annual_payment_arrears,term_years,incremental_borrowing_rate
+L-01,Head office,250000,5,0.07
+L-02,Warehouse,120000,8,0.08
+L-03,Vehicle fleet,60000,4,0.09

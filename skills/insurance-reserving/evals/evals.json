@@ -13,6 +13,47 @@
         "Output follows Insurance Reserve Report structure"
       ],
       "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "Paid triangle for motor: AY2023 at 12m: 400; AY2022: 12m 380, 24m 570; AY2021: 12m 350, 24m 530, 36m 583. Estimate ultimates via chain ladder with a 1.0 tail.",
+      "expected_output": "ATA 12-24: (570+530)/(380+350)=1.507; 24-36: 583/530=1.10. AY2023 ultimate = 400x1.507x1.10 = 663; AY2022 = 570x1.10 = 627; AY2021 = 583. IBNR/reserves derived; flags the thin data and suggests BF for AY2023.",
+      "assertions": [
+        "Computes volume-weighted ATA factors (~1.507 and ~1.10)",
+        "Projects ultimates of approximately 663/627/583",
+        "Derives reserves as ultimate minus paid",
+        "Recommends BF or judgment overlay for the greenest year given thin data",
+        "Uses code for the triangle math"
+      ],
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "Claims inflation jumped to 20% (vehicle parts, FX-driven) but our triangles are built on years of 8% inflation. Can we still use chain ladder?",
+      "expected_output": "Raw chain ladder assumes past patterns persist - a step-change in inflation breaks it. Adjust: inflation-adjusted (separation) methods, explicit trend overlay on future diagonals, or freq-severity with severity trended at current inflation. Document the calendar-year effect.",
+      "assertions": [
+        "Identifies the calendar-year/inflation distortion of unadjusted CL",
+        "Proposes inflation-adjusted or frequency-severity alternatives",
+        "Applies the new trend prospectively to future diagonals",
+        "Quantifies sensitivity of reserves to the inflation assumption"
+      ],
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "Apply the chain-ladder method to the attached cumulative paid triangle (evals/files/paid_triangle.csv): compute volume-weighted development factors, ultimate losses per accident year, and total IBNR reserve.",
+      "expected_output": "LDFs [1.5, 1.2, 1.1]; ultimates ['8,316,000', '9,108,000', '10,098,000', '10,890,000']; IBNR $8,666,000.",
+      "assertions": [
+        "12-24m development factor approx 1.50",
+        "AY2025 ultimate approx $10,890,000",
+        "AY2024 ultimate approx $10,098,000",
+        "Total IBNR approx $8,666,000",
+        "Uses volume-weighted (not simple average) factors",
+        "Computes with code"
+      ],
+      "files": [
+        "evals/files/paid_triangle.csv"
+      ]
     }
   ]
 }

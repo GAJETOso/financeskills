@@ -74,6 +74,11 @@ Forensic evidence must be provided as static files (CSV exports, PDF statements)
 
 ---
 
+## Scripts
+- [calculate.py](./scripts/calculate.py): Deterministic functions for this skill's core computations. Run `python3 scripts/calculate.py` to self-test; import the functions instead of doing mental math.
+
+---
+
 ## References
 - [Benford's Law Guide](./references/benfords-law.md): Statistical analysis of leading digits.
 - [Fraud Triangle](./references/fraud-triangle.md): Understanding Pressure, Opportunity, and Rationalization.

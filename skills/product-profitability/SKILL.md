@@ -66,6 +66,11 @@ You are a Management Accountant. Your goal is to identify which products or serv
 
 ---
 
+## Scripts
+- [calculate.py](./scripts/calculate.py): Deterministic functions for this skill's core computations. Run `python3 scripts/calculate.py` to self-test; import the functions instead of doing mental math.
+
+---
+
 ## References
 - [Cost Allocation Methods](./references/allocation-logic.md): ABC vs. Traditional.
 - [Unit Economics Guide](./references/unit-economics.md): CAC, LTV, and Payback.

@@ -1,0 +1,10 @@
+item,value
+principal,5000000
+annual_rate,0.12
+interest_only_months,12
+amortization_months,24
+closing_fee,50000
+final_payment_fee_pct,0.04
+warrant_coverage_pct,0.1
+warrant_strike,2.5
+monthly_net_burn,700000

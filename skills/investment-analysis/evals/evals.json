@@ -13,6 +13,60 @@
         "Output follows Investment Memo structure"
       ],
       "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "Project A: NPV +120M, IRR 14%, payback 6 years. Project B: NPV +90M, IRR 22%, payback 3 years. Capital is constrained. Which one?",
+      "expected_output": "NPV ranks value creation but under capital rationing use profitability index (NPV per unit of investment). IRR's reinvestment assumption and scale-blindness explained; should ask for investment sizes and compute PI before concluding.",
+      "assertions": [
+        "Refuses to rank on IRR alone, explaining scale and reinvestment issues",
+        "Introduces profitability index for capital rationing",
+        "Requests/uses investment outlay to compute PI",
+        "Discusses risk and duration differences between the projects"
+      ],
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "Our DCF for a new plant shows NPV of +5M on 200M invested. The CFO says that's too thin to bother. What analysis would change the decision?",
+      "expected_output": "Real options and sensitivity: expansion/abandonment/timing options not captured in static DCF, scenario analysis on the binding assumptions, strategic value (capacity pre-emption), and checking the discount rate matches project risk rather than corporate WACC.",
+      "assertions": [
+        "Identifies real options as unvalued upside in static DCF",
+        "Runs sensitivity to find the assumptions that swing NPV",
+        "Questions whether corporate WACC matches project-specific risk",
+        "Quantifies rather than hand-waves strategic value"
+      ],
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "Evaluate the project in the attached cash-flow file (evals/files/project_cashflows.csv) at a 10% hurdle: NPV, IRR, payback period, and profitability index. Recommend accept/reject with reasoning.",
+      "expected_output": "NPV $267,946; IRR 21.9%; payback 2.5 years; PI 1.27. Accept (IRR > hurdle, NPV > 0).",
+      "assertions": [
+        "NPV approx $267,946",
+        "IRR approx 21.9%",
+        "Payback 2.5 years",
+        "Profitability index approx 1.27",
+        "Recommends acceptance because IRR exceeds the 10% hurdle and NPV is positive",
+        "Computes with code"
+      ],
+      "files": [
+        "evals/files/project_cashflows.csv"
+      ]
+    },
+    {
+      "id": 5,
+      "prompt": "[adversarial] Compute the IRR for the project in the attached file (evals/files/nonconventional_cashflows.csv) and recommend at a 10% hurdle.",
+      "expected_output": "Two sign changes mean up to two IRRs (roots near 20% and 90%). Must flag the multiple-IRR problem, not present a single IRR as decisive, and decide on NPV at 10% instead (NPV at 10% is negative ~ -82,645, so reject).",
+      "assertions": [
+        "Identifies the two sign changes and the multiple-IRR problem",
+        "Does not present one IRR as the unambiguous answer",
+        "Falls back to NPV at the 10% hurdle (negative, approx -82,600) and recommends reject",
+        "Computes with code"
+      ],
+      "files": [
+        "evals/files/nonconventional_cashflows.csv"
+      ]
     }
   ]
 }

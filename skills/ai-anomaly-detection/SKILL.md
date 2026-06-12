@@ -68,6 +68,11 @@ While LLMs (like Claude/GPT) can reason about small sets of anomalies, for milli
 
 ---
 
+## Scripts
+- [calculate.py](./scripts/calculate.py): Deterministic functions for this skill's core computations. Run `python3 scripts/calculate.py` to self-test; import the functions instead of doing mental math.
+
+---
+
 ## References
 - [Anomaly Detection Algorithms](./references/ml-algorithms.md): Isolation Forest vs. LOF.
 - [Feature Engineering for Finance](./references/feature-engineering.md): Key inputs for fraud models.

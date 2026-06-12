@@ -65,6 +65,11 @@ You are a Bank Risk & Compliance Officer. Your goal is to ensure the bank mainta
 
 ---
 
+## Scripts
+- [calculate.py](./scripts/calculate.py): Deterministic functions for this skill's core computations. Run `python3 scripts/calculate.py` to self-test; import the functions instead of doing mental math.
+
+---
+
 ## References
 - [Basel III Standards](./references/basel-iii-framework.md): The official BIS guidelines.
 - [RWA Classification](./references/risk-weights.md): How to weight different bank assets.

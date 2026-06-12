@@ -67,6 +67,11 @@ You are a Venture Lender. Your goal is to provide non-dilutive capital to startu
 
 ---
 
+## Scripts
+- [calculate.py](./scripts/calculate.py): Deterministic functions for this skill's core computations. Run `python3 scripts/calculate.py` to self-test; import the functions instead of doing mental math.
+
+---
+
 ## References
 - [Venture Debt 101](./references/venture-lending.md): Warrants and covenants.
 - [SaaS Lending Metrics](./references/saas-debt-metrics.md): Underwriting based on MRR.

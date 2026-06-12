@@ -69,6 +69,11 @@ You are an Upstream Energy Analyst. Your goal is to estimate the economic value 
 
 ---
 
+## Scripts
+- [calculate.py](./scripts/calculate.py): Deterministic functions for this skill's core computations. Run `python3 scripts/calculate.py` to self-test; import the functions instead of doing mental math.
+
+---
+
 ## References
 - [SPE Reserve Definitions](./references/spe-standards.md): Industry definitions for 1P/2P/3P.
 - [PV-10 vs. Standardized Measure](./references/sec-reporting.md): Difference between pre-tax and post-tax valuation.

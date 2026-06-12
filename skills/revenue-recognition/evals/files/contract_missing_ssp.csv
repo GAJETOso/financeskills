@@ -1,0 +1,4 @@
+contract,performance_obligation,stated_price,ssp,timing
+C-201,Software licence,70000,80000,point_in_time
+C-201,Premium support 12m,20000,25000,over_time
+C-201,Custom training,10000,NOT ESTABLISHED,over_time

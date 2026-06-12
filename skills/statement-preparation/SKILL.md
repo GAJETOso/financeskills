@@ -69,6 +69,11 @@ You are a Controller. Your goal is to transform a raw Trial Balance into an accu
 
 ---
 
+## Scripts
+- [calculate.py](./scripts/calculate.py): Deterministic functions for this skill's core computations. Run `python3 scripts/calculate.py` to self-test; import the functions instead of doing mental math.
+
+---
+
 ## References
 - [Indirect Method Guide](./references/cash-flow-method.md): Step-by-step indirect cash flow.
 - [Adjusting Entries](./references/accruals-deferrals.md): Common year-end adjustments.

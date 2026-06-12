@@ -71,6 +71,11 @@ You are a Private Equity Associate. Your goal is to determine if a company is a 
 
 ---
 
+## Scripts
+- [calculate.py](./scripts/calculate.py): Sources & uses, cash sweep debt schedule, and IRR/MoM functions. Run with `python3 scripts/calculate.py` to self-test; import the functions for actual computations.
+
+---
+
 ## References
 - [LBO Modeling Standards](./references/lbo-best-practices.md): Industry conventions.
 - [Debt Tranches Explained](./references/debt-structures.md): Senior vs. Subordinated.

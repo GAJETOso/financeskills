@@ -1,6 +1,6 @@
 {
   "name": "FinanceSkills Marketplace",
-  "version": "1.1.0",
+  "version": "1.0.1",
   "description": "Premium AI-powered financial engineering skills for automated analysis and auditing.",
   "publisher": "KOMVIA",
   "skills": [
@@ -183,13 +183,84 @@
       "name": "Earned Value Management",
       "path": "skills/earned-value-mgmt",
       "category": "Project Management"
+    },
+    {
+      "id": "close-management",
+      "name": "Close Management",
+      "path": "skills/close-management",
+      "category": "Accounting Operations"
+    },
+    {
+      "id": "journal-entry",
+      "name": "Journal Entry Preparation",
+      "path": "skills/journal-entry",
+      "category": "Accounting Operations"
+    },
+    {
+      "id": "sox-compliance",
+      "name": "SOX 404 Compliance Testing",
+      "path": "skills/sox-compliance",
+      "category": "Compliance"
+    },
+    {
+      "id": "lease-accounting",
+      "name": "Lease Accounting (IFRS 16/ASC 842)",
+      "path": "skills/lease-accounting",
+      "category": "Compliance"
+    },
+    {
+      "id": "fixed-asset-accounting",
+      "name": "Fixed Asset Accounting",
+      "path": "skills/fixed-asset-accounting",
+      "category": "Accounting Operations"
+    },
+    {
+      "id": "deferred-tax",
+      "name": "Deferred Tax (IAS 12/ASC 740)",
+      "path": "skills/deferred-tax",
+      "category": "Compliance"
+    },
+    {
+      "id": "inventory-costing",
+      "name": "Inventory Costing (IAS 2)",
+      "path": "skills/inventory-costing",
+      "category": "Accounting Operations"
+    },
+    {
+      "id": "intercompany-accounting",
+      "name": "Intercompany Accounting",
+      "path": "skills/intercompany-accounting",
+      "category": "Accounting Operations"
+    },
+    {
+      "id": "company-valuation",
+      "name": "Company Valuation",
+      "path": "skills/company-valuation",
+      "category": "Valuation"
+    },
+    {
+      "id": "credit-analysis",
+      "name": "Credit Analysis",
+      "path": "skills/credit-analysis",
+      "category": "Analysis"
+    },
+    {
+      "id": "working-capital-analysis",
+      "name": "Working Capital Analysis",
+      "path": "skills/working-capital-analysis",
+      "category": "Analysis"
+    },
+    {
+      "id": "three-statement-modeling",
+      "name": "Three-Statement Modeling",
+      "path": "skills/three-statement-modeling",
+      "category": "Analysis"
+    },
+    {
+      "id": "cvp-breakeven",
+      "name": "CVP & Breakeven Analysis",
+      "path": "skills/cvp-breakeven",
+      "category": "Analysis"
     }
-
-
-
-
-
-
-
   ]
 }

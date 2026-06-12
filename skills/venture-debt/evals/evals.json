@@ -13,6 +13,45 @@
         "Output follows Venture Debt Term Sheet structure"
       ],
       "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "Term sheet: 5M loan, 36 months, 12-month interest-only, 11.5% coupon, 1% facility fee, 6% final payment fee, 10% warrant coverage at last round price. Compute the all-in cost.",
+      "expected_output": "Build the full cash flow schedule (IO period then amortization), add fees and estimated warrant value, solve the IRR - lands meaningfully above the 11.5% coupon (typically 16-18% all-in here). Code-verified.",
+      "assertions": [
+        "Models the IO-then-amortizing cash flows",
+        "Includes facility fee, final payment fee, and warrant value",
+        "Solves for IRR as the all-in cost metric",
+        "Result is materially above the coupon with the gap explained"
+      ],
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "We're 8 months from cash-out and our venture lender's covenant requires 6 months minimum runway. The next raise is planned in 5 months. What's the play?",
+      "expected_output": "Covenant breach is imminent (runway crosses 6 months before the raise closes): proactive lender engagement now, waiver/amendment negotiation with the raise process as evidence, parallel cost levers to extend runway, and beware MAC/investor-support clauses. Never surprise the lender.",
+      "assertions": [
+        "Projects the covenant breach timing explicitly",
+        "Recommends early proactive lender communication",
+        "Pairs the waiver ask with credible raise evidence and cost actions",
+        "Flags subjective default clauses as a risk"
+      ],
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "Analyze the attached venture-debt term sheet (evals/files/term_sheet.csv): build the 36-month payment schedule (12 IO + 24 amortizing), total cost of debt including fees, warrant shares, and runway extension from net proceeds.",
+      "expected_output": "Total interest+fees $1,498,817; warrants 200,000 shares; runway extension 7.1 months; monthly payment in amortization ~$235,367.",
+      "assertions": [
+        "Total cost of debt (interest + fees) approx $1,498,817",
+        "Warrant coverage 200,000 shares",
+        "Runway extension approx 7.1 months",
+        "Schedule has 12 interest-only months then 24 level amortizing payments",
+        "Computes with code"
+      ],
+      "files": [
+        "evals/files/term_sheet.csv"
+      ]
     }
   ]
 }

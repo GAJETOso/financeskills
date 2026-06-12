@@ -1,0 +1,10 @@
+date,description,amount,ref
+2026-05-02,Customer deposit - INV1041,48200.0,BNK-1
+2026-05-05,Customer deposit - INV1042,31750.0,BNK-2
+2026-05-09,Cheque 2204 - Apex Supplies,-18400.0,BNK-3
+2026-05-12,Customer deposit - INV1043,22600.0,BNK-4
+2026-05-15,Cheque 2205 - Delta Logistics,-9750.0,BNK-5
+2026-05-20,Wire out - payroll,-84300.0,BNK-6
+2026-05-23,Customer deposit - INV1044,56900.0,BNK-7
+2026-05-28,Bank charges,-350.0,BNK-8
+2026-05-30,Interest received,410.0,BNK-9

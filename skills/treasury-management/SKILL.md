@@ -66,6 +66,11 @@ You are a Corporate Treasurer. Your goal is to ensure the company has enough liq
 
 ---
 
+## Scripts
+- [calculate.py](./scripts/calculate.py): Deterministic functions for this skill's core computations. Run `python3 scripts/calculate.py` to self-test; import the functions instead of doing mental math.
+
+---
+
 ## References
 - [FX Hedging Basics](./references/fx-hedging.md): Tools and strategies.
 - [Liquidity Ratios](./references/liquidity-metrics.md): Focus on Cash Ratio and Burn Rate.

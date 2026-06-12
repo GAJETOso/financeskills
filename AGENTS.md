@@ -40,8 +40,18 @@ financeskills/
 - `name` is 1-64 chars, lowercase alphanumeric and hyphens only
 - `description` is 1-1024 characters
 
-**Evals** (`skills/*/evals/evals.json`) are JSON-based benchmarks. Verify with:
-- `validate-skills.sh` script to check integrity.
+**Validation** - run before committing:
+- `python3 validate_skills.py` - enforces this spec: frontmatter constraints, name-dir match, evals.json schema, fixture existence, dead-link detection, <500-line limit, script self-tests, marketplace sync, no compiled artifacts. (`./validate-skills.sh` wraps it.)
+
+**Evals** (`skills/*/evals/evals.json`) are runnable benchmarks:
+- `python3 tools/evals/run_evals.py --dry-run` - schema + fixture check (no model calls)
+- `python3 tools/evals/run_evals.py --skill <name>` - run one skill's evals against a model (needs `ANTHROPIC_API_KEY`, or `--backend cli` for the Claude Code CLI)
+- `python3 tools/evals/run_evals.py --all` - full regression run; reports land in `tools/evals/results/`
+- Eval `files` entries are paths relative to the skill directory (fixtures live in `evals/files/`)
+
+**Scripts** (`skills/*/scripts/calculate.py`): 38 of 43 skills ship deterministic calculators with self-tests. Always import these for computations instead of doing mental math - per CLAUDE.md, calculations must be verified with code. The 5 skills without scripts (audit-checklist, sox-compliance, close-management, esg-reporting, nlp-earnings-sentiment) are judgment-based by design.
+
+**Standards summaries** (`standards/`) carry an `as_of` date and a verification footer. Treat them as orientation, not authority - verify against the issuing body's current text for decision-grade output.
 
 ## Agent Skills Specification
 
@@ -81,9 +91,11 @@ description: What this skill does and when to use it. Include trigger phrases.
 skills/skill-name/
 ├── SKILL.md        # Required - main instructions (<500 lines)
 ├── evals/          # Required - evaluation suite
+│   ├── evals.json  # Prompts, expected outputs, assertions
+│   └── files/      # Fixture data (CSVs etc.) referenced by evals
 ├── references/     # Optional - detailed docs loaded on demand
-├── scripts/        # Optional - executable code
-└── assets/         # Optional - templates, data files
+├── scripts/        # Optional - executable code (calculate.py with self-tests)
+└── assets/         # Optional - output templates, data files
 ```
 
 ## Writing Style Guidelines
@@ -129,6 +141,19 @@ description: When the user wants to analyze corporate financials. Use when the u
 ## Claude Code Plugin
 
 This repo also serves as a plugin marketplace. The manifest at `.claude-plugin/marketplace.json` lists all skills for installation.
+
+
+## Interfaces Beyond Skills
+
+- **Slash commands**: `commands/*.md` - workflow entry points with `$ARGUMENTS`.
+- **MCP server**: `python3 tools/mcp/server.py` - exposes every `calculate.py`
+  function as `<skill>__<function>` tools plus `list_skills`/`get_skill`/
+  `get_standard`/`get_template`. Stdlib-only.
+- **Connectors**: `tools/connectors/` (Stripe, Plaid) - the only networked tool
+  code, opt-in, env-var credentials, `--mock` for testing.
+- **Provenance**: `python3 tools/security/manifest.py --verify` checks all
+  content against MANIFEST.sha256. Regenerate (no --verify) after intentional
+  edits; the validator warns when it is stale.
 
 ## Ethical Boundaries
 - Do not provide financial advice.

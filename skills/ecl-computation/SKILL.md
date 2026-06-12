@@ -68,6 +68,11 @@ You are a Credit Risk Accountant. Your goal is to provide a forward-looking esti
 
 ---
 
+## Scripts
+- [calculate.py](./scripts/calculate.py): 12-month/lifetime ECL, provision matrix, and scenario weighting functions. Run with `python3 scripts/calculate.py` to self-test; import the functions for actual computations.
+
+---
+
 ## References
 - [IFRS 9 Impairment](./references/ifrs9-standard.md): Official IASB guidance.
 - [PD/LGD/EAD Modeling](./references/risk-modeling.md): Quantitative risk basics.

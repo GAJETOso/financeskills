@@ -1,0 +1,10 @@
+item,value
+ebitda,12500000
+ebit,9800000
+interest_expense,2450000
+total_debt,45000000
+cash,5000000
+cfads,6600000
+debt_service,5500000
+covenant_max_net_leverage,4.0
+covenant_min_dscr,1.25

@@ -13,6 +13,47 @@
         "Output follows LBO Analysis Summary structure"
       ],
       "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "Entry: 100 EBITDA at 8x, 60% debt at 9%, tax 30%, EBITDA grows 7%/yr, 50% FCF conversion, full cash sweep, exit year 5 at 8x. Compute MoM and IRR, then show the value-creation bridge.",
+      "expected_output": "Entry EV 800, equity 320; debt pays down via sweep; exit EBITDA ~140.3, exit EV ~1,122; equity = exit EV - remaining debt; MoM ~2.5x, IRR ~20%. Bridge: EBITDA growth vs multiple (zero here) vs deleveraging contributions quantified.",
+      "assertions": [
+        "Builds the debt schedule with the cash sweep",
+        "Computes MoM ~2.5x and IRR ~20%",
+        "Attributes value creation across EBITDA growth, multiple, and paydown",
+        "Notes zero multiple expansion in this case",
+        "Uses code"
+      ],
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "Our LBO model shows 28% IRR but interest coverage dips to 1.4x in year 2. The deal team says IRR is what matters. Push back.",
+      "expected_output": "IRR is conditional on surviving year 2: 1.4x coverage leaves no shock absorber (covenant breach/default risk on a modest EBITDA miss). Stress downside cases, consider less leverage or different tranching (PIK toggle, longer IO), and present risk-adjusted returns.",
+      "assertions": [
+        "Frames thin coverage as survival risk that gates the IRR",
+        "Stress-tests EBITDA downside against covenants",
+        "Proposes structural fixes (leverage, tranching, amortization profile)",
+        "Advocates risk-adjusted return comparison, not point IRR"
+      ],
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "Run the LBO described in the attached assumptions workbook (evals/files/lbo_assumptions.xlsx). Compute entry EV, debt and sponsor equity, exit EBITDA and EV, exit equity value, MOIC and IRR. Debt is a bullet (no paydown); ignore cash generation.",
+      "expected_output": "Entry EV $400m, debt $240m, equity $160m. Exit EBITDA $73.5m, exit EV $588m, exit equity $348m. MOIC 2.17x, IRR 16.8%.",
+      "assertions": [
+        "Entry equity approx $160m",
+        "Exit EBITDA approx $73.5m",
+        "Exit equity approx $348m",
+        "MOIC approx 2.17x",
+        "IRR approx 17%",
+        "Computes with code"
+      ],
+      "files": [
+        "evals/files/lbo_assumptions.xlsx"
+      ]
     }
   ]
 }

@@ -1,0 +1,8 @@
+task_id,task,plan_day,owner,status,dependency_note
+T-01,Post payroll accrual,Day 1,Accountant A,done,-
+T-02,Bank reconciliations,Day 2,Accountant B,done,-
+T-03,Post depreciation,Day 2,Accountant A,NOT STARTED,-
+T-04,Intercompany confirmation & elimination,Day 3,Accountant C,blocked,waiting on SubB statement
+T-05,Accrue utilities (estimate),Day 3,Accountant B,done,-
+T-06,Draft P&L and flux analysis,Day 4,Controller,NOT STARTED,"needs T-03, T-04"
+T-07,Management review & sign-off,Day 5,CFO,not started,needs T-06

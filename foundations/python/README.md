@@ -39,5 +39,5 @@ print(f"Latest 30-day Annualized Volatility for {ticker}: {volatility.iloc[-1]:.
 ```
 
 ## 🚀 Utility Tools
-See [finance_helpers.py](./finance_helpers.py) for a collection of ready-to-use utility functions for CAGR and outlier detection.
+See [finance_helpers.py](../../tools/finance_helpers.py) for a collection of ready-to-use utility functions for CAGR and outlier detection.
 

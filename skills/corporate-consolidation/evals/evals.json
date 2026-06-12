@@ -13,6 +13,45 @@
         "Output follows Consolidated Financial Package structure"
       ],
       "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "Parent owns 45% of an entity but appoints 4 of 6 board seats and holds potential voting rights via in-the-money options for another 10%. Consolidate or equity method?",
+      "expected_output": "IFRS 10 control test: board control over relevant activities plus substantive (in-the-money, currently exercisable) potential voting rights indicate control despite 45% - consolidate. Document the de facto control assessment.",
+      "assertions": [
+        "Applies the IFRS 10 power test beyond the 50% threshold",
+        "Weighs substantive potential voting rights",
+        "Concludes consolidation with documented judgment",
+        "Contrasts with the equity-method outcome if facts differed"
+      ],
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "Sub (80% owned) sold goods up to Parent at 12M with 30% margin; 50% remains in Parent inventory. Show the elimination and the NCI effect.",
+      "expected_output": "Eliminate IC revenue/COGS 12M gross; unrealized profit = 12M x 30% x 50% = 1.8M against inventory; because this is UPSTREAM (sub is seller), allocate 20% of the 1.8M against NCI's profit share (360k). Deferred tax at buyer's rate.",
+      "assertions": [
+        "Computes unrealized profit of 1.8M",
+        "Identifies the upstream direction and allocates 360k against NCI",
+        "Eliminates the full 12M gross, not just the group share",
+        "Includes the deferred tax effect"
+      ],
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "Using the attached acquisition data (evals/files/acquisition.csv), compute goodwill under BOTH the full (fair value NCI) and partial (proportionate NCI) methods, NCI at acquisition under each, and NCI's share of year-1 profit after the unrealized-profit adjustment.",
+      "expected_output": "Full goodwill $2,300,000; partial goodwill $2,000,000; NCI at acquisition $1,800,000 (full) / $1,500,000 (partial); NCI profit share $190,000.",
+      "assertions": [
+        "Full-method goodwill $2,300,000",
+        "Partial-method goodwill $2,000,000",
+        "NCI at acquisition $1,800,000 under full method and $1,500,000 under partial",
+        "NCI share of profit $190,000 (after deducting URP)",
+        "Computes with code"
+      ],
+      "files": [
+        "evals/files/acquisition.csv"
+      ]
     }
   ]
 }

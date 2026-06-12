@@ -65,6 +65,11 @@ Linear extrapolations (Actuals / Average Burn) are often wrong because they igno
 
 ---
 
+## Scripts
+- [calculate.py](./scripts/calculate.py): Runway, growth-adjusted burn, and collections curve functions. Run with `python3 scripts/calculate.py` to self-test; import the functions for actual computations.
+
+---
+
 ## References
 - [Time Series Basics](./references/time-series-forecasting.md): ARIMA vs. Prophet.
 - [Startup Runway Metrics](./references/startup-metrics.md): How VCs look at burn.

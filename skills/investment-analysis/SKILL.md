@@ -65,6 +65,11 @@ You are an Equity Research Analyst. Your goal is to determine the intrinsic valu
 
 ---
 
+## Scripts
+- [calculate.py](./scripts/calculate.py): Deterministic functions for this skill's core computations. Run `python3 scripts/calculate.py` to self-test; import the functions instead of doing mental math.
+
+---
+
 ## References
 - [Valuation Methodologies](./references/valuation-guide.md): Standard practices for DCF and Multiples.
 - [Moat Identification](./references/competitive-advantage.md): How to assess business quality.

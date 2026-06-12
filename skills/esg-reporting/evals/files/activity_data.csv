@@ -1,0 +1,5 @@
+source,unit,quantity,emission_factor_kgco2e_per_unit,scope
+Diesel generators,litres,180000,2.68,Scope 1
+Natural gas boilers,m3,95000,1.93,Scope 1
+Company fleet petrol,litres,60000,2.31,Scope 1
+Purchased electricity,kWh,2400000,0.43,Scope 2

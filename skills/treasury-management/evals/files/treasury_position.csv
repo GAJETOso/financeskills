@@ -1,0 +1,9 @@
+item,value
+unrestricted_cash,8000000
+committed_undrawn_facilities,4000000
+avg_daily_net_outflow,150000
+spot_ngn_per_usd,1500.0
+ngn_6m_rate,0.22
+usd_6m_rate,0.05
+days,180
+usd_payable_in_6m,1000000

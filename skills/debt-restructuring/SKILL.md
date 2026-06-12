@@ -62,6 +62,11 @@ You are a Distressed Debt Specialist. Your goal is to design a plan that prevent
 
 ---
 
+## Scripts
+- [calculate.py](./scripts/calculate.py): Deterministic functions for this skill's core computations. Run `python3 scripts/calculate.py` to self-test; import the functions instead of doing mental math.
+
+---
+
 ## References
 - [Restructuring Strategies](./references/restructuring-types.md): Haircuts vs. Swaps.
 - [Creditor Rights](./references/creditor-priority.md): Understanding the waterfall.

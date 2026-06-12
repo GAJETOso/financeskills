@@ -1,0 +1,57 @@
+{
+  "skill_name": "three-statement-modeling",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Build a simple 3-year integrated model: revenue 1,000 growing 10%, EBITDA margin 25%, D&A 50/yr (capex 60/yr), tax 30%, DSO 45, DPO 30, DIO 0, opening cash 100, no debt, no dividends. Show the three statements and prove the balance sheet balances.",
+      "expected_output": "A coded model producing IS (NI year 1 = (250-50)x0.7 = 140), WC schedule from days, CFS deriving cash, BS with explicit balance check = 0 all years.",
+      "assertions": [
+        "Year-1 net income of 140",
+        "AR and AP computed from DSO/DPO days",
+        "Cash flow statement derived from IS and BS deltas, not independently assumed",
+        "Displays a balance check equal to zero for every year",
+        "Built programmatically with the check printed"
+      ],
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "My model balances in years 1-3 but is off by exactly the PIK interest amount from year 4 onward. What's wrong?",
+      "expected_output": "PIK interest is expensed on the IS (reducing RE) but isn't a cash outflow and must be added back in the CFS operating section AND added to the debt balance. The model is likely expensing it without accreting the debt (or without the CFS addback).",
+      "assertions": [
+        "Identifies PIK as non-cash interest requiring a CFS addback",
+        "Identifies that PIK must accrete the debt balance",
+        "Explains why the imbalance equals the PIK amount exactly",
+        "Recommends the delta-vs-CFS mapping audit"
+      ],
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "Add a revolver with 200 minimum cash to my model and explain how you avoid the circular reference.",
+      "expected_output": "Revolver plug logic (draw shortfall below 200, repay with surplus) plus a circularity convention: interest computed on opening balances (stable) or iterative solve with convergence tolerance - stated and applied consistently.",
+      "assertions": [
+        "Implements draw/repay logic against the minimum cash threshold",
+        "Explains the interest-cash-revolver circularity",
+        "Applies a documented convention (opening balance or iteration)",
+        "Demonstrates the revolver responding in a stress case"
+      ],
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "Project one year of the linked three-statement model from the attached workbook (evals/files/model_inputs.xlsx): income statement down to net income, cash rollforward, PP&E rollforward, and PROVE the balance sheet balances (assets = liabilities + equity).",
+      "expected_output": "Revenue 110.0; net income 13.16; closing cash 26.80; PP&E 81.10; equity 67.90; balance check passes.",
+      "assertions": [
+        "Projected revenue 110",
+        "Net income approx 13.2",
+        "Closing cash approx 26.8",
+        "Explicitly proves assets = liabilities + equity after projection",
+        "Computes with code"
+      ],
+      "files": [
+        "evals/files/model_inputs.xlsx"
+      ]
+    }
+  ]
+}

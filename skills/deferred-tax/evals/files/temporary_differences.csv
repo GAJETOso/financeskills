@@ -1,0 +1,4 @@
+item,carrying_amount,tax_base
+PP&E accelerated tax depreciation,1000000,700000
+Provision for warranty (deductible when paid),250000,0
+Revaluation surplus (no tax-base change),600000,400000

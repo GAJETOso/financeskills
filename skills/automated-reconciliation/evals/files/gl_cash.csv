@@ -1,0 +1,11 @@
+date,description,amount,ref
+2026-05-02,INV1041 receipt,48200.0,GL-1
+2026-05-05,INV1042 receipt,31750.0,GL-2
+2026-05-08,Chq 2204 Apex Supplies,-18400.0,GL-3
+2026-05-12,INV1043 receipt,22600.0,GL-4
+2026-05-14,Chq 2205 Delta Logistics,-9750.0,GL-5
+2026-05-20,Payroll wire,-84300.0,GL-6
+2026-05-23,INV1044 receipt,56900.0,GL-7
+2026-05-29,Chq 2206 Omega Services,-12640.0,GL-8
+2026-05-31,INV1045 receipt,27300.0,GL-9
+2026-05-31,Chq 2207 Kappa Ltd,-7120.0,GL-10

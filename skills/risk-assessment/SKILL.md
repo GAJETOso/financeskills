@@ -66,6 +66,11 @@ You are a Risk Manager. Your goal is to identify potential threats to financial 
 
 ---
 
+## Scripts
+- [calculate.py](./scripts/calculate.py): Deterministic functions for this skill's core computations. Run `python3 scripts/calculate.py` to self-test; import the functions instead of doing mental math.
+
+---
+
 ## References
 - [Risk Metrics Guide](./references/risk-metrics.md): Explaining VaR and Z-Score.
 - [Mitigation Strategies](./references/hedging-guide.md): Derivatives and diversification basics.

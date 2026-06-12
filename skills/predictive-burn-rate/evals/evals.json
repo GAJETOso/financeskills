@@ -13,6 +13,45 @@
         "Output follows Runway Forecast Report structure"
       ],
       "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "Cash 2.4M; last 3 months net burn: 180k, 195k, 210k (trending +8%/mo as we hire). Board says '12 months runway'. Verify.",
+      "expected_output": "Simple runway 2.4M/195k = ~12.3 months is wrong with growing burn: at 8% monthly growth from 210k, cash-out arrives around month 9-10. Show the schedule and the safety-floor adjusted number.",
+      "assertions": [
+        "Rejects the simple average-burn division for a growing burn",
+        "Projects month-by-month with burn growth (~9-10 months)",
+        "Applies a safety floor rather than running to zero",
+        "Recommends scenario/lever analysis to extend runway"
+      ],
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "Model our cash receipts: invoicing 500k/mo, collection curve 15% month 0, 55% month 1, 25% month 2, 5% bad debt. We're switching enterprise clients to annual prepay (30% of billings) next quarter. Impact?",
+      "expected_output": "Current steady-state receipts ~475k/mo lagged; prepay shift pulls ~30% of billings forward creating a one-time cash bulge then steady-state improvement in timing (not amount). Model both phases and the DSO effect.",
+      "assertions": [
+        "Applies the lag distribution to invoicing correctly",
+        "Separates one-time timing bulge from steady-state effect",
+        "Notes total cash unchanged except bad-debt and financing effects",
+        "Quantifies the runway extension from the timing shift"
+      ],
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "Cash on hand is $7,500,000. Using the attached six months of actuals (evals/files/monthly_cash.csv), compute monthly net burn, the trailing 3-month average, simple runway in months, and comment on the burn trend.",
+      "expected_output": "Net burn rising from $510,000 to $584,000; trailing 3-month avg $569,667; simple runway 13.2 months; trend-adjusted runway is shorter - flag it.",
+      "assertions": [
+        "June net burn $584,000",
+        "Trailing 3-month average burn approx $569,667",
+        "Simple runway approx 13.2 months",
+        "Notes burn is growing month over month, so trend-adjusted runway is shorter than simple runway",
+        "Computes with code"
+      ],
+      "files": [
+        "evals/files/monthly_cash.csv"
+      ]
     }
   ]
 }

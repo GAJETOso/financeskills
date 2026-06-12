@@ -64,9 +64,19 @@ You are a Technical Accounting Manager. Your goal is to ensure that revenue is r
 
 ---
 
+## Scripts
+- [calculate.py](./scripts/calculate.py): Deterministic functions for this skill's core computations. Run `python3 scripts/calculate.py` to self-test; import the functions instead of doing mental math.
+
+---
+
 ## References
 - [IFRS 15 Summary](./references/ifrs15-guide.md): The official 5-step model details.
 - [SaaS Revenue Standards](./references/saas-rev-rec.md): Specifics for subscription businesses.
+
+---
+
+## Assets
+- [allocation-workpaper-template.md](./assets/allocation-workpaper-template.md): 5-step IFRS 15 / ASC 606 workpaper.
 
 ---
 

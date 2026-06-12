@@ -1,0 +1,73 @@
+{
+  "skill_name": "lease-accounting",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "We signed a 5-year office lease: 10,000,000 NGN per year paid annually in arrears, IBR 18%, no incentives, no restoration. Compute the initial lease liability and ROU asset and give me year-1 entries.",
+      "expected_output": "Liability = PV of 5 payments of 10M at 18% = ~31,272,000 NGN. ROU = same. Year 1: interest = ~5,629,000, payment 10M reduces liability to ~26,901,000; ROU depreciation = ~6,254,400/yr straight-line.",
+      "assertions": [
+        "Computes initial liability of approximately 31.27 million NGN using PV at 18%",
+        "Sets ROU asset equal to the liability absent other adjustments",
+        "Year-1 interest of approximately 5.63 million and closing liability of approximately 26.9 million",
+        "Straight-line ROU depreciation of approximately 6.25 million per year",
+        "Performs the calculation with code, not mental math"
+      ],
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "Our logistics contract gives us exclusive use of 10 identified trucks; the provider can swap trucks only if one breaks down, and we decide routes and cargo. Is this a lease?",
+      "expected_output": "Yes \u2014 identified assets (substitution right not substantive, only on breakdown), customer directs use and obtains substantially all benefits. Embedded lease in a service contract; separate lease and non-lease components or apply the practical expedient.",
+      "assertions": [
+        "Concludes the arrangement contains a lease",
+        "Explains why the substitution right is not substantive",
+        "Applies the control test (direct use + economic benefits)",
+        "Addresses separation of lease vs. service components"
+      ],
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "Three years into a 10-year lease, we negotiated to cut the leased floor space by half, with rent halved too. How do we account for it?",
+      "expected_output": "Partial termination/scope decrease: reduce ROU proportionately (50%), reduce liability via remeasurement with a revised discount rate, recognize the difference between liability reduction and ROU reduction as gain/loss in P&L.",
+      "assertions": [
+        "Identifies this as a modification reducing scope, not a separate lease",
+        "Reduces the ROU asset proportionate to the scope decrease",
+        "Remeasures the liability using a revised discount rate at modification date",
+        "Recognizes resulting gain or loss in P&L"
+      ],
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "Using the attached lease portfolio (evals/files/lease_portfolio.csv) \u2014 payments annual in arrears, no renewal options, commencement today \u2014 measure each lease liability and right-of-use asset at commencement under IFRS 16, and compute total year-1 interest expense and straight-line depreciation. Produce a commencement summary table and the initial journal entry.",
+      "expected_output": "Liabilities: L-01 $1,025,049, L-02 $689,597, L-03 $194,383; total $1,909,029 (ROU assets equal liabilities here). Year-1 interest $144,416; year-1 depreciation $339,805.",
+      "assertions": [
+        "L-01 lease liability approx $1,025,049",
+        "L-02 lease liability approx $689,597",
+        "L-03 lease liability approx $194,383",
+        "Total liability and ROU approx $1,909,029",
+        "Year-1 interest expense approx $144,416",
+        "Year-1 depreciation approx $339,805",
+        "Computes present values with code, not approximation"
+      ],
+      "files": [
+        "evals/files/lease_portfolio.csv"
+      ]
+    },
+    {
+      "id": 5,
+      "prompt": "[adversarial] Measure the commencement lease liability for the lease in the attached file (evals/files/lease_advance.csv). Watch the payment timing.",
+      "expected_output": "Payments are in ADVANCE (annuity-due): liability 998,542, NOT the arrears figure 924,576. (Under IFRS 16 the day-one payment is often shown as reducing the liability immediately or added to ROU - either presentation accepted if the annuity-due math is right.)",
+      "assertions": [
+        "Uses annuity-due treatment for in-advance payments (PV approx 998,542, or equivalently 924,576 liability plus the first payment in ROU - either is acceptable if explained)",
+        "Does not present the plain arrears figure 924,576 as the answer without addressing timing",
+        "Explicitly notes the timing field in the data",
+        "Computes with code"
+      ],
+      "files": [
+        "evals/files/lease_advance.csv"
+      ]
+    }
+  ]
+}

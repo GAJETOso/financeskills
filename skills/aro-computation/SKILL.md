@@ -65,6 +65,11 @@ You are a Technical Accountant. Your goal is to recognize the legal obligation a
 
 ---
 
+## Scripts
+- [calculate.py](./scripts/calculate.py): Initial PV, accretion schedule, and IFRIC 1 revision functions. Run with `python3 scripts/calculate.py` to self-test; import the functions for actual computations.
+
+---
+
 ## References
 - [ASC 410 / IAS 37](./references/aro-standards.md): Standards for asset retirement.
 - [Discounting for Accountants](./references/pv-math.md): Present value logic.

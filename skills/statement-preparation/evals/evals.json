@@ -13,6 +13,46 @@
         "Output follows Financial Statement Package structure"
       ],
       "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "Prepare the year-end statements knowing we breached a loan covenant in November and got a waiver in February, after year-end but before issuing. Current or non-current debt?",
+      "expected_output": "Under IAS 1, classification reflects conditions AT the reporting date: waiver received after year-end means the liability was current at year-end (no unconditional right to defer) - classify current, disclose the subsequent-event waiver. (US GAAP differs - waiver before issuance can support non-current.)",
+      "assertions": [
+        "Classifies the debt as current under IFRS reasoning",
+        "Explains the reporting-date condition principle",
+        "Discloses the waiver as a non-adjusting subsequent event",
+        "Notes the US GAAP difference"
+      ],
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "Our draft balance sheet shows negative cash of -45M because of outstanding checks. Present it as negative cash?",
+      "expected_output": "No - a book overdraft from outstanding checks is reclassified to accounts payable (or bank overdraft liability if a true bank overdraft). Cash can't be negative on the face; also check offsetting rules across accounts at the same bank.",
+      "assertions": [
+        "Reclassifies the book overdraft to liabilities",
+        "Distinguishes book overdraft from bank overdraft",
+        "Considers legal right of offset before netting accounts",
+        "Corrects the cash flow statement presentation accordingly"
+      ],
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "Prepare an indirect-method cash flow statement from the attached movement data (evals/files/movement_data.csv): CFO with working-capital adjustments, CFI, CFF, and prove closing cash.",
+      "expected_output": "CFO $2,238,000; CFI $-3,100,000; CFF $1,562,000; closing cash $4,200,000.",
+      "assertions": [
+        "Operating cash flow $2,238,000",
+        "Investing cash flow $-3,100,000 (outflow)",
+        "Financing cash flow $1,562,000",
+        "Closing cash ties at $4,200,000",
+        "Subtracts AR and inventory increases, adds payables increase",
+        "Computes with code"
+      ],
+      "files": [
+        "evals/files/movement_data.csv"
+      ]
     }
   ]
 }

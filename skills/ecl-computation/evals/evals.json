@@ -13,6 +13,46 @@
         "Output follows ECL Analysis Report structure"
       ],
       "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "A 5M loan was 25 days past due at year-end; by the time we run the ECL model it's 40 days past due. Stage 1 or Stage 2?",
+      "expected_output": "Staging reflects conditions at the reporting date, but the 30-DPD backstop is rebuttable and SICR is a holistic test - 25 DPD at year-end plus subsequent deterioration is strong evidence SICR existed at the reporting date. Likely Stage 2 with documented judgment.",
+      "assertions": [
+        "Anchors staging to the reporting date while using post-date evidence",
+        "Treats 30 DPD as a rebuttable backstop, not a cliff",
+        "Concludes Stage 2 (lifetime ECL) with documented rationale",
+        "Notes the interest revenue basis stays on gross carrying amount"
+      ],
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "Our ECL model output fell 20% this quarter but management added a 'macro uncertainty overlay' that more than reverses the decrease. Is that acceptable?",
+      "expected_output": "Overlays/PMAs are legitimate for risks the model can't capture, but require: quantified rationale, governance approval, release criteria, and back-testing. An overlay that systematically negates model movements suggests the model needs recalibration or the overlay is profit-smoothing - an audit red flag.",
+      "assertions": [
+        "Accepts overlays in principle with strict governance conditions",
+        "Demands quantified rationale and defined release criteria",
+        "Flags persistent model-negating overlays as potential smoothing",
+        "Recommends model recalibration if overlays persist"
+      ],
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "Apply the IFRS 9 simplified approach (provision matrix) to the attached receivables aging (evals/files/receivables_aging.csv). Compute the loss allowance per bucket and in total, and state the coverage ratio.",
+      "expected_output": "Allowance per bucket from balance x loss rate; total $721,400; coverage 10.66% of gross receivables.",
+      "assertions": [
+        "90+ bucket allowance approx $229,500",
+        "61-90 bucket allowance approx $51,000",
+        "Total allowance approx $721,400",
+        "Coverage ratio approx 10.7%",
+        "Uses the provision matrix (simplified approach), not general 3-stage model",
+        "Computes with code"
+      ],
+      "files": [
+        "evals/files/receivables_aging.csv"
+      ]
     }
   ]
 }

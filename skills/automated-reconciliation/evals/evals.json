@@ -13,6 +13,64 @@
         "Output follows Reconciliation Report structure"
       ],
       "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "Our bank rec auto-matches 92% of items but the 8% manual queue has grown to 1,400 items. Diagnose and fix.",
+      "expected_output": "Analyze unmatched population by pattern: missing alias rules, batched settlements needing one-to-many matching, FX/fee tolerance too tight, stale items needing write-off policy. Quantify each cluster before adding rules.",
+      "assertions": [
+        "Clusters the unmatched queue by root cause pattern before proposing fixes",
+        "Suggests one-to-many/subset-sum matching for batched settlements",
+        "Reviews tolerance and alias rules with false-positive guardrails",
+        "Addresses the aged backlog with an escalation/write-off policy"
+      ],
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "Finance wants to auto-clear all reconciling differences under 5,000 to P&L. Sensible?",
+      "expected_output": "Conditionally - small-difference auto-clear is standard, but require: a single materiality-based threshold approved by the controller, logging of every auto-cleared item, monthly trend monitoring (many small differences can hide systematic error or fraud), and direction analysis (consistent one-way differences are a red flag).",
+      "assertions": [
+        "Accepts the practice in principle with governance conditions",
+        "Requires logging and review of auto-cleared items",
+        "Flags one-directional or trending differences as systematic risk",
+        "Sets the threshold by documented materiality, not convenience"
+      ],
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "Reconcile the attached May bank statement (evals/files/bank_statement.csv) against the GL cash ledger (evals/files/gl_cash.csv). Both start from an agreed opening balance of $100,000.00. Match transactions, identify deposits in transit, outstanding cheques, and bank-only items, then produce a bank reconciliation statement proving the adjusted balances agree.",
+      "expected_output": "Bank ending balance $147,060.00; GL ending balance $154,540.00. Deposit in transit $27,300.00 (INV1045); outstanding cheques $12,640.00 (2206) and $7,120.00 (2207); bank-only items: charges $350.00 and interest $410.00 to be booked in GL. Adjusted balance both sides $154,600.00.",
+      "assertions": [
+        "Computes bank ending balance as $147,060.00",
+        "Computes GL ending balance as $154,540.00",
+        "Identifies the $27,300.00 INV1045 receipt as a deposit in transit",
+        "Identifies cheques 2206 ($12,640.00) and 2207 ($7,120.00) as outstanding",
+        "Identifies bank charges $350.00 and interest $410.00 as unbooked GL items",
+        "Proves adjusted balances agree at $154,600.00",
+        "Performs the matching with code"
+      ],
+      "files": [
+        "evals/files/bank_statement.csv",
+        "evals/files/gl_cash.csv"
+      ]
+    },
+    {
+      "id": 5,
+      "prompt": "[adversarial] Reconcile the attached June files (evals/files/bank_dirty.csv vs evals/files/gl_june.csv), opening balances agreed at $50,000.",
+      "expected_output": "Must flag B3 as a duplicate bank posting of cheque 2210 (potential bank error - only one GL entry exists) and B4 as a malformed non-numeric amount needing source correction; must NOT guess B4's value silently or treat the duplicate as an outstanding item.",
+      "assertions": [
+        "Flags the duplicated cheque 2210 (refs B2/B3) as a likely bank error, not an outstanding item",
+        "Flags the non-numeric 'TWENTY THOUSAND' amount as unprocessable without correction",
+        "Does not silently impute a value for the malformed row when computing totals",
+        "Completes the reconciliation for clean items and lists the two exceptions",
+        "Processes with code"
+      ],
+      "files": [
+        "evals/files/bank_dirty.csv",
+        "evals/files/gl_june.csv"
+      ]
     }
   ]
 }

@@ -13,6 +13,44 @@
         "Output follows Sentiment Analysis Report structure"
       ],
       "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "Analyze the tone shift: last quarter the CEO said 'we will deliver 15% growth'; this quarter it's 'we believe we are well positioned to pursue growth opportunities, subject to market conditions'. Quantify what changed.",
+      "expected_output": "Strong modal ('will deliver') to weak modal + hedging ('believe', 'well positioned', 'subject to') with numeric specificity dropping (15% to none) - classic guidance-softening pattern. Score with L-M categories and flag for estimate-revision risk.",
+      "assertions": [
+        "Identifies the strong-to-weak modal shift",
+        "Flags loss of numeric specificity",
+        "Maps phrases to Loughran-McDonald categories",
+        "Connects the pattern to downside revision risk"
+      ],
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "We want to score 200 earnings call transcripts. General-purpose sentiment model or FinBERT, and what preprocessing matters?",
+      "expected_output": "FinBERT-class domain model - general models misread finance language. Preprocessing: separate prepared remarks from Q&A (analyze separately), sentence-level chunking under 512 tokens, speaker attribution, compare tone deltas vs company baseline rather than absolute levels.",
+      "assertions": [
+        "Selects a finance-tuned model with the rationale",
+        "Separates prepared remarks from Q&A",
+        "Chunks at sentence level within token limits",
+        "Uses within-company tone deltas, not absolute scores"
+      ],
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "Analyze the attached earnings-call excerpt (evals/files/earnings_call_excerpt.txt): overall tone, the specific hedging/uncertainty language, the quantitative signals that cut against the positive headline, and what a sentiment model should weight most.",
+      "expected_output": "Surface tone positive (record OCF, 18% growth, guidance reiterated) but hedged: 'prudent to assume', 'admittedly uncertain', 'yet'. Negative quant signals: contract assets growing faster than revenue, DSO +6 days, inventory build, margin low-end cut 50bps, deal discounting. Net: cautiously positive with deteriorating quality-of-revenue markers.",
+      "assertions": [
+        "Identifies the hedging phrases (e.g. 'prudent to assume', 'admittedly uncertain', the trailing 'yet')",
+        "Flags contract assets outgrowing revenue and the 6-day DSO increase as quality-of-revenue concerns",
+        "Notes the margin guidance low-end cut and links it to deal discounting",
+        "Concludes mixed/cautiously-positive rather than uncritically bullish"
+      ],
+      "files": [
+        "evals/files/earnings_call_excerpt.txt"
+      ]
     }
   ]
 }

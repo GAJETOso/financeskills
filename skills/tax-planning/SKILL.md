@@ -76,6 +76,11 @@ This skill is for strategy and automation of calculations. All final tax filings
 
 ---
 
+## Scripts
+- [calculate.py](./scripts/calculate.py): Deterministic functions for this skill's core computations. Run `python3 scripts/calculate.py` to self-test; import the functions instead of doing mental math.
+
+---
+
 ## References
 - [IRS / Local Tax Codes](./references/tax-code-lookup.md): Direct links to source regulations.
 - [Deduction Cheat Sheet](./references/common-deductions.md): List of standard eligible expenses.

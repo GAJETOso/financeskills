@@ -13,6 +13,45 @@
         "Output follows Treasury Report structure"
       ],
       "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "We hold 4B NGN earning 3% in a current account while drawing on a 24% overdraft averaging 1.5B. Fix this.",
+      "expected_output": "Self-funding arbitrage: sweep idle cash against the overdraft first (saves ~21% spread on 1.5B = ~315M/yr), then ladder the residual into T-bills/money market within policy. Check account structure/pooling and why the silos existed.",
+      "assertions": [
+        "Nets the overdraft against idle cash as priority one",
+        "Quantifies the annual interest saving",
+        "Invests residual per an approved instrument ladder",
+        "Addresses the structural cause (account silos, no sweeping)"
+      ],
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "Design a cash forecasting process for a group with 12 entities, 3 currencies, and chronic forecast misses over 25%.",
+      "expected_output": "13-week direct-method rolling forecast per entity consolidated centrally; standard templates, weekly cadence, driver-based receipts (AR aging x collection curve), accountability via entity-level variance scorecards, and central FX netting.",
+      "assertions": [
+        "Implements a 13-week direct method rolling forecast",
+        "Standardizes templates and consolidates centrally with FX views",
+        "Builds receipts from AR aging and collection history, not hope",
+        "Creates a variance accountability loop per entity"
+      ],
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "From the attached treasury position (evals/files/treasury_position.csv): compute liquidity runway in days, the 6-month NGN/USD forward rate under covered interest parity, and the NGN cost of hedging the $1,000,000 payable forward versus at spot.",
+      "expected_output": "Runway 80 days; 6m forward 1,624.39 NGN/USD; hedged cost NGN 1,624,390,244 vs spot 1,500,000,000 - forward premium 8.3%.",
+      "assertions": [
+        "Liquidity runway 80 days",
+        "6-month forward approx 1,624 NGN/USD",
+        "Hedged payable cost approx NGN 1.62 billion",
+        "Explains the forward premium follows from the interest differential (CIP)",
+        "Computes with code"
+      ],
+      "files": [
+        "evals/files/treasury_position.csv"
+      ]
     }
   ]
 }

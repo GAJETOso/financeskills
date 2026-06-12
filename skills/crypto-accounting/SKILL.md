@@ -64,6 +64,11 @@ You are a Digital Asset Controller. Your goal is to apply existing accounting fr
 
 ---
 
+## Scripts
+- [calculate.py](./scripts/calculate.py): Deterministic functions for this skill's core computations. Run `python3 scripts/calculate.py` to self-test; import the functions instead of doing mental math.
+
+---
+
 ## References
 - [IFRS Digital Asset Guide](./references/ifrs-crypto.md): Intangible vs Inventory.
 - [FASB Crypto Update](./references/fasb-crypto.md): New rules on fair value reporting.

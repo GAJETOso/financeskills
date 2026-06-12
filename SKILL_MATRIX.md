@@ -33,7 +33,7 @@ Complete overview of all FinanceSkills organized by category, complexity, and in
 | [debt-restructuring](./skills/debt-restructuring) | Advisory | Advanced | General | financial-analysis, investment-analysis | Workouts, turnarounds, distressed M&A |
 | [wacc-computation](./skills/wacc-computation) | Valuation | Intermediate | General | financial-analysis | Cost of capital, hurdle rates, valuation inputs |
 | [venture-debt](./skills/venture-debt) | Financing | Advanced | General | startup-valuation, debt-restructuring | Alternative financing, warrant analysis, covenant modeling |
-| [aro-computation](./skills/aro-computation) | Compliance | Advanced | IFRS 16, ASC 410 | financial-analysis | Decommissioning liabilities, environmental obligations |
+| [aro-computation](./skills/aro-computation) | Compliance | Advanced | IAS 37, ASC 410 | financial-analysis | Decommissioning liabilities, environmental obligations |
 | **Industry-Specific** |
 | [oil-gas-valuation](./skills/oil-gas-valuation) | Valuation | Advanced | IFRS 6, SEC | investment-analysis, aro-computation | Reserve valuation, RBL, asset acquisitions |
 | [insurance-reserving](./skills/insurance-reserving) | Actuarial | Advanced | IFRS 17, SAP | risk-assessment, ecl-computation | Loss reserves, IBNR, reserve adequacy testing |
@@ -44,9 +44,25 @@ Complete overview of all FinanceSkills organized by category, complexity, and in
 | [nlp-earnings-sentiment](./skills/nlp-earnings-sentiment) | Analytics | Advanced | General | financial-analysis | Earnings call analysis, disclosure mining, sentiment tracking |
 | [predictive-burn-rate](./skills/predictive-burn-rate) | Forecasting | Advanced | General | budget-forecast, treasury-management | Runway analysis, funding requirements, scenario planning |
 
+| **Accounting Operations** |
+| [close-management](./skills/close-management) | Operations | Beginner | General | journal-entry, automated-reconciliation | Close calendars, task sequencing, fast close |
+| [journal-entry](./skills/journal-entry) | Operations | Beginner | IFRS, GAAP | None | Accruals, prepaids, payroll, corrections |
+| [fixed-asset-accounting](./skills/fixed-asset-accounting) | Operations | Intermediate | IAS 16, IAS 36, ASC 360 | journal-entry, aro-computation | Capitalization, depreciation, impairment, disposals |
+| [inventory-costing](./skills/inventory-costing) | Operations | Intermediate | IAS 2, ASC 330 | variance-analysis | FIFO/weighted average, absorption, NRV write-downs |
+| [intercompany-accounting](./skills/intercompany-accounting) | Operations | Intermediate | IFRS 10, TP rules | corporate-consolidation, automated-reconciliation | IC matching, eliminations, netting, TP entries |
+| [lease-accounting](./skills/lease-accounting) | Compliance | Intermediate | IFRS 16, ASC 842 | journal-entry, deferred-tax | ROU assets, lease liabilities, modifications |
+| [deferred-tax](./skills/deferred-tax) | Compliance | Advanced | IAS 12, ASC 740 | tax-planning, fixed-asset-accounting | Temporary differences, DTA recognition, ETR bridge |
+| [sox-compliance](./skills/sox-compliance) | Compliance | Intermediate | SOX 404, PCAOB | audit-checklist, risk-assessment | Control testing, sampling, deficiency classification |
+| **Financial Analysis (Extended)** |
+| [company-valuation](./skills/company-valuation) | Valuation | Advanced | General | wacc-computation, financial-analysis | DCF, comps, precedent transactions, EV bridges |
+| [credit-analysis](./skills/credit-analysis) | Analysis | Intermediate | General | financial-analysis, ecl-computation | Debt capacity, DSCR, covenant design |
+| [working-capital-analysis](./skills/working-capital-analysis) | Analysis | Intermediate | General | treasury-management, financial-analysis | CCC, DSO/DIO/DPO, cash release programs |
+| [three-statement-modeling](./skills/three-statement-modeling) | Analysis | Intermediate | General | budget-forecast, company-valuation | Integrated models, revolver plugs, balance checks |
+| [cvp-breakeven](./skills/cvp-breakeven) | Analysis | Beginner | Management Accounting | product-profitability | Breakeven, contribution margin, special orders |
+
 ## Complexity Levels
 
-### Beginner (6 skills)
+### Beginner (10 skills)
 **Time to proficiency**: 1-2 weeks  
 **Prerequisites**: Basic accounting knowledge
 
@@ -60,7 +76,7 @@ Complete overview of all FinanceSkills organized by category, complexity, and in
 2. budget-forecast → Apply analysis to planning and forecasting
 3. audit-checklist → Understand control frameworks and testing
 
-### Intermediate (12 skills)
+### Intermediate (20 skills)
 **Time to proficiency**: 2-4 weeks  
 **Prerequisites**: Beginner skills + industry experience
 
@@ -83,7 +99,7 @@ Complete overview of all FinanceSkills organized by category, complexity, and in
 3. treasury-management → Apply to cash management
 4. Choose industry path (valuation, tax, manufacturing, etc.)
 
-### Advanced (12 skills)
+### Advanced (13 skills)
 **Time to proficiency**: 4-8 weeks  
 **Prerequisites**: Intermediate skills + specialized knowledge
 

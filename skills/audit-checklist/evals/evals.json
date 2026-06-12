@@ -13,6 +13,45 @@
         "Each finding has Issue, Risk, and Recommendation"
       ],
       "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "Plan the audit of revenue for a company where 70% of sales run through a December channel-stuffing-prone distributor arrangement.",
+      "expected_output": "Elevated risk assessment on cut-off and returns: side-letter inquiry, post-period credit note review, distributor confirmation of sell-through vs sell-in terms, analytics on December vs January patterns.",
+      "assertions": [
+        "Identifies cut-off and right-of-return as the key assertions at risk",
+        "Tests post-period returns and credit notes",
+        "Considers side agreements and confirms terms with the distributor",
+        "Uses month-over-month analytics targeting period-end spikes"
+      ],
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "Management refuses to provide the legal confirmation letter for a pending lawsuit the lawyers say is 'probable and material'. What are my options as auditor?",
+      "expected_output": "Scope limitation on a material item: escalate to those charged with governance, evaluate alternative procedures, and if unresolved consider qualified opinion or disclaimer; also reassess management integrity and fraud risk.",
+      "assertions": [
+        "Treats it as a scope limitation, not an inconvenience",
+        "Escalates to governance before opinion modification",
+        "Maps the outcome to qualified/disclaimer options",
+        "Reconsiders the integrity/fraud risk assessment"
+      ],
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "Review the attached control register (evals/files/control_register.csv) as part of interim audit planning. Identify control gaps, segregation-of-duties conflicts, and overdue performance; classify severity and propose the audit response for each.",
+      "expected_output": "Findings: C-02 missing evidence for two months (operating effectiveness cannot be relied on - extend substantive testing on credit notes); C-03 preparer-approver SoD conflict on bank recs (design deficiency); C-05 user access review two quarters overdue (ITGC gap - affects reliance on automated controls incl. C-01). C-01 and C-04 satisfactory.",
+      "assertions": [
+        "Flags C-02's missing April-May evidence and its impact on control reliance",
+        "Identifies the C-03 segregation-of-duties conflict as a design deficiency",
+        "Flags C-05 as two quarters overdue and links the ITGC gap to reliance on automated controls",
+        "Does not raise findings on C-01 or C-04",
+        "Proposes a concrete audit response per finding"
+      ],
+      "files": [
+        "evals/files/control_register.csv"
+      ]
     }
   ]
 }

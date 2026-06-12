@@ -77,9 +77,19 @@ You are a Corporate Finance Manager. Your goal is to determine the minimum retur
 
 ---
 
+## Scripts
+- [calculate.py](./scripts/calculate.py): CAPM, beta unlevering/relevering, and WACC functions. Run with `python3 scripts/calculate.py` to self-test; import the functions for actual computations.
+
+---
+
 ## References
 - [CAPM Guide](./references/capm-basics.md): Understanding the components.
 - [Beta Unlevering](./references/beta-math.md): The Hamada equation and adjustments.
+
+---
+
+## Assets
+- [wacc-memo-template.md](./assets/wacc-memo-template.md): WACC memo with beta workpaper and sensitivity grid.
 
 ---
 

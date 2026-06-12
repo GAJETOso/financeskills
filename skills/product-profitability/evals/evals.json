@@ -13,6 +13,45 @@
         "Output follows Product Profitability Dashboard structure"
       ],
       "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "SKU X shows a 22% gross margin but consumes 40% of QA inspections and 30% of expedited freight events while being 8% of volume. Re-assess its profitability with ABC.",
+      "expected_output": "Build activity pools for QA and expedited freight, assign on causal drivers - SKU X absorbs disproportionate overhead and likely turns negative at CM2 level. Decision framework: price up, fix root causes (quality), or rationalize; using avoidable-cost logic, not full-cost.",
+      "assertions": [
+        "Allocates QA and freight pools on causal drivers",
+        "Shows SKU X margin collapsing once complexity costs are assigned",
+        "Applies CM hierarchy/avoidable cost to the keep-kill-fix decision",
+        "Identifies root-cause fixes before rationalization"
+      ],
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "Our top customer by revenue (18% of sales) demands 60-day terms, weekly small drops, and free returns. Are they actually profitable?",
+      "expected_output": "Cost-to-serve analysis: financing cost of 60-day terms, delivery frequency cost vs standard, returns processing and margin loss - build customer P&L to CM2. Often the largest customer is mid-table on profit; recommend term/price renegotiation backed by the data.",
+      "assertions": [
+        "Builds a customer-level P&L including cost-to-serve",
+        "Quantifies the working capital financing cost of extended terms",
+        "Includes returns and delivery frequency costs",
+        "Produces a negotiation position rather than just a verdict"
+      ],
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "Build a product P&L from the attached file (evals/files/product_lines.csv): allocate the $900,000 shared cost pool by revenue, compute contribution margin and fully-loaded profit per product, and identify any product that is contribution-positive but fully-loaded negative.",
+      "expected_output": "Alpha profit $1,860,000; Beta $630,000; Gamma $60,000 - Gamma is contribution-positive ($150,000) but fully-loaded negative.",
+      "assertions": [
+        "Allocates $540,000 of shared cost to Alpha",
+        "Alpha fully-loaded profit $1,860,000",
+        "Gamma fully-loaded result approx $60,000 (negative)",
+        "Notes Gamma is contribution-positive, so dropping it requires checking cost avoidability",
+        "Computes with code"
+      ],
+      "files": [
+        "evals/files/product_lines.csv"
+      ]
     }
   ]
 }

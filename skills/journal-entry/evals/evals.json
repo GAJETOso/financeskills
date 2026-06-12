@@ -1,0 +1,69 @@
+{
+  "skill_name": "journal-entry",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "We received legal services worth $25,000 in June but the invoice won't arrive until July. Prepare the June entry.",
+      "expected_output": "Dr Legal/Professional Fees 25,000 / Cr Accrued Liabilities 25,000, flagged auto-reversing in July, with documentation basis (engagement letter, work confirmation).",
+      "assertions": [
+        "Debits expense and credits accrued liability for 25,000",
+        "Flags the entry as auto-reversing next period",
+        "Specifies supporting documentation",
+        "Assigns the expense to June (cut-off correct)"
+      ],
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "Payroll: gross salaries 8,000,000 NGN, PAYE 1,400,000, employee pension 8%, employer pension 10%. Book it.",
+      "expected_output": "Dr Salaries 8,000,000 and Dr Employer Pension Expense 800,000; Cr PAYE Payable 1,400,000, Cr Pension Payable 1,440,000 (640,000 employee + 800,000 employer), Cr Net Pay Payable 5,960,000. Entry balances at 8,800,000.",
+      "assertions": [
+        "Calculates employee pension as 640,000 (8% of 8,000,000)",
+        "Calculates employer pension as 800,000 and records it as additional expense",
+        "Net pay payable equals 5,960,000",
+        "Total debits equal total credits",
+        "Verifies the math with code rather than mental arithmetic"
+      ],
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "Last month someone posted a 90,000 software invoice to Repairs & Maintenance instead of capitalizing it as an asset (capitalization threshold is 50,000, useful life 3 years). Fix it this month.",
+      "expected_output": "Reverse the expense and capitalize: Dr Software/Intangible Asset 90,000 / Cr R&M Expense 90,000, then book catch-up amortization for elapsed month(s) (2,500/month). Should discuss materiality of the prior-period error.",
+      "assertions": [
+        "Capitalizes the asset and credits the expense account originally hit",
+        "Books catch-up amortization of 2,500 per elapsed month",
+        "References the original JE in the correction memo",
+        "Considers whether the error is material enough for prior-period treatment"
+      ],
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "Review the attached draft journal entries (evals/files/draft_entries.csv) before posting. Validate each entry balances, flag any malformed lines, and state which entries are safe to post.",
+      "expected_output": "JE-101 and JE-103 are valid. JE-102 is out of balance by $450 (17,500 vs 17,050 - transposition). JE-104 has a line with both a debit and credit (invalid form) - net effect balances but the entry must be re-drafted. Only JE-101 and JE-103 post as-is.",
+      "assertions": [
+        "Flags JE-102 as unbalanced by $450 and suggests a transposition error",
+        "Flags JE-104's rent line for having both debit and credit on one line",
+        "Passes JE-101 and JE-103 as valid",
+        "Validates with code (validate_entry), not by eye"
+      ],
+      "files": [
+        "evals/files/draft_entries.csv"
+      ]
+    },
+    {
+      "id": 5,
+      "prompt": "[adversarial] Validate the attached entry (evals/files/negative_entry.csv) for posting.",
+      "expected_output": "Totals net to zero but via a NEGATIVE debit - invalid form. Must reject and re-draft as Dr Marketing 50,000 / Cr Travel 50,000.",
+      "assertions": [
+        "Rejects the negative-amount line even though totals net to zero",
+        "Re-drafts correctly as a debit to Marketing and credit to Travel",
+        "Validates with code"
+      ],
+      "files": [
+        "evals/files/negative_entry.csv"
+      ]
+    }
+  ]
+}

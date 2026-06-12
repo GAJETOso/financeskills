@@ -72,6 +72,11 @@ Assign a value ($0 to $500k) for each of the following:
 
 ---
 
+## Scripts
+- [calculate.py](./scripts/calculate.py): Deterministic functions for this skill's core computations. Run `python3 scripts/calculate.py` to self-test; import the functions instead of doing mental math.
+
+---
+
 ## References
 - [VC Method Guide](./references/vc-method.md): Deep dive into exit modeling.
 - [Berkus Method Origins](./references/berkus-method.md): Historical context and weighting.

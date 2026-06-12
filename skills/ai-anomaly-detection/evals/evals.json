@@ -13,6 +13,45 @@
         "Output follows AI Audit Report structure"
       ],
       "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "We ran Isolation Forest on 2M journal entries and got 20,000 flags. The audit team can review 200. What now?",
+      "expected_output": "Tune contamination downward, build a composite score (model score x monetary value x rule flags), rank and take top 200, and use reviewer feedback to recalibrate. Volume of flags is a triage problem, not a model failure.",
+      "assertions": [
+        "Reduces or reweights via composite scoring rather than reviewing everything",
+        "Incorporates monetary materiality into ranking",
+        "Establishes a feedback loop from reviewed items",
+        "Mentions precision@k as the metric that matters"
+      ],
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "Our anomaly model flags almost every entry posted by the new shared-services center. Is the model broken?",
+      "expected_output": "Likely concept drift/population shift: the training baseline predates the SSC migration. Retrain or segment by posting source; new-user and new-pattern features will fire en masse after an org change. Validate with PSI/stability metrics.",
+      "assertions": [
+        "Identifies population/concept drift from the org change",
+        "Recommends retraining or segmenting by posting entity",
+        "References stability metrics (e.g., PSI) to confirm drift",
+        "Warns against simply suppressing the flags"
+      ],
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "Screen the attached expense ledger (evals/files/expense_ledger.csv) for anomalies using at least two methods (z-score and IQR). Report flagged rows with their references and quantify how extreme each is.",
+      "expected_output": "Two planted anomalies: GL-4057 (290.00, high) and GL-4101 (12.00, low). Z-score flags indices [57, 101].",
+      "assertions": [
+        "Flags the 290.00 transaction (GL-4057)",
+        "Flags the 12.00 transaction (GL-4101)",
+        "Uses at least two detection methods and compares results",
+        "Reports no other false positives from the regular 100-107 pattern",
+        "Computes with code"
+      ],
+      "files": [
+        "evals/files/expense_ledger.csv"
+      ]
     }
   ]
 }

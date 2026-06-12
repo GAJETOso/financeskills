@@ -1,0 +1,4 @@
+asset,current_estimated_cost,inflation_rate,discount_rate,years_to_retirement
+Platform Alpha,12000000,0.03,0.08,15
+Platform Beta,8000000,0.03,0.08,10
+Storage site Gamma,3000000,0.025,0.07,20

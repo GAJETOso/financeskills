@@ -13,6 +13,46 @@
         "Output follows Forensic Report structure"
       ],
       "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "Apply Benford's Law to our AP population of 45,000 invoices and tell me how to interpret a spike at first-digit 4.",
+      "expected_output": "Benford expects first-digit 4 at ~9.7%; a spike may indicate amounts engineered below a 50,000 approval threshold. Drill into the 40,000-49,999 band by vendor and submitter; Benford is a screening tool - deviations warrant investigation, not accusation.",
+      "assertions": [
+        "States the expected Benford frequency for digit 4 (~9.7%)",
+        "Hypothesizes threshold-avoidance just below 50,000",
+        "Drills down by vendor and submitter",
+        "Frames Benford as screening, not proof"
+      ],
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "A whistleblower alleges the warehouse manager has a side company supplying us. Map the fraud triangle and the first five investigative steps.",
+      "expected_output": "Triangle: opportunity (vendor onboarding + receiving control), pressure/rationalization unknown - investigate. Steps: secure data quietly, vendor master vs employee data match (addresses, banks, phones), price benchmarking on the suspect vendor, PO/receiving pattern analysis, legal/HR coordination before confrontation.",
+      "assertions": [
+        "Maps the allegation to fraud triangle elements",
+        "Runs vendor-employee data matching as an early analytic",
+        "Preserves evidence and confidentiality before interviews",
+        "Coordinates with legal/HR before any confrontation"
+      ],
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "Run a Benford first-digit analysis on the attached disbursements (evals/files/disbursements.csv) - overall AND segmented by the 'segment' column. Report chi-square per segment against the 15.507 critical value and identify which population deviates.",
+      "expected_output": "Operations chi2 16 (conforms); Procurement-VendorX chi2 544 (strong deviation - first digits cluster 4-8); overall chi2 217. Flags VendorX for follow-up, noting deviation is an indicator not proof.",
+      "assertions": [
+        "Segments the analysis rather than only testing the combined population",
+        "Operations segment conforms to Benford (chi-square below ~15.5)",
+        "Procurement-VendorX segment strongly deviates (chi-square far above critical value)",
+        "Notes digits 4-8 are over-represented in the flagged segment",
+        "States deviation is an anomaly indicator, not proof of fraud",
+        "Computes with code"
+      ],
+      "files": [
+        "evals/files/disbursements.csv"
+      ]
     }
   ]
 }

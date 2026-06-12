@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "financeskills"
+version = "1.0.1"
+description = "43 finance skills for AI agents: deterministic calculators, MCP server, evals, standards library"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "KOMVIA", email = "support@komvia.com" }]
+keywords = ["finance", "accounting", "ai-agents", "mcp", "agent-skills"]
+
+[project.urls]
+Homepage = "https://github.com/GAJETOso/financeskills"
+
+[project.scripts]
+financeskills-mcp = "financeskills_pkg.cli:mcp"
+financeskills-mcp-http = "financeskills_pkg.cli:mcp_http"
+financeskills-validate = "financeskills_pkg.cli:validate"
+financeskills-evals = "financeskills_pkg.cli:evals"
+
+[tool.setuptools]
+packages = ["financeskills_pkg"]

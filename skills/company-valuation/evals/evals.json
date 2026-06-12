@@ -1,0 +1,58 @@
+{
+  "skill_name": "company-valuation",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Value this company: FCF next year 100M growing 10% for 5 years then 3% terminal; WACC 12%. Net debt 250M. 50M shares. What's the per-share value?",
+      "expected_output": "Explicit FCFs years 1-5 (100, 110, 121, 133.1, 146.41), TV at end of year 5 = 146.41x1.03/(0.12-0.03) = 1,675.5; discount all at 12% -> EV ~ 1,395M; equity = ~1,145M; ~22.9/share. Numbers verified by code; TV share of EV (~68%) noted.",
+      "assertions": [
+        "Builds the 5-year FCF schedule correctly",
+        "Computes terminal value off year-5 FCF grown at 3%",
+        "Discounts TV by 5 years, not 6",
+        "Bridges EV to equity by subtracting net debt before dividing by shares",
+        "Runs the math in code and shows a sensitivity or TV-dependence note"
+      ],
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "Our DCF says the company is worth 900M but EV/EBITDA comps suggest 1.4B. Management wants to average them to 1.15B. Advise.",
+      "expected_output": "Don't average a 35%+ divergence - diagnose it: WACC currency/inflation mismatch, overly conservative projections, peak-cycle comp multiples, non-comparable peers, IFRS 16 convention mismatch, or missing bridge items. Reconcile, then conclude a defended range.",
+      "assertions": [
+        "Refuses to mechanically average divergent methods",
+        "Lists plausible diagnostic causes for the gap on both DCF and comps sides",
+        "Mentions the IFRS 16 or normalization consistency checks",
+        "Concludes with a process to reconcile rather than a split-the-difference number"
+      ],
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "EV concluded at 2.0B. Balance sheet: debt 600M, cash 150M (of which 40M is restricted in a sanctioned jurisdiction), 30% minority interest in a sub with book value 80M and estimated fair value 200M, pension deficit 50M pre-tax (tax 30%), associate stake worth 90M. Get me to equity value.",
+      "expected_output": "Equity = 2,000 - 600 + 110 (usable cash; haircut/exclude the 40M restricted) - 200 (MI at fair value) - 35 (pension net of tax) + 90 (associate) = ~1,365M, with each judgment explained.",
+      "assertions": [
+        "Haircuts or excludes the restricted cash with rationale",
+        "Uses minority interest at fair value (200M) not book (80M)",
+        "Takes the pension deficit net of tax (35M)",
+        "Adds the associate stake",
+        "Arrives at approximately 1,365M with an itemized waterfall"
+      ],
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "Run a DCF on the attached projections (evals/files/fcf_projections.csv): discount the five FCF years at the stated WACC, compute Gordon terminal value, enterprise value, and bridge to equity value using net debt.",
+      "expected_output": "Terminal value $185,705,882; EV $156,614,561; equity value $128,614,561.",
+      "assertions": [
+        "Terminal value approx $186 million",
+        "Enterprise value approx $157 million",
+        "Equity value approx $129 million",
+        "Discounts terminal value back 5 years (does not leave it undiscounted)",
+        "Computes with code"
+      ],
+      "files": [
+        "evals/files/fcf_projections.csv"
+      ]
+    }
+  ]
+}

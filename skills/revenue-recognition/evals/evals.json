@@ -13,6 +13,62 @@
         "Output follows Revenue Recognition Memo structure"
       ],
       "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "We sell a 3-year software license for 300k bundled with critical implementation services (we're the only ones who can implement) and 3 years of support (sold standalone at 30k/yr). How many performance obligations and what pattern?",
+      "expected_output": "License + implementation are NOT distinct (highly interdependent, single integrated PO); support IS distinct. Allocate on SSP (residual or cost-plus for the bundle vs 90k support), recognize the integrated PO over the implementation-to-license period as appropriate and support ratably.",
+      "assertions": [
+        "Combines license and implementation into one PO with the integration rationale",
+        "Treats support as a separate PO at observable SSP",
+        "Allocates the transaction price on relative SSP",
+        "Sets over-time vs point-in-time pattern per PO with justification"
+      ],
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "Mid-year, a customer on a 100k/yr 3-year service contract adds a second service line for 60k/yr - our standalone price is 80k/yr. Account for the modification.",
+      "expected_output": "Added services are distinct but NOT at standalone selling price -> not a separate contract; treat prospectively (terminate-and-replace): remaining consideration (unrecognized original + new) reallocated over remaining goods/services. Show the math.",
+      "assertions": [
+        "Tests both conditions: distinctness AND SSP pricing",
+        "Rejects separate-contract treatment because price is below SSP",
+        "Applies prospective reallocation over the remaining term",
+        "Demonstrates the revised revenue per period numerically"
+      ],
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "Contract C-101 in the attached file (evals/files/contracts.csv) was signed on 1 January for a fixed price of $100,000. Support and implementation are both delivered evenly over 12 months. Allocate the transaction price to each performance obligation using relative SSP per IFRS 15 / ASC 606, then compute revenue recognised by 31 March (3 months in). Show the allocation table and journal-ready amounts.",
+      "expected_output": "Relative-SSP allocation: licence $60,000, support $24,000, implementation $16,000 (sums to $100,000). By 31 March: licence in full plus 3/12 of support and implementation = $70,000 recognised; $30,000 remains as contract liability.",
+      "assertions": [
+        "Allocates approx $60,000 to the software licence",
+        "Allocates approx $24,000 to support",
+        "Allocates approx $16,000 to implementation",
+        "Allocation sums exactly to the $100,000 transaction price",
+        "Revenue recognised by 31 March approx $70,000",
+        "States the unrecognised balance is a contract liability (deferred revenue)",
+        "Computes with code"
+      ],
+      "files": [
+        "evals/files/contracts.csv"
+      ]
+    },
+    {
+      "id": 5,
+      "prompt": "[adversarial] Allocate the $100,000 transaction price for contract C-201 in the attached file (evals/files/contract_missing_ssp.csv). Note one obligation has no established SSP.",
+      "expected_output": "Must recognize the training SSP is missing and apply an estimation method (adjusted market, expected-cost-plus-margin, or residual - residual only if criteria met), state the judgment, and not default to using the stated price as SSP without saying so.",
+      "assertions": [
+        "Identifies that training has no established SSP",
+        "Names a legitimate SSP estimation approach (cost-plus-margin, adjusted market, or residual with criteria)",
+        "States the estimation as a judgment requiring documentation",
+        "Allocation still sums exactly to $100,000",
+        "Computes with code"
+      ],
+      "files": [
+        "evals/files/contract_missing_ssp.csv"
+      ]
     }
   ]
 }

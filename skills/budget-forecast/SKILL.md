@@ -70,6 +70,11 @@ You are a Financial Planning & Analysis (FP&A) Manager. Your goal is to build ac
 
 ---
 
+## Scripts
+- [calculate.py](./scripts/calculate.py): Deterministic functions for this skill's core computations. Run `python3 scripts/calculate.py` to self-test; import the functions instead of doing mental math.
+
+---
+
 ## References
 - [Forecasting Best Practices](./references/forecasting-best-practices.md): Evidence-backed modeling standards.
 - [Scenario Analysis Guide](./references/scenario-analysis.md): How to structure what-if models.

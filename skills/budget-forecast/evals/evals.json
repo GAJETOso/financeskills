@@ -13,6 +13,45 @@
         "Output follows Financial Plan structure"
       ],
       "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "Build a rolling 12-month forecast approach for a company that currently does an annual budget that's stale by March.",
+      "expected_output": "Driver-based rolling forecast: monthly re-forecast of next 12 months, drivers (volume, price, headcount) not line-item minutiae, variance feedback loop, and a clear budget-vs-forecast governance distinction.",
+      "assertions": [
+        "Proposes a rolling horizon that always extends 12 months",
+        "Uses driver-based logic rather than line-item extrapolation",
+        "Keeps the annual budget for targets while the forecast tracks reality",
+        "Includes a monthly variance feedback loop"
+      ],
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "Sales says next year will grow 25% because 'pipeline is strong'. Historical growth: 8%, 11%, 9%. How do I pressure-test this in the budget?",
+      "expected_output": "Decompose the claim: pipeline coverage ratio x historical conversion rates, capacity check (sales headcount, ramp time), market growth comparison, and scenario-band the budget (base 10%, upside 25%) rather than planting 25% as base.",
+      "assertions": [
+        "Tests pipeline against historical conversion rates",
+        "Checks sales capacity and ramp time feasibility",
+        "Benchmarks against market growth and history",
+        "Recommends scenario banding rather than accepting or rejecting outright"
+      ],
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "From the attached history and drivers (evals/files/history_and_drivers.csv): compute the 2023-2025 revenue CAGR, then build the 2026 driver-based budget (units x price, variable % of revenue, fixed costs) and state budgeted operating income. Sanity-check the implied 2026 growth against the historical CAGR.",
+      "expected_output": "CAGR 31.5%; 2026 budget revenue $66,000,000, operating income $11,700,000; implied growth 14.6% vs CAGR 31.5%.",
+      "assertions": [
+        "Historical CAGR approx 32%",
+        "Budget revenue $66,000,000",
+        "Budget operating income approx $11,700,000",
+        "Compares implied 2026 growth (15%) against historical CAGR",
+        "Computes with code"
+      ],
+      "files": [
+        "evals/files/history_and_drivers.csv"
+      ]
     }
   ]
 }

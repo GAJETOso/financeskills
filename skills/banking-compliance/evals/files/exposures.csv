@@ -1,0 +1,6 @@
+exposure_class,amount,risk_weight
+Sovereign bonds,1200000000,0.0
+Interbank claims,600000000,0.2
+Residential mortgages,1500000000,0.35
+Corporate loans,2400000000,1.0
+Retail unsecured,800000000,0.75

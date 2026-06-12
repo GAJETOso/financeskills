@@ -1,0 +1,56 @@
+{
+  "skill_name": "deferred-tax",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Equipment carrying amount 90M, tax written-down value 65M, tax rate 30%. What's the deferred tax and which side?",
+      "expected_output": "Taxable temporary difference 25M (carrying exceeds tax base on an asset) -> deferred tax LIABILITY of 7.5M.",
+      "assertions": [
+        "Computes the temporary difference as 25M",
+        "Correctly identifies it as taxable, producing a DTL not a DTA",
+        "Calculates 7.5M at 30%",
+        "Explains the reversal mechanism"
+      ],
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "We have 50M of unused tax losses after two consecutive loss years. Our new 5-year forecast shows 30M of taxable profits. Can we book the full 15M DTA at 30%?",
+      "expected_output": "No. Recent losses require convincing evidence; recognize only to the extent supported - 30M x 30% = 9M DTA, with 20M of losses unrecognized and disclosed. Forecast quality must be assessed.",
+      "assertions": [
+        "Refuses full recognition of 15M",
+        "Recognizes 9M based on supportable 30M utilization",
+        "Notes the heightened evidence standard after a history of recent losses",
+        "Requires disclosure of the unrecognized portion"
+      ],
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "The government enacts a rate change from 30% to 25% effective next year. Our DTL is 60M, of which 12M arose through OCI on a building revaluation. Book the remeasurement.",
+      "expected_output": "Remeasure all deferred balances: new DTL = 60/0.30*0.25 = 50M, release 10M. The OCI-origin portion (12M -> 10M, release 2M) goes through OCI; the remaining 8M release goes through P&L (backward tracing under IAS 12).",
+      "assertions": [
+        "Remeasures the full DTL to 50M",
+        "Splits the 10M release between OCI (2M) and P&L (8M) by origin",
+        "Uses the enacted/substantively enacted rate",
+        "Shows the calculation programmatically"
+      ],
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "Tax rate 30%. For each temporary difference in the attached file (evals/files/temporary_differences.csv), classify it as taxable or deductible, compute the DTL/DTA, and note that the warranty provision is a LIABILITY (carrying 250,000, tax base nil) and the revaluation difference goes through OCI.",
+      "expected_output": "PP&E: taxable TD 300,000 -> DTL $90,000. Warranty: deductible TD 250,000 -> DTA $75,000. Revaluation: taxable TD 200,000 -> DTL $60,000 recognized in OCI.",
+      "assertions": [
+        "PP&E DTL $90,000",
+        "Warranty provision DTA $75,000 (deductible temporary difference)",
+        "Revaluation DTL $60,000",
+        "Notes the revaluation deferred tax is recognized in OCI, not P&L",
+        "Computes with code"
+      ],
+      "files": [
+        "evals/files/temporary_differences.csv"
+      ]
+    }
+  ]
+}

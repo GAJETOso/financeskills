@@ -86,9 +86,19 @@ Before analyzing, understand:
 
 ---
 
+## Scripts
+- [calculate.py](./scripts/calculate.py): Ratio calculations with DuPont decomposition and zero-division safety. Run with `python3 scripts/calculate.py` to self-test; import the functions for actual computations.
+
+---
+
 ## References
 - [Ratio Definitions](./references/ratio-definitions.md): Standard formulas used in this skill.
 - [IFRS vs GAAP](./references/accounting-standards.md): Key differences affecting analysis.
+
+---
+
+## Assets
+- [analysis-memo-template.md](./assets/analysis-memo-template.md): Standard memo structure for the final output.
 
 ---
 

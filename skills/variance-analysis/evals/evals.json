@@ -13,6 +13,47 @@
         "Output follows Production Variance Report structure"
       ],
       "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "Standards: 2kg @ 400/kg and 0.5hr @ 1,500/hr per unit. Actual for 10,000 units: 21,500kg @ 385/kg, 5,400hr @ 1,560/hr. Compute all four variances and diagnose.",
+      "expected_output": "MPV = (400-385)x21,500 = 322,500 F; MUV = (20,000-21,500)x400 = 600,000 U; LRV = (1,500-1,560)x5,400 = 324,000 U; LEV = (5,000-5,400)x1,500 = 600,000 U. Classic cheap-material trade-off pattern: cheaper input driving usage and labor inefficiency - net negative.",
+      "assertions": [
+        "All four variances computed correctly with F/U labels",
+        "Uses standard quantity allowed for actual output (20,000kg, 5,000hr)",
+        "Identifies the price-vs-usage trade-off interaction",
+        "Computes the net effect showing the 'saving' lost money",
+        "Uses code"
+      ],
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "The plant shows a large favorable fixed overhead volume variance because we produced 30% above plan into inventory. Celebrate?",
+      "expected_output": "No - volume variance is an absorption artifact; overproduction parks fixed cost in inventory and flatters current profit (absorption vs variable costing gap). Check demand reality, inventory obsolescence risk, and incentive distortion.",
+      "assertions": [
+        "Explains the volume variance as a unitization artifact",
+        "Identifies the overproduction-inventory profit inflation mechanism",
+        "Raises obsolescence and cash costs of the inventory build",
+        "Questions incentive design"
+      ],
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "Compute material price, material usage, labor rate, and labor efficiency variances from the attached production workbook (evals/files/production_data.xlsx). Label each favourable/adverse and explain the most material driver.",
+      "expected_output": "MPV -25,500 (adverse), MUV -30,000, LRV -15,620 (adverse), LEV 20,000.",
+      "assertions": [
+        "Material price variance approx 25,500 adverse",
+        "Material usage variance approx 30,000 adverse",
+        "Labor rate variance approx 15,620 adverse",
+        "Labor efficiency variance approx 20,000 favourable",
+        "Labels each variance favourable or adverse correctly",
+        "Computes with code"
+      ],
+      "files": [
+        "evals/files/production_data.xlsx"
+      ]
     }
   ]
 }

@@ -1,0 +1,43 @@
+name: Release
+
+on:
+  push:
+    tags: ["v*"]
+
+permissions:
+  contents: write
+  id-token: write
+  attestations: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Validate before releasing
+        run: |
+          pip install openpyxl
+          python3 validate_skills.py
+          python3 tools/evals/run_evals.py --dry-run
+          python3 tools/security/manifest.py --verify
+      - name: Build artifact
+        run: |
+          VERSION=${GITHUB_REF_NAME}
+          git archive --format=tar.gz --prefix=financeskills-${VERSION}/ \
+            -o financeskills-${VERSION}.tar.gz HEAD
+          sha256sum financeskills-${VERSION}.tar.gz > financeskills-${VERSION}.tar.gz.sha256
+      - name: Attest build provenance
+        uses: actions/attest-build-provenance@v2
+        with:
+          subject-path: financeskills-*.tar.gz
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          files: |
+            financeskills-*.tar.gz
+            financeskills-*.tar.gz.sha256
+            MANIFEST.sha256
+          generate_release_notes: true

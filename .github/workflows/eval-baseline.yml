@@ -1,0 +1,32 @@
+name: Eval Baseline
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 4 1 * *"   # monthly, 1st at 04:00 UTC
+
+jobs:
+  baseline:
+    runs-on: ubuntu-latest
+    if: github.repository == 'GAJETOso/financeskills'
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: pip install openpyxl
+      - name: Run full eval suite
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: python3 tools/evals/run_evals.py --all || true   # publish scorecard even with failures
+      - name: Generate baseline scorecard
+        run: python3 tools/evals/make_baseline.py
+      - name: Commit scorecard
+        run: |
+          git config user.name "eval-baseline-bot"
+          git config user.email "actions@github.com"
+          git add tools/evals/BASELINE.md tools/evals/results/
+          git commit -m "chore: refresh eval baseline scorecard" || echo "no changes"
+          git push

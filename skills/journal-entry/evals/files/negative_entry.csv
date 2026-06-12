@@ -1,0 +1,3 @@
+je_number,account,dr,cr,memo
+JE-201,Marketing expense,50000,0,reclass
+JE-201,Travel expense,-50000,0,negative debit to offset

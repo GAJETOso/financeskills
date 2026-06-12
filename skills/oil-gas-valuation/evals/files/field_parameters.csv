@@ -1,0 +1,7 @@
+item,value
+initial_annual_production_bbl,1000000
+annual_decline_rate,0.1
+forecast_years,10
+oil_price_usd,70.0
+royalty_pct,0.15
+opex_per_bbl,18.0

@@ -1,0 +1,57 @@
+{
+  "skill_name": "intercompany-accounting",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Parent shows due-from Sub A of 125M; Sub A shows due-to Parent of 117M. Walk me through resolving the 8M difference.",
+      "expected_output": "Apply the hierarchy: check in-transit items around cut-off, FX rate differences (different sources/dates), missing bookings on one side, then pricing disputes. Fix entity books before consolidation; never eliminate a mismatch.",
+      "assertions": [
+        "Investigates timing, FX, missing booking, and dispute causes in a structured order",
+        "Insists the difference is resolved in entity books, not hidden by elimination",
+        "References a tolerance policy for trivial residuals",
+        "Recommends the seller-invoice-authoritative and single-FX-source rules to prevent recurrence"
+      ],
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "Sub sold inventory to Parent for 60M at a 25% margin on sales. Parent still holds 40% of it at year-end. Buyer's tax rate 30%. Give me the eliminations.",
+      "expected_output": "IC revenue/COGS elimination of 60M gross. Unrealized profit = 60M x 25% x 40% = 6M: Dr COGS / Cr Inventory 6M. Deferred tax: Dr DTA / Cr Tax expense 1.8M at the buyer's rate.",
+      "assertions": [
+        "Eliminates the 60M trading gross",
+        "Computes unrealized profit of 6M (margin on sales, not cost-plus confusion)",
+        "Books deferred tax of 1.8M at the buyer's rate",
+        "Mentions NCI allocation if the seller is partly owned"
+      ],
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "Our Nigerian sub has carried a $2M unsettled payable to the UK parent for 18 months with no interest. Any problems?",
+      "expected_output": "Multiple: arm's-length requires market interest (TP adjustment risk with FIRS), aged unsettled balance risks deemed-dividend/thin-cap scrutiny under the 30% EBITDA interest cap regime, WHT obligations on any interest, and unhedged FX exposure on the USD balance. Recommend settlement or formalizing as a documented interest-bearing loan.",
+      "assertions": [
+        "Flags the missing arm's-length interest as a transfer pricing exposure",
+        "Raises the aged-balance and thin-capitalization/interest-cap concern",
+        "Identifies FX exposure on the USD payable",
+        "Recommends settlement, netting, or formal loan documentation"
+      ],
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "Match the attached intercompany balances (evals/files/ic_receivables_parent.csv vs evals/files/ic_payables_subs.csv) and identify mismatches. Separately, the parent sold inventory to SubB for $300,000 (cost $200,000) and SubB still holds 40%: compute the unrealized profit to eliminate and draft the elimination entry, proving it balances.",
+      "expected_output": "SubB mismatch $20,000 (cash/goods in transit to investigate); SubC and SubD agree. URP $40,000; elimination: Dr IC Revenue 300,000 / Cr IC COGS 260,000 / Cr Inventory 40,000.",
+      "assertions": [
+        "Identifies the $20,000 SubB mismatch and that SubC/SubD agree",
+        "Unrealized profit $40,000 (margin x 40% still held)",
+        "Elimination entry debits IC revenue $300,000",
+        "Elimination entry credits inventory $40,000 and balances",
+        "Computes with code"
+      ],
+      "files": [
+        "evals/files/ic_receivables_parent.csv",
+        "evals/files/ic_payables_subs.csv"
+      ]
+    }
+  ]
+}

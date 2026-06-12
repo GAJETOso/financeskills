@@ -67,6 +67,11 @@ You are a Group Controller. Your goal is to combine the financial results of a p
 
 ---
 
+## Scripts
+- [calculate.py](./scripts/calculate.py): Deterministic functions for this skill's core computations. Run `python3 scripts/calculate.py` to self-test; import the functions instead of doing mental math.
+
+---
+
 ## References
 - [IFRS 10 Summary](./references/consolidation-standard.md): Control and consolidation rules.
 - [NCI Accounting](./references/minority-interest.md): How to calculate and present NCI.
