@@ -2,7 +2,7 @@
 
 ![evals](https://img.shields.io/badge/evals-0%2F183_passing_(0%25)-red)
 
-**Run:** 20260612-222758 | **Model:** see run config | **Result: 0/183 evals passing (0%)**
+**Run:** 20260612-235147 | **Model:** see run config | **Result: 0/183 evals passing (0%)**
 
 Reproduce: `ANTHROPIC_API_KEY=... python3 tools/evals/run_evals.py --all`
 
@@ -52,4 +52,4 @@ Reproduce: `ANTHROPIC_API_KEY=... python3 tools/evals/run_evals.py --all`
 | wacc-computation | 0/5 | FAIL |
 | working-capital-analysis | 0/4 | FAIL |
 
-Raw output: `tools/evals/results/20260612-222758/`
+Raw output: `tools/evals/results/20260612-235147/`
