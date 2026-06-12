@@ -1,0 +1,1315 @@
+[
+  {
+    "skill": "ai-anomaly-detection",
+    "results": [
+      {
+        "id": 1,
+        "passed": false,
+        "assertions": [],
+        "response": "<error: HTTP Error 400: Bad Request>"
+      },
+      {
+        "id": 2,
+        "passed": false,
+        "assertions": [],
+        "response": "<error: HTTP Error 400: Bad Request>"
+      },
+      {
+        "id": 3,
+        "passed": false,
+        "assertions": [],
+        "response": "<error: HTTP Error 400: Bad Request>"
+      },
+      {
+        "id": 4,
+        "passed": false,
+        "assertions": [],
+        "response": "<error: HTTP Error 400: Bad Request>"
+      }
+    ]
+  },
+  {
+    "skill": "aro-computation",
+    "results": [
+      {
+        "id": 1,
+        "passed": false,
+        "assertions": [],
+        "response": "<error: HTTP Error 400: Bad Request>"
+      },
+      {
+        "id": 2,
+        "passed": false,
+        "assertions": [],
+        "response": "<error: HTTP Error 400: Bad Request>"
+      },
+      {
+        "id": 3,
+        "passed": false,
+        "assertions": [],
+        "response": "<error: HTTP Error 400: Bad Request>"
+      },
+      {
+        "id": 4,
+        "passed": false,
+        "assertions": [],
+        "response": "<error: HTTP Error 400: Bad Request>"
+      }
+    ]
+  },
+  {
+    "skill": "audit-checklist",
+    "results": [
+      {
+        "id": 1,
+        "passed": false,
+        "assertions": [],
+        "response": "<error: HTTP Error 400: Bad Request>"
+      },
+      {
+        "id": 2,
+        "passed": false,
+        "assertions": [],
+        "response": "<error: HTTP Error 400: Bad Request>"
+      },
+      {
+        "id": 3,
+        "passed": false,
+        "assertions": [],
+        "response": "<error: HTTP Error 400: Bad Request>"
+      },
+      {
+        "id": 4,
+        "passed": false,
+        "assertions": [],
+        "response": "<error: HTTP Error 400: Bad Request>"
+      }
+    ]
+  },
+  {
+    "skill": "automated-reconciliation",
+    "results": [
+      {
+        "id": 1,
+        "passed": false,
+        "assertions": [],
+        "response": "<error: HTTP Error 400: Bad Request>"
+      },
+      {
+        "id": 2,
+        "passed": false,
+        "assertions": [],
+        "response": "<error: HTTP Error 400: Bad Request>"
+      },
+      {
+        "id": 3,
+        "passed": false,
+        "assertions": [],
+        "response": "<error: HTTP Error 400: Bad Request>"
+      },
+      {
+        "id": 4,
+        "passed": false,
+        "assertions": [],
+        "response": "<error: HTTP Error 400: Bad Request>"
+      },
+      {
+        "id": 5,
+        "passed": false,
+        "assertions": [],
+        "response": "<error: HTTP Error 400: Bad Request>"
+      }
+    ]
+  },
+  {
+    "skill": "banking-compliance",
+    "results": [
+      {
+        "id": 1,
+        "passed": false,
+        "assertions": [],
+        "response": "<error: HTTP Error 400: Bad Request>"
+      },
+      {
+        "id": 2,
+        "passed": false,
+        "assertions": [],
+        "response": "<error: HTTP Error 400: Bad Request>"
+      },
+      {
+        "id": 3,
+        "passed": false,
+        "assertions": [],
+        "response": "<error: HTTP Error 400: Bad Request>"
+      },
+      {
+        "id": 4,
+        "passed": false,
+        "assertions": [],
+        "response": "<error: HTTP Error 400: Bad Request>"
+      }
+    ]
+  },
+  {
+    "skill": "budget-forecast",
+    "results": [
+      {
+        "id": 1,
+        "passed": false,
+        "assertions": [],
+        "response": "<error: HTTP Error 400: Bad Request>"
+      },
+      {
+        "id": 2,
+        "passed": false,
+        "assertions": [],
+        "response": "<error: HTTP Error 400: Bad Request>"
+      },
+      {
+        "id": 3,
+        "passed": false,
+        "assertions": [],
+        "response": "<error: HTTP Error 400: Bad Request>"
+      },
+      {
+        "id": 4,
+        "passed": false,
+        "assertions": [],
+        "response": "<error: HTTP Error 400: Bad Request>"
+      }
+    ]
+  },
+  {
+    "skill": "close-management",
+    "results": [
+      {
+        "id": 1,
+        "passed": false,
+        "assertions": [],
+        "response": "<error: HTTP Error 400: Bad Request>"
+      },
+      {
+        "id": 2,
+        "passed": false,
+        "assertions": [],
+        "response": "<error: HTTP Error 400: Bad Request>"
+      },
+      {
+        "id": 3,
+        "passed": false,
+        "assertions": [],
+        "response": "<error: HTTP Error 400: Bad Request>"
+      },
+      {
+        "id": 4,
+        "passed": false,
+        "assertions": [],
+        "response": "<error: HTTP Error 400: Bad Request>"
+      }
+    ]
+  },
+  {
+    "skill": "company-valuation",
+    "results": [
+      {
+        "id": 1,
+        "passed": false,
+        "assertions": [],
+        "response": "<error: HTTP Error 400: Bad Request>"
+      },
+      {
+        "id": 2,
+        "passed": false,
+        "assertions": [],
+        "response": "<error: HTTP Error 400: Bad Request>"
+      },
+      {
+        "id": 3,
+        "passed": false,
+        "assertions": [],
+        "response": "<error: HTTP Error 400: Bad Request>"
+      },
+      {
+        "id": 4,
+        "passed": false,
+        "assertions": [],
+        "response": "<error: HTTP Error 400: Bad Request>"
+      }
+    ]
+  },
+  {
+    "skill": "corporate-consolidation",
+    "results": [
+      {
+        "id": 1,
+        "passed": false,
+        "assertions": [],
+        "response": "<error: HTTP Error 400: Bad Request>"
+      },
+      {
+        "id": 2,
+        "passed": false,
+        "assertions": [],
+        "response": "<error: HTTP Error 400: Bad Request>"
+      },
+      {
+        "id": 3,
+        "passed": false,
+        "assertions": [],
+        "response": "<error: HTTP Error 400: Bad Request>"
+      },
+      {
+        "id": 4,
+        "passed": false,
+        "assertions": [],
+        "response": "<error: HTTP Error 400: Bad Request>"
+      }
+    ]
+  },
+  {
+    "skill": "credit-analysis",
+    "results": [
+      {
+        "id": 1,
+        "passed": false,
+        "assertions": [],
+        "response": "<error: HTTP Error 400: Bad Request>"
+      },
+      {
+        "id": 2,
+        "passed": false,
+        "assertions": [],
+        "response": "<error: HTTP Error 400: Bad Request>"
+      },
+      {
+        "id": 3,
+        "passed": false,
+        "assertions": [],
+        "response": "<error: HTTP Error 400: Bad Request>"
+      },
+      {
+        "id": 4,
+        "passed": false,
+        "assertions": [],
+        "response": "<error: HTTP Error 400: Bad Request>"
+      },
+      {
+        "id": 5,
+        "passed": false,
+        "assertions": [],
+        "response": "<error: HTTP Error 400: Bad Request>"
+      }
+    ]
+  },
+  {
+    "skill": "crypto-accounting",
+    "results": [
+      {
+        "id": 1,
+        "passed": false,
+        "assertions": [],
+        "response": "<error: HTTP Error 400: Bad Request>"
+      },
+      {
+        "id": 2,
+        "passed": false,
+        "assertions": [],
+        "response": "<error: HTTP Error 400: Bad Request>"
+      },
+      {
+        "id": 3,
+        "passed": false,
+        "assertions": [],
+        "response": "<error: HTTP Error 400: Bad Request>"
+      },
+      {
+        "id": 4,
+        "passed": false,
+        "assertions": [],
+        "response": "<error: HTTP Error 400: Bad Request>"
+      }
+    ]
+  },
+  {
+    "skill": "cvp-breakeven",
+    "results": [
+      {
+        "id": 1,
+        "passed": false,
+        "assertions": [],
+        "response": "<error: HTTP Error 400: Bad Request>"
+      },
+      {
+        "id": 2,
+        "passed": false,
+        "assertions": [],
+        "response": "<error: HTTP Error 400: Bad Request>"
+      },
+      {
+        "id": 3,
+        "passed": false,
+        "assertions": [],
+        "response": "<error: HTTP Error 400: Bad Request>"
+      },
+      {
+        "id": 4,
+        "passed": false,
+        "assertions": [],
+        "response": "<error: HTTP Error 400: Bad Request>"
+      }
+    ]
+  },
+  {
+    "skill": "debt-restructuring",
+    "results": [
+      {
+        "id": 1,
+        "passed": false,
+        "assertions": [],
+        "response": "<error: HTTP Error 400: Bad Request>"
+      },
+      {
+        "id": 2,
+        "passed": false,
+        "assertions": [],
+        "response": "<error: HTTP Error 400: Bad Request>"
+      },
+      {
+        "id": 3,
+        "passed": false,
+        "assertions": [],
+        "response": "<error: HTTP Error 400: Bad Request>"
+      },
+      {
+        "id": 4,
+        "passed": false,
+        "assertions": [],
+        "response": "<error: HTTP Error 400: Bad Request>"
+      }
+    ]
+  },
+  {
+    "skill": "deferred-tax",
+    "results": [
+      {
+        "id": 1,
+        "passed": false,
+        "assertions": [],
+        "response": "<error: HTTP Error 400: Bad Request>"
+      },
+      {
+        "id": 2,
+        "passed": false,
+        "assertions": [],
+        "response": "<error: HTTP Error 400: Bad Request>"
+      },
+      {
+        "id": 3,
+        "passed": false,
+        "assertions": [],
+        "response": "<error: HTTP Error 400: Bad Request>"
+      },
+      {
+        "id": 4,
+        "passed": false,
+        "assertions": [],
+        "response": "<error: HTTP Error 400: Bad Request>"
+      }
+    ]
+  },
+  {
+    "skill": "earned-value-mgmt",
+    "results": [
+      {
+        "id": 1,
+        "passed": false,
+        "assertions": [],
+        "response": "<error: HTTP Error 400: Bad Request>"
+      },
+      {
+        "id": 2,
+        "passed": false,
+        "assertions": [],
+        "response": "<error: HTTP Error 400: Bad Request>"
+      },
+      {
+        "id": 3,
+        "passed": false,
+        "assertions": [],
+        "response": "<error: HTTP Error 400: Bad Request>"
+      },
+      {
+        "id": 4,
+        "passed": false,
+        "assertions": [],
+        "response": "<error: HTTP Error 400: Bad Request>"
+      }
+    ]
+  },
+  {
+    "skill": "ecl-computation",
+    "results": [
+      {
+        "id": 1,
+        "passed": false,
+        "assertions": [],
+        "response": "<error: HTTP Error 400: Bad Request>"
+      },
+      {
+        "id": 2,
+        "passed": false,
+        "assertions": [],
+        "response": "<error: HTTP Error 400: Bad Request>"
+      },
+      {
+        "id": 3,
+        "passed": false,
+        "assertions": [],
+        "response": "<error: HTTP Error 400: Bad Request>"
+      },
+      {
+        "id": 4,
+        "passed": false,
+        "assertions": [],
+        "response": "<error: HTTP Error 400: Bad Request>"
+      }
+    ]
+  },
+  {
+    "skill": "esg-reporting",
+    "results": [
+      {
+        "id": 1,
+        "passed": false,
+        "assertions": [],
+        "response": "<error: HTTP Error 400: Bad Request>"
+      },
+      {
+        "id": 2,
+        "passed": false,
+        "assertions": [],
+        "response": "<error: HTTP Error 400: Bad Request>"
+      },
+      {
+        "id": 3,
+        "passed": false,
+        "assertions": [],
+        "response": "<error: HTTP Error 400: Bad Request>"
+      },
+      {
+        "id": 4,
+        "passed": false,
+        "assertions": [],
+        "response": "<error: HTTP Error 400: Bad Request>"
+      }
+    ]
+  },
+  {
+    "skill": "financial-analysis",
+    "results": [
+      {
+        "id": 1,
+        "passed": false,
+        "assertions": [],
+        "response": "<error: HTTP Error 400: Bad Request>"
+      },
+      {
+        "id": 2,
+        "passed": false,
+        "assertions": [],
+        "response": "<error: HTTP Error 400: Bad Request>"
+      },
+      {
+        "id": 3,
+        "passed": false,
+        "assertions": [],
+        "response": "<error: HTTP Error 400: Bad Request>"
+      },
+      {
+        "id": 4,
+        "passed": false,
+        "assertions": [],
+        "response": "<error: HTTP Error 400: Bad Request>"
+      },
+      {
+        "id": 5,
+        "passed": false,
+        "assertions": [],
+        "response": "<error: HTTP Error 400: Bad Request>"
+      },
+      {
+        "id": 6,
+        "passed": false,
+        "assertions": [],
+        "response": "<error: HTTP Error 400: Bad Request>"
+      }
+    ]
+  },
+  {
+    "skill": "fixed-asset-accounting",
+    "results": [
+      {
+        "id": 1,
+        "passed": false,
+        "assertions": [],
+        "response": "<error: HTTP Error 400: Bad Request>"
+      },
+      {
+        "id": 2,
+        "passed": false,
+        "assertions": [],
+        "response": "<error: HTTP Error 400: Bad Request>"
+      },
+      {
+        "id": 3,
+        "passed": false,
+        "assertions": [],
+        "response": "<error: HTTP Error 400: Bad Request>"
+      },
+      {
+        "id": 4,
+        "passed": false,
+        "assertions": [],
+        "response": "<error: HTTP Error 400: Bad Request>"
+      }
+    ]
+  },
+  {
+    "skill": "forensic-accounting",
+    "results": [
+      {
+        "id": 1,
+        "passed": false,
+        "assertions": [],
+        "response": "<error: HTTP Error 400: Bad Request>"
+      },
+      {
+        "id": 2,
+        "passed": false,
+        "assertions": [],
+        "response": "<error: HTTP Error 400: Bad Request>"
+      },
+      {
+        "id": 3,
+        "passed": false,
+        "assertions": [],
+        "response": "<error: HTTP Error 400: Bad Request>"
+      },
+      {
+        "id": 4,
+        "passed": false,
+        "assertions": [],
+        "response": "<error: HTTP Error 400: Bad Request>"
+      }
+    ]
+  },
+  {
+    "skill": "insurance-reserving",
+    "results": [
+      {
+        "id": 1,
+        "passed": false,
+        "assertions": [],
+        "response": "<error: HTTP Error 400: Bad Request>"
+      },
+      {
+        "id": 2,
+        "passed": false,
+        "assertions": [],
+        "response": "<error: HTTP Error 400: Bad Request>"
+      },
+      {
+        "id": 3,
+        "passed": false,
+        "assertions": [],
+        "response": "<error: HTTP Error 400: Bad Request>"
+      },
+      {
+        "id": 4,
+        "passed": false,
+        "assertions": [],
+        "response": "<error: HTTP Error 400: Bad Request>"
+      }
+    ]
+  },
+  {
+    "skill": "intercompany-accounting",
+    "results": [
+      {
+        "id": 1,
+        "passed": false,
+        "assertions": [],
+        "response": "<error: HTTP Error 400: Bad Request>"
+      },
+      {
+        "id": 2,
+        "passed": false,
+        "assertions": [],
+        "response": "<error: HTTP Error 400: Bad Request>"
+      },
+      {
+        "id": 3,
+        "passed": false,
+        "assertions": [],
+        "response": "<error: HTTP Error 400: Bad Request>"
+      },
+      {
+        "id": 4,
+        "passed": false,
+        "assertions": [],
+        "response": "<error: HTTP Error 400: Bad Request>"
+      }
+    ]
+  },
+  {
+    "skill": "inventory-costing",
+    "results": [
+      {
+        "id": 1,
+        "passed": false,
+        "assertions": [],
+        "response": "<error: HTTP Error 400: Bad Request>"
+      },
+      {
+        "id": 2,
+        "passed": false,
+        "assertions": [],
+        "response": "<error: HTTP Error 400: Bad Request>"
+      },
+      {
+        "id": 3,
+        "passed": false,
+        "assertions": [],
+        "response": "<error: HTTP Error 400: Bad Request>"
+      },
+      {
+        "id": 4,
+        "passed": false,
+        "assertions": [],
+        "response": "<error: HTTP Error 400: Bad Request>"
+      },
+      {
+        "id": 5,
+        "passed": false,
+        "assertions": [],
+        "response": "<error: HTTP Error 400: Bad Request>"
+      }
+    ]
+  },
+  {
+    "skill": "investment-analysis",
+    "results": [
+      {
+        "id": 1,
+        "passed": false,
+        "assertions": [],
+        "response": "<error: HTTP Error 400: Bad Request>"
+      },
+      {
+        "id": 2,
+        "passed": false,
+        "assertions": [],
+        "response": "<error: HTTP Error 400: Bad Request>"
+      },
+      {
+        "id": 3,
+        "passed": false,
+        "assertions": [],
+        "response": "<error: HTTP Error 400: Bad Request>"
+      },
+      {
+        "id": 4,
+        "passed": false,
+        "assertions": [],
+        "response": "<error: HTTP Error 400: Bad Request>"
+      },
+      {
+        "id": 5,
+        "passed": false,
+        "assertions": [],
+        "response": "<error: HTTP Error 400: Bad Request>"
+      }
+    ]
+  },
+  {
+    "skill": "journal-entry",
+    "results": [
+      {
+        "id": 1,
+        "passed": false,
+        "assertions": [],
+        "response": "<error: HTTP Error 400: Bad Request>"
+      },
+      {
+        "id": 2,
+        "passed": false,
+        "assertions": [],
+        "response": "<error: HTTP Error 400: Bad Request>"
+      },
+      {
+        "id": 3,
+        "passed": false,
+        "assertions": [],
+        "response": "<error: HTTP Error 400: Bad Request>"
+      },
+      {
+        "id": 4,
+        "passed": false,
+        "assertions": [],
+        "response": "<error: HTTP Error 400: Bad Request>"
+      },
+      {
+        "id": 5,
+        "passed": false,
+        "assertions": [],
+        "response": "<error: HTTP Error 400: Bad Request>"
+      }
+    ]
+  },
+  {
+    "skill": "lbo-modeling",
+    "results": [
+      {
+        "id": 1,
+        "passed": false,
+        "assertions": [],
+        "response": "<error: HTTP Error 400: Bad Request>"
+      },
+      {
+        "id": 2,
+        "passed": false,
+        "assertions": [],
+        "response": "<error: HTTP Error 400: Bad Request>"
+      },
+      {
+        "id": 3,
+        "passed": false,
+        "assertions": [],
+        "response": "<error: HTTP Error 400: Bad Request>"
+      },
+      {
+        "id": 4,
+        "passed": false,
+        "assertions": [],
+        "response": "<error: HTTP Error 400: Bad Request>"
+      }
+    ]
+  },
+  {
+    "skill": "lease-accounting",
+    "results": [
+      {
+        "id": 1,
+        "passed": false,
+        "assertions": [],
+        "response": "<error: HTTP Error 400: Bad Request>"
+      },
+      {
+        "id": 2,
+        "passed": false,
+        "assertions": [],
+        "response": "<error: HTTP Error 400: Bad Request>"
+      },
+      {
+        "id": 3,
+        "passed": false,
+        "assertions": [],
+        "response": "<error: HTTP Error 400: Bad Request>"
+      },
+      {
+        "id": 4,
+        "passed": false,
+        "assertions": [],
+        "response": "<error: HTTP Error 400: Bad Request>"
+      },
+      {
+        "id": 5,
+        "passed": false,
+        "assertions": [],
+        "response": "<error: HTTP Error 400: Bad Request>"
+      }
+    ]
+  },
+  {
+    "skill": "nlp-earnings-sentiment",
+    "results": [
+      {
+        "id": 1,
+        "passed": false,
+        "assertions": [],
+        "response": "<error: HTTP Error 400: Bad Request>"
+      },
+      {
+        "id": 2,
+        "passed": false,
+        "assertions": [],
+        "response": "<error: HTTP Error 400: Bad Request>"
+      },
+      {
+        "id": 3,
+        "passed": false,
+        "assertions": [],
+        "response": "<error: HTTP Error 400: Bad Request>"
+      },
+      {
+        "id": 4,
+        "passed": false,
+        "assertions": [],
+        "response": "<error: HTTP Error 400: Bad Request>"
+      }
+    ]
+  },
+  {
+    "skill": "oil-gas-valuation",
+    "results": [
+      {
+        "id": 1,
+        "passed": false,
+        "assertions": [],
+        "response": "<error: HTTP Error 400: Bad Request>"
+      },
+      {
+        "id": 2,
+        "passed": false,
+        "assertions": [],
+        "response": "<error: HTTP Error 400: Bad Request>"
+      },
+      {
+        "id": 3,
+        "passed": false,
+        "assertions": [],
+        "response": "<error: HTTP Error 400: Bad Request>"
+      },
+      {
+        "id": 4,
+        "passed": false,
+        "assertions": [],
+        "response": "<error: HTTP Error 400: Bad Request>"
+      }
+    ]
+  },
+  {
+    "skill": "predictive-burn-rate",
+    "results": [
+      {
+        "id": 1,
+        "passed": false,
+        "assertions": [],
+        "response": "<error: HTTP Error 400: Bad Request>"
+      },
+      {
+        "id": 2,
+        "passed": false,
+        "assertions": [],
+        "response": "<error: HTTP Error 400: Bad Request>"
+      },
+      {
+        "id": 3,
+        "passed": false,
+        "assertions": [],
+        "response": "<error: HTTP Error 400: Bad Request>"
+      },
+      {
+        "id": 4,
+        "passed": false,
+        "assertions": [],
+        "response": "<error: HTTP Error 400: Bad Request>"
+      }
+    ]
+  },
+  {
+    "skill": "product-profitability",
+    "results": [
+      {
+        "id": 1,
+        "passed": false,
+        "assertions": [],
+        "response": "<error: HTTP Error 400: Bad Request>"
+      },
+      {
+        "id": 2,
+        "passed": false,
+        "assertions": [],
+        "response": "<error: HTTP Error 400: Bad Request>"
+      },
+      {
+        "id": 3,
+        "passed": false,
+        "assertions": [],
+        "response": "<error: HTTP Error 400: Bad Request>"
+      },
+      {
+        "id": 4,
+        "passed": false,
+        "assertions": [],
+        "response": "<error: HTTP Error 400: Bad Request>"
+      }
+    ]
+  },
+  {
+    "skill": "revenue-recognition",
+    "results": [
+      {
+        "id": 1,
+        "passed": false,
+        "assertions": [],
+        "response": "<error: HTTP Error 400: Bad Request>"
+      },
+      {
+        "id": 2,
+        "passed": false,
+        "assertions": [],
+        "response": "<error: HTTP Error 400: Bad Request>"
+      },
+      {
+        "id": 3,
+        "passed": false,
+        "assertions": [],
+        "response": "<error: HTTP Error 400: Bad Request>"
+      },
+      {
+        "id": 4,
+        "passed": false,
+        "assertions": [],
+        "response": "<error: HTTP Error 400: Bad Request>"
+      },
+      {
+        "id": 5,
+        "passed": false,
+        "assertions": [],
+        "response": "<error: HTTP Error 400: Bad Request>"
+      }
+    ]
+  },
+  {
+    "skill": "risk-assessment",
+    "results": [
+      {
+        "id": 1,
+        "passed": false,
+        "assertions": [],
+        "response": "<error: HTTP Error 400: Bad Request>"
+      },
+      {
+        "id": 2,
+        "passed": false,
+        "assertions": [],
+        "response": "<error: HTTP Error 400: Bad Request>"
+      },
+      {
+        "id": 3,
+        "passed": false,
+        "assertions": [],
+        "response": "<error: HTTP Error 400: Bad Request>"
+      },
+      {
+        "id": 4,
+        "passed": false,
+        "assertions": [],
+        "response": "<error: HTTP Error 400: Bad Request>"
+      }
+    ]
+  },
+  {
+    "skill": "sox-compliance",
+    "results": [
+      {
+        "id": 1,
+        "passed": false,
+        "assertions": [],
+        "response": "<error: HTTP Error 400: Bad Request>"
+      },
+      {
+        "id": 2,
+        "passed": false,
+        "assertions": [],
+        "response": "<error: HTTP Error 400: Bad Request>"
+      },
+      {
+        "id": 3,
+        "passed": false,
+        "assertions": [],
+        "response": "<error: HTTP Error 400: Bad Request>"
+      },
+      {
+        "id": 4,
+        "passed": false,
+        "assertions": [],
+        "response": "<error: HTTP Error 400: Bad Request>"
+      }
+    ]
+  },
+  {
+    "skill": "startup-valuation",
+    "results": [
+      {
+        "id": 1,
+        "passed": false,
+        "assertions": [],
+        "response": "<error: HTTP Error 400: Bad Request>"
+      },
+      {
+        "id": 2,
+        "passed": false,
+        "assertions": [],
+        "response": "<error: HTTP Error 400: Bad Request>"
+      },
+      {
+        "id": 3,
+        "passed": false,
+        "assertions": [],
+        "response": "<error: HTTP Error 400: Bad Request>"
+      },
+      {
+        "id": 4,
+        "passed": false,
+        "assertions": [],
+        "response": "<error: HTTP Error 400: Bad Request>"
+      }
+    ]
+  },
+  {
+    "skill": "statement-preparation",
+    "results": [
+      {
+        "id": 1,
+        "passed": false,
+        "assertions": [],
+        "response": "<error: HTTP Error 400: Bad Request>"
+      },
+      {
+        "id": 2,
+        "passed": false,
+        "assertions": [],
+        "response": "<error: HTTP Error 400: Bad Request>"
+      },
+      {
+        "id": 3,
+        "passed": false,
+        "assertions": [],
+        "response": "<error: HTTP Error 400: Bad Request>"
+      },
+      {
+        "id": 4,
+        "passed": false,
+        "assertions": [],
+        "response": "<error: HTTP Error 400: Bad Request>"
+      }
+    ]
+  },
+  {
+    "skill": "tax-planning",
+    "results": [
+      {
+        "id": 1,
+        "passed": false,
+        "assertions": [],
+        "response": "<error: HTTP Error 400: Bad Request>"
+      },
+      {
+        "id": 2,
+        "passed": false,
+        "assertions": [],
+        "response": "<error: HTTP Error 400: Bad Request>"
+      },
+      {
+        "id": 3,
+        "passed": false,
+        "assertions": [],
+        "response": "<error: HTTP Error 400: Bad Request>"
+      },
+      {
+        "id": 4,
+        "passed": false,
+        "assertions": [],
+        "response": "<error: HTTP Error 400: Bad Request>"
+      },
+      {
+        "id": 5,
+        "passed": false,
+        "assertions": [],
+        "response": "<error: HTTP Error 400: Bad Request>"
+      }
+    ]
+  },
+  {
+    "skill": "three-statement-modeling",
+    "results": [
+      {
+        "id": 1,
+        "passed": false,
+        "assertions": [],
+        "response": "<error: HTTP Error 400: Bad Request>"
+      },
+      {
+        "id": 2,
+        "passed": false,
+        "assertions": [],
+        "response": "<error: HTTP Error 400: Bad Request>"
+      },
+      {
+        "id": 3,
+        "passed": false,
+        "assertions": [],
+        "response": "<error: HTTP Error 400: Bad Request>"
+      },
+      {
+        "id": 4,
+        "passed": false,
+        "assertions": [],
+        "response": "<error: HTTP Error 400: Bad Request>"
+      }
+    ]
+  },
+  {
+    "skill": "treasury-management",
+    "results": [
+      {
+        "id": 1,
+        "passed": false,
+        "assertions": [],
+        "response": "<error: HTTP Error 400: Bad Request>"
+      },
+      {
+        "id": 2,
+        "passed": false,
+        "assertions": [],
+        "response": "<error: HTTP Error 400: Bad Request>"
+      },
+      {
+        "id": 3,
+        "passed": false,
+        "assertions": [],
+        "response": "<error: HTTP Error 400: Bad Request>"
+      },
+      {
+        "id": 4,
+        "passed": false,
+        "assertions": [],
+        "response": "<error: HTTP Error 400: Bad Request>"
+      }
+    ]
+  },
+  {
+    "skill": "variance-analysis",
+    "results": [
+      {
+        "id": 1,
+        "passed": false,
+        "assertions": [],
+        "response": "<error: HTTP Error 400: Bad Request>"
+      },
+      {
+        "id": 2,
+        "passed": false,
+        "assertions": [],
+        "response": "<error: HTTP Error 400: Bad Request>"
+      },
+      {
+        "id": 3,
+        "passed": false,
+        "assertions": [],
+        "response": "<error: HTTP Error 400: Bad Request>"
+      },
+      {
+        "id": 4,
+        "passed": false,
+        "assertions": [],
+        "response": "<error: HTTP Error 400: Bad Request>"
+      }
+    ]
+  },
+  {
+    "skill": "venture-debt",
+    "results": [
+      {
+        "id": 1,
+        "passed": false,
+        "assertions": [],
+        "response": "<error: HTTP Error 400: Bad Request>"
+      },
+      {
+        "id": 2,
+        "passed": false,
+        "assertions": [],
+        "response": "<error: HTTP Error 400: Bad Request>"
+      },
+      {
+        "id": 3,
+        "passed": false,
+        "assertions": [],
+        "response": "<error: HTTP Error 400: Bad Request>"
+      },
+      {
+        "id": 4,
+        "passed": false,
+        "assertions": [],
+        "response": "<error: HTTP Error 400: Bad Request>"
+      }
+    ]
+  },
+  {
+    "skill": "wacc-computation",
+    "results": [
+      {
+        "id": 1,
+        "passed": false,
+        "assertions": [],
+        "response": "<error: HTTP Error 400: Bad Request>"
+      },
+      {
+        "id": 2,
+        "passed": false,
+        "assertions": [],
+        "response": "<error: HTTP Error 400: Bad Request>"
+      },
+      {
+        "id": 3,
+        "passed": false,
+        "assertions": [],
+        "response": "<error: HTTP Error 400: Bad Request>"
+      },
+      {
+        "id": 4,
+        "passed": false,
+        "assertions": [],
+        "response": "<error: HTTP Error 400: Bad Request>"
+      },
+      {
+        "id": 5,
+        "passed": false,
+        "assertions": [],
+        "response": "<error: HTTP Error 400: Bad Request>"
+      }
+    ]
+  },
+  {
+    "skill": "working-capital-analysis",
+    "results": [
+      {
+        "id": 1,
+        "passed": false,
+        "assertions": [],
+        "response": "<error: HTTP Error 400: Bad Request>"
+      },
+      {
+        "id": 2,
+        "passed": false,
+        "assertions": [],
+        "response": "<error: HTTP Error 400: Bad Request>"
+      },
+      {
+        "id": 3,
+        "passed": false,
+        "assertions": [],
+        "response": "<error: HTTP Error 400: Bad Request>"
+      },
+      {
+        "id": 4,
+        "passed": false,
+        "assertions": [],
+        "response": "<error: HTTP Error 400: Bad Request>"
+      }
+    ]
+  }
+]
