@@ -1,0 +1,43 @@
+{
+  "skill_name": "net-worth-tracker",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Here are my finances: checking $3,000, savings $12,000, 401k $68,000, car value $15,000. Debts: car loan $9,000, student loan $22,000, credit card $3,500. What's my net worth and how healthy does it look?",
+      "expected_output": "Total assets $98,000; total liabilities $34,500; net worth $63,500; debt-to-asset ratio 35.2% (healthy, below 50%); liquid assets $15,000 (15.3%); 401k is 69% of assets — concentrated but age-appropriate for a wealth-builder.",
+      "assertions": [
+        "Total assets correctly summed to $98,000",
+        "Total liabilities correctly summed to $34,500",
+        "Net worth correctly stated as $63,500",
+        "Debt-to-asset ratio calculated (~35%)",
+        "Provides health commentary on the ratios"
+      ],
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "My net worth last year was $45,000. This year it's $63,500. What's my year-over-year growth and am I building wealth fast enough for someone in their 30s?",
+      "expected_output": "Dollar change: +$18,500. Percentage change: +41.1%. This is strong growth. A common benchmark (Millionaire Next Door formula) suggests net worth of Age × Gross Income / 10. Growth of $18,500/year is solid for a wealth-building phase.",
+      "assertions": [
+        "Dollar change correctly calculated as $18,500",
+        "Percentage change correctly calculated as ~41%",
+        "Benchmarks the result against a rule-of-thumb or percentile",
+        "Provides context on whether the rate is on track"
+      ],
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "From the attached balance sheet (evals/files/balance_sheet.csv), calculate net worth, debt-to-asset ratio, and asset allocation. Compare to the prior period values in the file.",
+      "expected_output": "Current net worth $87,500; prior net worth $74,200; change +$13,300 (+17.9%); debt-to-asset ratio 28.6%; retirement accounts 71% of total assets. Primary driver: retirement account growth.",
+      "assertions": [
+        "Loads both current and prior period data from CSV",
+        "Net worth correctly calculated as $87,500",
+        "Period change correctly stated as $13,300 (+17.9%)",
+        "Debt-to-asset ratio ~28.6%",
+        "Identifies retirement accounts as largest asset class"
+      ],
+      "files": ["evals/files/balance_sheet.csv"]
+    }
+  ]
+}

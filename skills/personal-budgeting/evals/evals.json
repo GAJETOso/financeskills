@@ -1,0 +1,42 @@
+{
+  "skill_name": "personal-budgeting",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "My take-home is $4,500/month. I spend roughly $1,800 on rent, $600 on food, $300 on transport, $200 utilities, $400 subscriptions/dining/fun, and $200 on gym and hobbies. I never seem to save anything. Help me build a budget.",
+      "expected_output": "Total expenses $3,500; surplus $1,000. 50/30/20 targets: Needs $2,250, Wants $1,350, Savings $900. Needs ($2,900) exceed 50% target. Recommends automating savings and reducing a specific discretionary category.",
+      "assertions": [
+        "Calculates total expenses as $3,500",
+        "Identifies surplus of $1,000",
+        "Applies 50/30/20 rule correctly to $4,500",
+        "Flags that Needs exceed the 50% target",
+        "Recommends automating savings transfer"
+      ],
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "I earn $6,000/month after tax. My fixed costs are $2,800 (rent, insurance, utilities). I want to save 25% of my income. How much can I spend on wants?",
+      "expected_output": "Savings target: $1,500. Fixed costs: $2,800. Remaining for wants: $1,700. This leaves wants at 28% of income, just under the 30% guideline — achievable.",
+      "assertions": [
+        "Savings target correctly calculated as $1,500 (25% of $6,000)",
+        "Correctly allocates remaining $1,700 to discretionary spending",
+        "Notes the 28% wants allocation is within acceptable range"
+      ],
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "From the attached monthly expense data (evals/files/monthly_expenses.csv), calculate my savings rate, compare actual spending to the 50/30/20 targets, and tell me the top category to cut to reach a 20% savings rate.",
+      "expected_output": "Income $5,000; Needs $2,600 (52%), Wants $1,300 (26%), Savings $600 (12%); savings rate 12%; needs to save $1,000/month for 20% target; top cut category is Dining ($400).",
+      "assertions": [
+        "Savings rate calculated as 12%",
+        "Needs correctly flagged as over the 50% target",
+        "Identifies Dining as the largest discretionary line item",
+        "States the savings shortfall is $400/month",
+        "Uses code to compute, not mental math"
+      ],
+      "files": ["evals/files/monthly_expenses.csv"]
+    }
+  ]
+}

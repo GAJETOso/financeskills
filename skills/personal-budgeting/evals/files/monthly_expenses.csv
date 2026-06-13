@@ -1,0 +1,14 @@
+category,type,amount
+Salary,income,5000
+Rent,needs,1500
+Utilities,needs,200
+Groceries,needs,400
+Transport,needs,300
+Insurance,needs,200
+Dining,wants,400
+Subscriptions,wants,200
+Entertainment,wants,200
+Gym,wants,150
+Clothing,wants,150
+Clothing,wants,200
+Savings,savings,600

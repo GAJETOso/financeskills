@@ -1,0 +1,42 @@
+{
+  "skill_name": "tax-efficient-investing",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "I'm in the 24% federal tax bracket, single filer, earning $95,000. I have a 401k at work with a 4% employer match, and I have $10,000 to invest this year. How should I allocate it across account types for maximum tax efficiency?",
+      "expected_output": "Priority: (1) 401k to capture full 4% match ($3,800 at $95k salary), (2) max Roth IRA ($7,000), (3) remaining into traditional 401k. At 24% bracket, Roth is preferred if future rates expected to be similar or higher. Tax savings from pre-tax contributions highlighted.",
+      "assertions": [
+        "First priority is capturing the full employer match",
+        "Recommends maxing Roth IRA at the $7,000 limit",
+        "Explains Roth vs. traditional trade-off at 24% bracket",
+        "Provides a specific dollar allocation plan"
+      ],
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "A municipal bond yields 3.5% tax-free. I'm in the 32% tax bracket. What taxable bond yield would I need to match it?",
+      "expected_output": "Tax-equivalent yield = 3.5% / (1 − 0.32) = 5.15%. A taxable bond must yield at least 5.15% to match the after-tax value of the 3.5% muni bond for this investor.",
+      "assertions": [
+        "Applies tax-equivalent yield formula correctly",
+        "Result is approximately 5.15%",
+        "Explains the comparison clearly",
+        "Uses code to compute"
+      ],
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "From the attached tax inputs (evals/files/tax_inputs.csv), calculate the after-tax future value of the investment in a taxable account vs. a Roth IRA over the specified horizon. Quantify the tax drag in dollar terms.",
+      "expected_output": "Roth IRA FV ~$54,274; Taxable FV ~$42,415; tax drag cost ~$11,859 over 25 years; Roth advantage ~21.8% more wealth.",
+      "assertions": [
+        "Loads inputs from CSV correctly",
+        "Roth FV within $500 of $54,274",
+        "Taxable FV within $500 of $42,415",
+        "Tax drag cost stated in dollars",
+        "Percentage advantage of Roth stated"
+      ],
+      "files": ["evals/files/tax_inputs.csv"]
+    }
+  ]
+}
