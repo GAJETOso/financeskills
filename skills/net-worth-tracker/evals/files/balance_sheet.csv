@@ -1,0 +1,21 @@
+category,type,period,amount
+Checking Account,liquid,current,5000
+Savings Account,liquid,current,10000
+Retirement 401k,investment,current,62000
+Brokerage,investment,current,8000
+Real Estate Equity,illiquid,current,25000
+Vehicle,illiquid,current,12500
+Mortgage,liability,current,34000
+Car Loan,liability,current,6000
+Credit Card,liability,current,2500
+Student Loan,liability,current,2500
+Checking Account,liquid,prior,3500
+Savings Account,liquid,prior,8000
+Retirement 401k,investment,prior,52000
+Brokerage,investment,prior,5000
+Real Estate Equity,illiquid,prior,23000
+Vehicle,illiquid,prior,14000
+Mortgage,liability,prior,36500
+Car Loan,liability,prior,7800
+Credit Card,liability,prior,4000
+Student Loan,liability,prior,4000

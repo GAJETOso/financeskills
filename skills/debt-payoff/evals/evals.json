@@ -1,0 +1,43 @@
+{
+  "skill_name": "debt-payoff",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "I have three debts: a credit card with a $4,500 balance at 22% APR ($90 minimum), a car loan with $8,000 at 6% APR ($180 minimum), and a student loan with $12,000 at 5% APR ($130 minimum). I can put $600/month total toward debt. Which strategy saves me more money — avalanche or snowball?",
+      "expected_output": "Avalanche targets the credit card first (22% APR). Avalanche saves more total interest than snowball. Both strategies should reach debt-free within approximately 3-4 years. Clear recommendation of avalanche given the large rate gap.",
+      "assertions": [
+        "Identifies credit card as the avalanche target (highest rate 22%)",
+        "Identifies credit card as lowest balance for snowball target",
+        "Calculates total interest for both strategies",
+        "States that avalanche saves more interest",
+        "Provides months to debt-free for each strategy"
+      ],
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "I owe $2,000 on a store card at 28% APR and $15,000 on a car loan at 4% APR. My minimum payments are $50 and $280. I can afford $500/month total. Should I use avalanche or snowball, and what's the total interest I'll pay?",
+      "expected_output": "Avalanche: target store card first (28% APR). Since the store card is also the lower balance, avalanche and snowball coincide — same payoff order, same total interest. Should note this and provide the unified payoff schedule.",
+      "assertions": [
+        "Recognises that highest-rate debt and lowest-balance debt are the same",
+        "Notes avalanche and snowball produce identical results here",
+        "Calculates total interest paid correctly",
+        "Provides estimated months to debt-free"
+      ],
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "From the attached debt list (evals/files/debts.csv), calculate the total interest paid and months to debt-free under both avalanche and snowball, with $200/month extra payment. Show which strategy saves more.",
+      "expected_output": "Avalanche — approximately 38 months, $2,847 total interest. Snowball — approximately 38 months, $3,201 total interest. Avalanche saves approximately $354 in interest.",
+      "assertions": [
+        "Loads debt data from CSV",
+        "Applies $200 extra payment on top of minimums",
+        "Computes avalanche and snowball schedules separately",
+        "Avalanche total interest lower than snowball",
+        "States the interest saving in dollar terms"
+      ],
+      "files": ["evals/files/debts.csv"]
+    }
+  ]
+}

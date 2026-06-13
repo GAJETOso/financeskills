@@ -1,0 +1,43 @@
+{
+  "skill_name": "retirement-planning",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "I'm 35, have $45,000 saved for retirement, and contribute $500/month. I want to retire at 65 with $1.5M. My expected return is 7% per year. Am I on track? If not, how much more do I need to contribute?",
+      "expected_output": "Projected nest egg ~$975,000; gap ~$525,000; current contributions fall well short of the $1.5M target; need approximately $930/month to reach $1.5M. The 4% rule supports $60,000/year annual withdrawal from $1.5M.",
+      "assertions": [
+        "Projects FV of $45,000 + $500/month at 7% over 30 years correctly (~$975,000)",
+        "Identifies gap to $1.5M target (~$525,000)",
+        "Calculates required monthly contribution to close the gap (~$930)",
+        "Mentions the 4% safe withdrawal rule",
+        "Uses calculate.py functions, not mental math"
+      ],
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "I'm 45 with no retirement savings and want $1M by 65. What monthly contribution do I need, assuming 6% annual return?",
+      "expected_output": "Required monthly contribution approximately $2,164/month at 6% over 20 years to accumulate $1M. The 4% rule supports $40,000/year from that portfolio.",
+      "assertions": [
+        "Uses 20 years as the horizon",
+        "Applies 6% annual return compounded monthly",
+        "Calculates required PMT correctly (~$2,164/month)",
+        "Notes this is a high bar and suggests increasing the timeline or reducing target"
+      ],
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "From the attached inputs (evals/files/retirement_inputs.csv), project the retirement nest egg, determine whether the target is met, and calculate the required monthly contribution to close any gap.",
+      "expected_output": "Projected nest egg ~$975,228; target $1,500,000; gap ~$524,772; required monthly contribution ~$930 to meet target; safe withdrawal $60,000/year or $5,000/month.",
+      "assertions": [
+        "Loads all inputs from CSV",
+        "FV projection within $5,000 of $975,228",
+        "Gap calculated correctly (~$524,772)",
+        "Required PMT calculated correctly (~$930)",
+        "Safe withdrawal rate applied correctly"
+      ],
+      "files": ["evals/files/retirement_inputs.csv"]
+    }
+  ]
+}

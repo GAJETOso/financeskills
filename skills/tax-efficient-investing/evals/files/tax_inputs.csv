@@ -1,0 +1,6 @@
+parameter,value
+principal,10000
+gross_annual_rate,0.07
+annual_tax_rate,0.15
+years,25
+marginal_income_tax_rate,0.24

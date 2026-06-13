@@ -1,0 +1,8 @@
+parameter,value
+current_age,35
+retirement_age,65
+current_savings,45000
+monthly_contribution,500
+annual_return,0.07
+target_nest_egg,1500000
+safe_withdrawal_rate,0.04
