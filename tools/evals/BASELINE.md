@@ -1,8 +1,8 @@
 # Eval Baseline
 
-![evals](https://img.shields.io/badge/evals-0%2F183_passing_(0%25)-red)
+![evals](https://img.shields.io/badge/evals-0%2F198_passing_(0%25)-red)
 
-**Run:** 20260612-235147 | **Model:** see run config | **Result: 0/183 evals passing (0%)**
+**Run:** 20260701-081626 | **Model:** see run config | **Result: 0/198 evals passing (0%)**
 
 Reproduce: `ANTHROPIC_API_KEY=... python3 tools/evals/run_evals.py --all`
 
@@ -20,6 +20,7 @@ Reproduce: `ANTHROPIC_API_KEY=... python3 tools/evals/run_evals.py --all`
 | credit-analysis | 0/5 | FAIL |
 | crypto-accounting | 0/4 | FAIL |
 | cvp-breakeven | 0/4 | FAIL |
+| debt-payoff | 0/3 | FAIL |
 | debt-restructuring | 0/4 | FAIL |
 | deferred-tax | 0/4 | FAIL |
 | earned-value-mgmt | 0/4 | FAIL |
@@ -35,15 +36,19 @@ Reproduce: `ANTHROPIC_API_KEY=... python3 tools/evals/run_evals.py --all`
 | journal-entry | 0/5 | FAIL |
 | lbo-modeling | 0/4 | FAIL |
 | lease-accounting | 0/5 | FAIL |
+| net-worth-tracker | 0/3 | FAIL |
 | nlp-earnings-sentiment | 0/4 | FAIL |
 | oil-gas-valuation | 0/4 | FAIL |
+| personal-budgeting | 0/3 | FAIL |
 | predictive-burn-rate | 0/4 | FAIL |
 | product-profitability | 0/4 | FAIL |
+| retirement-planning | 0/3 | FAIL |
 | revenue-recognition | 0/5 | FAIL |
 | risk-assessment | 0/4 | FAIL |
 | sox-compliance | 0/4 | FAIL |
 | startup-valuation | 0/4 | FAIL |
 | statement-preparation | 0/4 | FAIL |
+| tax-efficient-investing | 0/3 | FAIL |
 | tax-planning | 0/5 | FAIL |
 | three-statement-modeling | 0/4 | FAIL |
 | treasury-management | 0/4 | FAIL |
@@ -52,4 +57,4 @@ Reproduce: `ANTHROPIC_API_KEY=... python3 tools/evals/run_evals.py --all`
 | wacc-computation | 0/5 | FAIL |
 | working-capital-analysis | 0/4 | FAIL |
 
-Raw output: `tools/evals/results/20260612-235147/`
+Raw output: `tools/evals/results/20260701-081626/`
