@@ -179,3 +179,5 @@ When using any skill from this repository:
    Skills update available: X finance skills have updates.
    Say "update skills" to update automatically, or run `git pull` in your financeskills folder.
    ```
+
+## Imported Claude Cowork project instructions
